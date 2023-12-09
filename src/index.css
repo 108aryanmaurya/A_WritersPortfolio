@@ -3,3 +3,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Minerva-Modern-Regular";
+  src: local("Minerva-Modern-Regular"),
+    url(./fonts/Minerva-Modern-Regular.otf) format("opentype");
+}
+@font-face {
+  font-family: "proximanovaexcn-regular";
+  src: local("proximanovaexcn-regular"),
+    url(./fonts/proximanovaexcn-regular.otf) format("opentype");
+}
+.head-title {
+  font-family: "Minerva-Modern-Regular";
+}
+.head-menu {
+  font-family: "proximanovaexcn-regular";
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+}
+@layer components {
+  .max-container {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+  .container {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+}

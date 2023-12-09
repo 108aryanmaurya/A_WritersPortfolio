@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Aboutimg, RandomPerson } from "../assets/images";
 const About = () => {
