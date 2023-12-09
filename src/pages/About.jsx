@@ -24,7 +24,7 @@ const About = () => {
         </div>
         <div className="text-black head-title flex font-serif transform translate-y-10 -translate-x-40  max-md:-translate-x-0 text-center justify-center text-6xl max-md:text-2xl tracking-wide my-6 max-md:m-0 mt-0 max-md:ml-5  ">
           <span>A</span>ditya&nbsp;
-          <span>G</span>outam
+          <span>G</span>autam
         </div>
         <div className="float-none text-[19px]  text-justify bg-white w-[60%] max-sm:w-[85%] max-sm:p-2 max-sm:leading-[17px] max-sm:ml-8 max-sm:mt-14  ml-24 mt-24  p-10 max-sm:text-[15px]  ">
           <span className="text-[25px] ml-3 font-serif ">L</span>

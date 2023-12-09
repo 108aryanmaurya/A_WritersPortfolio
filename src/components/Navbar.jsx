@@ -52,7 +52,7 @@ const Navbar = () => {
               } head-title flex font-serif items-center text-4xl max-md:text-2xl tracking-wide my-3 max-md:m-0 mt-0 max-md:ml-5`}
             >
               <span>A</span>ditya&nbsp;
-              <span>G</span>outam
+              <span>G</span>autam
             </div>
 
             <div className="flex items-center w-auto">
