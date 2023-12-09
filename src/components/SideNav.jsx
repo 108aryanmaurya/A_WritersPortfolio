@@ -19,8 +19,8 @@ export default function SideNav(props) {
         onClick={handleOutsideClick}
         className="backdrop-blur-sm fixed select-none w-screen sidenav bg-Opacitywhite h-[100vh] overflow-hidden  z-[99] transition-all ease-in-out delay-75 duration-200"
       >
-        <div className="w-full flex justify-evenly select-none h-full bg-white shadow-lg overflow-hidden dark:bg-darkBgMain flex-col cursor-pointer">
-          <div className="flex items-center w-auto">
+        <div className="w-full flex justify-start  select-none h-full bg-white shadow-lg overflow-hidden dark:bg-darkBgMain flex-col cursor-pointer">
+          <div className="flex w-auto mt-24">
             <ul className="flex-1 flex flex-col items-center gap-8">
               {navLinks.map((item) => (
                 <li key={item.label} className="px-2">
