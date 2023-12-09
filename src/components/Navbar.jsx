@@ -36,11 +36,21 @@ const Navbar = () => {
       >
         <header
           className={`flex items-center ${
-            showNav ? "" : "border-b"
-          }  border-gray-100 dark:border-darkBorderAll dark:bg-darkBgMain w-full bg-white`}
+            showNav ? "" : "border-b border-gray-100 "
+          }  w-full bg-white`}
         >
-          <nav className="flex flex-col max-md:flex-row max-md:justify-between my-5 max-md:my-2 justify-center items-center w-full">
-            <div className="head-title flex font-serif items-center text-4xl max-md:text-2xl tracking-wide my-3 max-md:m-0 mt-0 max-md:ml-5">
+          <nav
+            className={` ${
+              location.pathname === "/About"
+                ? " !text-white absolute flex-row justify-between px-10 max-md:px-0 "
+                : " !text-black  relative flex-col justify-center "
+            }  top-0 flex  max-md:flex-row max-md:justify-between my-5 max-md:my-2 items-center w-full`}
+          >
+            <div
+              className={` ${
+                location.pathname === "/About" ? "" : ""
+              } head-title flex font-serif items-center text-4xl max-md:text-2xl tracking-wide my-3 max-md:m-0 mt-0 max-md:ml-5`}
+            >
               <span>A</span>ditya&nbsp;
               <span>G</span>outam
             </div>
@@ -63,22 +73,37 @@ const Navbar = () => {
                   </li>
                 ))}
               </ul>
-              <div className="hidden max-md:block " onClick={NavStatus}>
-                <button className="relative group">
-                  <div className="relative flex overflow-hidden items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all duration-200">
+              <div
+                className="hidden max-md:block outline-none"
+                onClick={NavStatus}
+              >
+                <button className="relative group outline-none hover:bg-transparent">
+                  <div className="relative flex overflow-hidden items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all duration-200 ">
                     <div className="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 origin-center overflow-hidden">
                       <div
-                        className={`bg-black h-[2px] w-7 transform transition-all duration-300 origin-left ${
+                        className={`${
+                          location.pathname === "/About"
+                            ? " bg-white "
+                            : " bg-black "
+                        } h-[2px] w-7 transform transition-all duration-300 origin-left ${
                           showNav ? "translate-y-6 delay-100" : ""
                         }`}
                       ></div>
                       <div
-                        className={`bg-black h-[2px] w-7 rounded transform transition-all duration-300 ${
+                        className={`${
+                          location.pathname === "/About"
+                            ? " bg-white "
+                            : " bg-black "
+                        } h-[2px] w-7 rounded transform transition-all duration-300 ${
                           showNav ? "translate-y-6 delay-75" : ""
                         }`}
                       ></div>
                       <div
-                        className={`bg-black h-[2px] w-7 transform transition-all duration-300 origin-left ${
+                        className={`${
+                          location.pathname === "/About"
+                            ? " bg-white "
+                            : " bg-black "
+                        } h-[2px] w-7 transform transition-all duration-300 origin-left ${
                           showNav ? "translate-y-6" : ""
                         }`}
                       ></div>
