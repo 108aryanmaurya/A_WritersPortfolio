@@ -1,10 +1,21 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
+import React from "react";
+import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
+import Home from "./pages/Home";
+import Contact from "./pages/Contact";
+import About from "./pages/About";
 
-function App() {
-  return <div className="bg-red-500">Hello</div>;
-}
+const App = () => {
+  return (
+    <main className="bg-slate-300/20">
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About></About>} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </Router>
+    </main>
+  );
+};
 
 export default App;
