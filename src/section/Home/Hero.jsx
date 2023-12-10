@@ -49,7 +49,7 @@ export default function Hero() {
           return randomIndex;
         });
       }
-    }, 1000);
+    }, 4000);
 
     const rightInterval = setInterval(() => {
       if (!isHovered) {
@@ -61,7 +61,7 @@ export default function Hero() {
           return randomIndex;
         });
       }
-    }, 1000);
+    }, 4000);
 
     return () => {
       clearInterval(leftInterval);
@@ -88,31 +88,16 @@ export default function Hero() {
       >
         <div className="w-full h-full group text-center relative uppercase overflow-hidden">
           <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
-            <span className="overflow-hidden block w-full">
-              <span className="opacity-0 group-hover:opacity-100 text-[#3367D1] relative right-1/4 transform top-10 group-hover:top-0  transition-all ease-linear max-sm:top-0 max-sm:opacity-100  duration-300">
-                Content Writer
-              </span>
-            </span>
             <span className="text-[86px] max-lg:text-[75px] max-md:text-[70px] max-sm:text-[42px] leading-[5.5rem]  w-[100%] font-bold flex justify-center items-center max-sm:leading-[3rem]">
               <span className="overflow-hidden block w-full">
-                <span className="relative text-white top-12 group-hover:-top-0 max-sm:-top-0 transition-all ease-linear  duration-200">
-                  Ashwin
+                <span className="relative text-white top-0 transition-all ease-linear  duration-200">
+                  A.M&nbsp;Gautam
                 </span>
-              </span>
-              <span className="overflow-hidden block w-full ">
-                <span className="relative -top-12 text-white group-hover:-top-0 max-sm:-top-0 transition-all ease-linear  duration-200">
-                  Maurya&nbsp;
-                </span>
-              </span>
-            </span>
-            <span className="overflow-hidden block w-full">
-              <span className="opacity-0 group-hover:opacity-100 text-[red] relative left-1/4 transform -top-10 group-hover:top-0  transition-all ease-linear max-sm:top-0 max-sm:opacity-100  duration-300">
-                Frontend Developer
               </span>
             </span>
           </h1>{" "}
           <div
-            className="hero-one  transition-all ease-in-out duration-200 absolute top-0 z-[1] w-[60%] h-full bg-cover bg-no-repeat bg-center [clip-path:polygon(0%_0%,65%_0%,100%_100%,0%_100%)]"
+            className="hero-one  transition-all ease-in-out duration-200 absolute top-0 z-[1] w-[80%] h-full bg-cover bg-no-repeat bg-center [clip-path:polygon(0%_0%,65%_0%,100%_100%,0%_100%)]"
             style={{
               backgroundImage: `url(${images[leftImageIndex].img})`,
             }}
@@ -123,7 +108,7 @@ export default function Hero() {
               backgroundImage: `url(${images[rightImageIndex].img})`,
             }}
           ></div>
-          <div className="w-full absolute h-full bg-[rgba(0,0,0,.4)] z-10 "></div>
+          {/* <div className="w-full absolute h-full bg-[rgba(0,0,0,.4)] z-10 "></div> */}
         </div>
       </div>
     </>

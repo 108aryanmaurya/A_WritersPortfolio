@@ -34,7 +34,7 @@ export default function SideNav(props) {
                 >
                   <Link
                     to={item.href}
-                    className={`head-menu text-lg text-slate-gray`}
+                    className={`font-CooperHevitt text-lg text-slate-gray`}
                   >
                     {item.label}
                   </Link>

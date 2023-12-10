@@ -22,11 +22,11 @@ const About = () => {
             className=" pb-4 pr-6 z-10 max-sm:pr-2 max-sm:pb-1  max-sm:h-[260px] h-[600px] "
           />
         </div>
-        <div className="text-black head-title flex font-serif transform translate-y-10 -translate-x-40  max-md:-translate-x-0 text-center justify-center text-6xl max-md:text-2xl tracking-wide my-6 max-md:m-0 mt-0 max-md:ml-5  ">
-          <span>A</span>ditya&nbsp;
+        <div className="text-black flex font-Authorfont transform translate-y-10 -translate-x-40  max-md:-translate-x-0 text-center justify-center text-6xl max-md:text-2xl tracking-wide my-6 max-md:m-0 mt-0 max-md:ml-5  ">
+          <span>A</span>.M&nbsp;
           <span>G</span>autam
         </div>
-        <div className="bg-[#edd8ff] max-md:hidden h-32  w-32 rounded-full  absolute  right-0 z-20"></div>
+        <div className="bg-[#ff33a3] max-md:hidden h-32  w-32 rounded-full  absolute  right-0 z-20"></div>
         <div className="bg-[#edd8ff] h-72 top-72 w-72 max-md:hidden  rounded-full  absolute  right-32 z-20"></div>
         <div className="text-[18px]  text-justify bg-white w-[60%] max-sm:w-[85%] max-sm:p-2 max-sm:leading-[17px] font-montserrat max-sm:ml-8 max-sm:mt-14  ml-24 mt-24  p-14 max-sm:text-[15px]  ">
           <span className="text-[35px] ml-3 mr-1 font-serif ">L</span>

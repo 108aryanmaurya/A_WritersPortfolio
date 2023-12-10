@@ -21,13 +21,7 @@
   src: local("CooperHewitt-Light"),
     url(./fonts/CooperHewitt-Light.otf) format("opentype");
 }
-.head-title {
-  font-family: "Minerva-Modern-Regular";
-}
-.head-menu {
-  /* font-family: "proximanovaexcn-regular"; */
-  font-family: "CooperHewitt-Light";
-}
+
 * {
   margin: 0;
   padding: 0;
@@ -37,6 +31,21 @@
 body {
   background-color: rgb(244, 244, 244);
   overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #eeeeee;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #696969;
 }
 @layer components {
   .container {

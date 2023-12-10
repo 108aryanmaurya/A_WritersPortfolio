@@ -39,18 +39,14 @@ const Navbar = () => {
             location.pathname === "/About"
               ? " !text-white absolute flex-row justify-between px-10 max-md:px-0 "
               : " !text-black  relative flex-col justify-center "
-          } ${
-            showNav || location.pathname === "/About"
-              ? ""
-              : "border-b border-gray-100 "
           } top-0 flex  max-md:flex-row max-md:justify-between py-5 max-md:py-2 items-center w-full`}
         >
           <div
             className={` ${location.pathname === "/About" ? "text-" : ""} ${
               showNav ? "text-black" : ""
-            } head-title flex font-serif transition-all duration-300 items-center text-4xl max-md:text-2xl tracking-wide my-3 max-md:m-0 mt-0 max-md:ml-5`}
+            } font-Authorfont flex transition-all duration-300 items-center text-4xl max-md:text-2xl tracking-wide my-3 max-md:m-0 mt-0 max-md:ml-5`}
           >
-            <span>A</span>ditya&nbsp;
+            <span>A</span>.M&nbsp;
             <span>G</span>autam
           </div>
 
@@ -74,7 +70,7 @@ const Navbar = () => {
                 >
                   <Link
                     to={item.href}
-                    className={`head-menu text-lg text-slate-gray`}
+                    className={`font-CooperHevitt text-lg text-slate-gray`}
                   >
                     {item.label}
                   </Link>
