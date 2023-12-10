@@ -9,6 +9,7 @@ export default {
         montserrat: ["Montserrat", "sans-serif"],
         Authorfont: ["Minerva-Modern-Regular", "sans-serif"],
         CooperHevitt: ["CooperHewitt-Light", "sans-serif"],
+
       },
     },
   },

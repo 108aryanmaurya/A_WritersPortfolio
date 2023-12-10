@@ -1,135 +1,77 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { crausoel } from "./constants";
 
 const AboutCrousel = () => {
+  const [reviews, setReviews] = useState(crausoel);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      nextSlide();
+    }, 5000);
+
+    return () => clearInterval(intervalId); // Clean up the interval on component unmount
+  }, [reviews?.cover]);
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === reviews.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+  const prevSlide = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? reviews.length - 1 : prevIndex - 1
+    );
+  };
+
   return (
-    <div
-      id="default-carousel"
-      className="relative w-full"
-      data-carousel="slide"
-    >
-      <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
-        <div className="hidden duration-700 ease-in-out" data-carousel-item>
+    <section className="mx-auto flex px-24 bg-gray-900 flex-col   my-6 max-md:my-3 max-md:py-3 py-10 max-sm:px-0">
+      <p className="font-CooperHevitt my-6 max-md:my-2 font-semibold opacity-70 tracking-[5px]  text-[30px] text-white max-md:text-center  max-sm:text-[22px] ">
+        READS BY A.M GAUTAM
+      </p>
+
+      <div className="flex max-md:flex-col max-md:gap-0  gap-10">
+        <div className="h-[350px] relative bg-black flex  justify-center items-center  max-md:w-[400px] max-md:h-[300px]   group w-[600px] mx-auto text-center">
+          {/* <button
+            className="transition ease-in-out group-hover:block  text-primaryMain left-4 absolute hover:underline     p-5 "
+            onClick={prevSlide}
+          >
+            <i className="fa fa-chevron-left  text-white  text-lg w-5 h-3"></i>
+          </button> */}
           <img
-            src="/docs/images/carousel/carousel-1.svg"
-            className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-            alt="..."
+            src={reviews[currentIndex]?.cover}
+            alt=""
+            className=" transition ease-in-out group3    group2-hover:opacity-60  w-full h-full object-top   hover:opacity-60  m-auto mb-1 "
           />
+
+          {/* <button
+            className=" transition ease-in-out group-hover:block  text-primaryMain right-4 group2 absolute hover:underline   p-5 "
+            onClick={nextSlide}
+          >
+            <i className="fa fa-chevron-right text-white  text-lg w-5 h-3"></i>
+          </button> */}
         </div>
-        <div className="hidden duration-700 ease-in-out" data-carousel-item>
-          <img
-            src="/docs/images/carousel/carousel-2.svg"
-            className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-            alt="..."
-          />
-        </div>
-        <div className="hidden duration-700 ease-in-out" data-carousel-item>
-          <img
-            src="/docs/images/carousel/carousel-3.svg"
-            className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-            alt="..."
-          />
-        </div>
-        <div className="hidden duration-700 ease-in-out" data-carousel-item>
-          <img
-            src="/docs/images/carousel/carousel-4.svg"
-            className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-            alt="..."
-          />
-        </div>
-        <div className="hidden duration-700 ease-in-out" data-carousel-item>
-          <img
-            src="/docs/images/carousel/carousel-5.svg"
-            className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-            alt="..."
-          />
+        <div className="mx-7   w-[50%] max-sm:w-[100%] max-md:mx-0  flex flex-col  gap-4 max-md:gap-0 ">
+          <div>
+            <p className="text-[30px] text-white ">The Avacado Toast </p>
+            <span className="italic text-[18px] font-[50] font-Oswald tracking-wider text-slate-300">
+              -BY A.M GAUTAM
+            </span>
+          </div>
+          <div className="font-montserrat max-md:mx-2  h-[50%]  text-slate-400 text-justify">
+            {reviews[currentIndex]?.description.length > 600
+              ? reviews[currentIndex]?.description.substring(600) + "..."
+              : reviews[currentIndex]?.description}
+          </div>
+          <div className=" max-sm:p-1  max-md:m-2    text-white   border-2 p-2     max-sm:text-[14px] w-[30%]   border-white">
+            <span>READ MORE</span>
+            <i className="fa px-1 pl-2 text-[24px] max-sm:text-[16px] fa-arrow-right"></i>
+          </div>
         </div>
       </div>
-      <div className="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-        <button
-          type="button"
-          className="w-3 h-3 rounded-full"
-          aria-current="true"
-          aria-label="Slide 1"
-          data-carousel-slide-to="0"
-        ></button>
-        <button
-          type="button"
-          className="w-3 h-3 rounded-full"
-          aria-current="false"
-          aria-label="Slide 2"
-          data-carousel-slide-to="1"
-        ></button>
-        <button
-          type="button"
-          className="w-3 h-3 rounded-full"
-          aria-current="false"
-          aria-label="Slide 3"
-          data-carousel-slide-to="2"
-        ></button>
-        <button
-          type="button"
-          className="w-3 h-3 rounded-full"
-          aria-current="false"
-          aria-label="Slide 4"
-          data-carousel-slide-to="3"
-        ></button>
-        <button
-          type="button"
-          className="w-3 h-3 rounded-full"
-          aria-current="false"
-          aria-label="Slide 5"
-          data-carousel-slide-to="4"
-        ></button>
-      </div>
-      <button
-        type="button"
-        className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-        data-carousel-prev
-      >
-        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-          <svg
-            className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 6 10"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M5 1 1 5l4 4"
-            />
-          </svg>
-          <span className="sr-only">Previous</span>
-        </span>
-      </button>
-      <button
-        type="button"
-        className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-        data-carousel-next
-      >
-        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-          <svg
-            className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 6 10"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="m1 9 4-4-4-4"
-            />
-          </svg>
-          <span className="sr-only">Next</span>
-        </span>
-      </button>
-    </div>
+    </section>
   );
 };
 
