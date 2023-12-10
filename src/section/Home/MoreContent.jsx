@@ -32,7 +32,7 @@ export default function MoreContent() {
     <>
       <div className="bg-gray-900 my-10 py-24 px-12 max-sm:px-8">
         <div className="flex flex-col text-center w-full mb-10">
-          <h2 className="max-sm:tracking-[6px] max-sm:text-[27px] tracking-[6px] font-semibold text-[40px] text-[#FAF8F0] font-Oswald textce">
+          <h2 className="max-sm:tracking-[6px] max-sm:text-[27px] tracking-[6px] font-semibold text-[40px] text-[#FAF8F0] font-Oswald textce uppercase">
             Reads By A.M Gautam
           </h2>
         </div>

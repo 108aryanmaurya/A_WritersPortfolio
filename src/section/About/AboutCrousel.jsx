@@ -27,7 +27,7 @@ const AboutCrousel = () => {
   };
 
   return (
-    <section className="mx-auto flex px-24 bg-gray-900 flex-col   my-6 max-md:my-3 max-md:py-3 py-10 max-sm:px-0">
+    <section className="mx-auto flex px-24 bg-gray-900 flex-col my-10 max-sm:mt-20 max-md:py-3 py-10 max-sm:px-0">
       <p className="font-CooperHevitt my-6 max-md:my-2 font-semibold opacity-70 tracking-[5px]  text-[30px] text-white max-md:text-center  max-sm:text-[22px] ">
         READS BY A.M GAUTAM
       </p>
