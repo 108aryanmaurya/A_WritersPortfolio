@@ -4,7 +4,7 @@ import NewsletterCard from "../pages/NewsletterCard";
 export default function Footer() {
   return (
     <>
-      <footer className="bg-white dark:bg-darkBgPrimary z-50 dark:border-darkBorderAll">
+      <footer className="bg-white  z-50 mt-20">
         <div className=" w-full py-6 max-lg:py-2 px-20 max-lg:px-5">
           <div className="md:flex md:justify-between">
             <div className="mb-6 md:mb-0">
