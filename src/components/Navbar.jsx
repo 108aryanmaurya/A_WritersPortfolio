@@ -34,82 +34,114 @@ const Navbar = () => {
         id="navbar"
         className="relative top-0 select-none z-[100] transition-all ease-in-out duration-300"
       >
-        <header
-          className={`flex items-center ${
-            showNav ? "" : "border-b"
-          }  border-gray-100 dark:border-darkBorderAll dark:bg-darkBgMain w-full bg-white`}
+        <nav
+          className={` ${
+            location.pathname === "/About"
+              ? " !text-white absolute flex-row justify-between px-10 max-md:px-0 "
+              : " !text-black  relative flex-col justify-center "
+          } ${
+            showNav || location.pathname === "/About"
+              ? ""
+              : "border-b border-gray-100 "
+          } top-0 flex  max-md:flex-row max-md:justify-between py-5 max-md:py-2 items-center w-full`}
         >
-          <nav className="flex flex-col max-md:flex-row max-md:justify-between my-5 max-md:my-2 justify-center items-center w-full">
-            <div className="head-title flex font-serif items-center text-4xl max-md:text-2xl tracking-wide my-3 max-md:m-0 mt-0 max-md:ml-5">
-              <span>A</span>.M&nbsp;
-              <span>G</span>outam
-            </div>
+          <div
+            className={` ${location.pathname === "/About" ? "text-" : ""} ${
+              showNav ? "text-black" : ""
+            } head-title flex font-serif transition-all duration-300 items-center text-4xl max-md:text-2xl tracking-wide my-3 max-md:m-0 mt-0 max-md:ml-5`}
+          >
+            <span>A</span>ditya&nbsp;
+            <span>G</span>autam
+          </div>
 
-            <div className="flex items-center w-auto">
-              <ul className="flex-1 flex items-center gap-8 max-md:hidden">
-                {navLinks.map((item) => (
-                  <li key={item.label} className="px-2">
-                    <Link
-                      to={item.href}
-                      className={`head-menu tracking-wider leading-normal text-xl dark:hover:text-secondary hover:text-primaryMain text-slate-gray dark:text-darkTextMain ${
-                        (location.pathname === "/" && item.href === "/home") ||
-                        location.pathname === item.href
-                          ? "underline"
-                          : ""
+          <div className="flex items-center w-auto">
+            <ul className="flex-1 flex items-center gap-8 max-md:hidden">
+              {navLinks.map((item) => (
+                <li
+                  key={item.label}
+                  className={`px-2 ${
+                    (location.pathname === "/" && item.href === "/home") ||
+                    location.pathname === item.href
+                      ? "border-b-[1px] "
+                      : ""
+                  }
+                  ${
+                    location.pathname === "/About"
+                      ? "border-b-white"
+                      : "border-b-gray-600"
+                  }
+                  `}
+                >
+                  <Link
+                    to={item.href}
+                    className={`head-menu text-lg text-slate-gray`}
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <div
+              className="hidden max-md:block outline-none"
+              onClick={NavStatus}
+            >
+              <button className="relative group outline-none hover:bg-transparent">
+                <div className="relative flex overflow-hidden items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all duration-200 ">
+                  <div className="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 origin-center overflow-hidden">
+                    <div
+                      className={`${
+                        location.pathname === "/About"
+                          ? " bg-white "
+                          : " bg-black "
+                      } h-[2px] w-7 transform transition-all duration-300 origin-left ${
+                        showNav ? "translate-y-6 delay-100" : ""
+                      }`}
+                    ></div>
+                    <div
+                      className={`${
+                        location.pathname === "/About"
+                          ? " bg-white "
+                          : " bg-black "
+                      } h-[2px] w-7 rounded transform transition-all duration-300 ${
+                        showNav ? "translate-y-6 delay-75" : ""
+                      }`}
+                    ></div>
+                    <div
+                      className={`${
+                        location.pathname === "/About"
+                          ? " bg-white "
+                          : " bg-black "
+                      } h-[2px] w-7 transform transition-all duration-300 origin-left ${
+                        showNav ? "translate-y-6" : ""
+                      }`}
+                    ></div>
+
+                    <div
+                      className={`absolute items-center justify-between transform transition-all duration-500 top-2.5 -translate-x-10 flex w-0 ${
+                        showNav ? "translate-x-0 group-focus:w-12" : ""
                       }`}
                     >
-                      {item.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-              <div className="hidden max-md:block " onClick={NavStatus}>
-                <button className="relative group">
-                  <div className="relative flex overflow-hidden items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all duration-200">
-                    <div className="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 origin-center overflow-hidden">
                       <div
-                        className={`bg-black h-[2px] w-7 transform transition-all duration-300 origin-left ${
-                          showNav ? "translate-y-6 delay-100" : ""
+                        className={`absolute bg-black h-[2px] w-5 transform transition-all duration-200 ${
+                          showNav
+                            ? "rotate-45 delay-300 group-focus:rotate-45"
+                            : "rotate-0 delay-300"
                         }`}
                       ></div>
                       <div
-                        className={`bg-black h-[2px] w-7 rounded transform transition-all duration-300 ${
-                          showNav ? "translate-y-6 delay-75" : ""
+                        className={`absolute bg-black h-[2px] w-5 transform transition-all duration-200 ${
+                          showNav
+                            ? "-rotate-45 delay-300 group-focus:-rotate-45"
+                            : "-rotate-0 delay-300"
                         }`}
                       ></div>
-                      <div
-                        className={`bg-black h-[2px] w-7 transform transition-all duration-300 origin-left ${
-                          showNav ? "translate-y-6" : ""
-                        }`}
-                      ></div>
-
-                      <div
-                        className={`absolute items-center justify-between transform transition-all duration-500 top-2.5 -translate-x-10 flex w-0 ${
-                          showNav ? "translate-x-0 group-focus:w-12" : ""
-                        }`}
-                      >
-                        <div
-                          className={`absolute bg-black h-[2px] w-5 transform transition-all duration-500 ${
-                            showNav
-                              ? "rotate-45 delay-300 group-focus:rotate-45"
-                              : "rotate-0 delay-300"
-                          }`}
-                        ></div>
-                        <div
-                          className={`absolute bg-black h-[2px] w-5 transform transition-all duration-500 ${
-                            showNav
-                              ? "-rotate-45 delay-300 group-focus:-rotate-45"
-                              : "-rotate-0 delay-300"
-                          }`}
-                        ></div>
-                      </div>
                     </div>
                   </div>
-                </button>
-              </div>
+                </div>
+              </button>
             </div>
-          </nav>
-        </header>
+          </div>
+        </nav>
       </section>
     </>
   );

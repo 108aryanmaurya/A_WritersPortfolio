@@ -22,7 +22,7 @@ const ScrollProgress = () => {
 
   return (
     <div
-      className="fixed top-0 z-[98] scroll-progress h-[5px] dark:bg-secondary bg-black"
+      className="fixed top-0 z-[98] scroll-progress h-[5px] dark:bg-secondary bg-[#B564F7]"
       style={{ width: `${scrollProgress}%` }}
     ></div>
   );
