@@ -47,7 +47,7 @@ const AboutCrousel = () => {
               -BY A.M GAUTAM
             </span>
           </div>
-          <div className="font-montserrat max-md:mx-2  h-[50%]  text-slate-400 text-justify">
+          <div className="font-montserrat max-md:mx-2 max-md:text-[12px]  h-[50%]  text-slate-400 text-justify">
             {reviews[currentIndex]?.description &&
             reviews[currentIndex]?.description.length > 400
               ? reviews[currentIndex]?.description.slice(0, 400) + "..."
