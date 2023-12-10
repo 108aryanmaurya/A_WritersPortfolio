@@ -42,15 +42,15 @@ const AboutCrousel = () => {
         </div>
         <div className="mx-7 max-sm:p-2  w-[50%] max-sm:w-[100%] max-md:mx-0  flex flex-col  gap-4 max-md:gap-0 ">
           <div>
-            <p className="text-[30px] text-white ">The Avacado Toast </p>
+            <p className="text-[30px] text-white ">The Lorem Ipsum</p>
             <span className="italic max-sm:pl-2 text-[18px] font-[50] font-Oswald tracking-wider text-slate-300">
               -BY A.M GAUTAM
             </span>
           </div>
           <div className="font-montserrat max-md:mx-2  h-[50%]  text-slate-400 text-justify">
             {reviews[currentIndex]?.description &&
-            reviews[currentIndex]?.description.length > 400
-              ? reviews[currentIndex]?.description.slice(0, 400) + "..."
+            reviews[currentIndex]?.description.length > 350
+              ? reviews[currentIndex]?.description.slice(0, 350) + "..."
               : reviews[currentIndex]?.description}
           </div>
           <div className=" max-sm:p-1  max-md:m-2   w-auto max-w-[200px] flex justify-center items-center flex-row text-white   border-2 p-2  max-sm:text-[14px]   border-white">
