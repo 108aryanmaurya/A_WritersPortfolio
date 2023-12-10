@@ -3,6 +3,7 @@ import { book1, book2, book3, book4, book5 } from "../../assets/images";
 export const navLinks = [
   { href: "/home", label: "Home" },
   { href: "/Work", label: "Work" },
+  { href: "/Writing-Journey", label: "Writing-Journey" },
   { href: "/Blog", label: "Blog" },
   { href: "/About", label: "About" },
   { href: "/Contact", label: "Contact" },

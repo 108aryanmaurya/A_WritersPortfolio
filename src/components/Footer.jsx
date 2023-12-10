@@ -56,12 +56,15 @@ export default function Footer() {
           <hr className="my-6 border-gray-200  lg:my-8" />
           <div className="flex items-center justify-between">
             <span className="text-sm text-gray-600 sm:text-center  font-montserrat">
-              <Link to="/" className="font-Authorfont hover:underline mr-1">
+              <Link
+                to="/"
+                className="font-Authorfont text-base hover:underline mr-1"
+              >
                 A.M Gautam
               </Link>
               © 2024{" "}
             </span>
-            <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
+            <div className="flex space-x-5 sm:justify-center sm:mt-0">
               <Link
                 to="/"
                 className="text-gray-600 hover:text-gray-600 hover:scale-110"

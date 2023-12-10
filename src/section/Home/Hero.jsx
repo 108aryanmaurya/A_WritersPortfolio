@@ -108,7 +108,7 @@ export default function Hero() {
               backgroundImage: `url(${images[rightImageIndex].img})`,
             }}
           ></div>
-          {/* <div className="w-full absolute h-full bg-[rgba(0,0,0,.4)] z-10 "></div> */}
+          <div className="w-full absolute h-full bg-[rgba(0,0,0,.4)] z-10 "></div>
         </div>
       </div>
     </>
