@@ -12,7 +12,7 @@ export default function About() {
                 alt=""
                 className="w-52 h-52 rounded-full"
               />
-              <p className="leading-relaxed text-gray-500 text-lg max-lg:text-md text-lightTextMain dark:text-darkTextMain my-5 font-Authorfont">
+              <p className="leading-relaxed text-gray-500 text-2xl max-sm:xl max-lg:text-md text-lightTextMain dark:text-darkTextMain my-5 font-Authorfont">
                 A.M Gautam
               </p>
             </div>
