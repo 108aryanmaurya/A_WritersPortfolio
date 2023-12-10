@@ -80,7 +80,7 @@ export default function Hero() {
   return (
     <>
       <div
-        className={`relative bigger max-sm:min-h-[300px] min-h-[500px] max-2xl:min-h-[380px] ${
+        className={`relative bigger max-sm:min-h-[300px]  min-h-[500px] max-2xl:min-h-[380px] ${
           isHovered ? "no-change" : ""
         }`}
         onMouseEnter={handleMouseEnter}

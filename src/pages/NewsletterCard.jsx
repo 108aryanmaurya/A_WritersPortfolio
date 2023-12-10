@@ -23,22 +23,22 @@ export default function NewsletterCard({ onSubscribe }) {
 
   return (
     <>
-      <div className="mb-6 max-sm:mb-0 flex justify-center max-sm:flex-col items-center gap-2">
+      <form method="post" class="relative flex items-center">
         <input
-          type="text"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          className="group block w-full max-sm:w-[80%] p-2  text-lg rounded-md dark:text-darkTextMain text-gray-900 border-2 dark:bg-darkBgPrimary border-gray-300 dark:border-gray-700  outline-none transition-colors duration-300 ease-in-out"
-          placeholder="Enter your email"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="your@email.com"
+          class="w-full bg-transparent py-3 pl-5 pr-20 border-2 border-solid border-black rounded-0 outline-none placeholder:text-black/50"
+          required
         />
         <button
-          type="button"
-          onClick={subscribeHandler}
-          className="border-2 border-slate-200 h-full dark:hover:border-blue-400   rounded-md   px-4 py-1 font-semibold text-black"
+          type="submit"
+          class="absolute h-full right-0 bg-black text-white px-5 flex items-center cursor-pointer hover:bg-black/80"
         >
           Subscribe
         </button>
-      </div>
+      </form>
     </>
   );
 }
