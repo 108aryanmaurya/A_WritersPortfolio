@@ -8,13 +8,15 @@ export default function Newsletter() {
           <h1 class="text-center text-5xl font-bold font-CooperHevitt">
             Newsletter
           </h1>
-          <p class="text-center mt-2">
+          <p class="text-center mt-2  font-montserrat">
             Stay up to date with our latest Reads and News
           </p>
           <div className="mt-10 mb-5">
             <NewsletterCard />
           </div>
-          <p class="text-center">*No spam. Unsubscribe anytime.</p>
+          <p class="text-center  font-montserrat">
+            *No spam. Unsubscribe anytime.
+          </p>
         </div>
       </div>
     </>

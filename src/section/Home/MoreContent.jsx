@@ -48,11 +48,11 @@ export default function MoreContent() {
                 className="h-64 w-64 object-cover"
               />
 
-              <h3 className="mt-4 text-lg font-bold text-white sm:text-xl">
+              <h3 className="mt-4 text-lg font-bold text-white sm:text-xl font-Authorfont">
                 {card.title}
               </h3>
 
-              <p className="mt-2 max-w-sm text-gray-200 max-sm:text-center">
+              <p className="mt-2 max-w-sm text-gray-200 max-sm:text-center  font-montserrat ">
                 {card.description}
               </p>
             </div>

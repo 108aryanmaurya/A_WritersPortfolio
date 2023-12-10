@@ -17,7 +17,7 @@ export default function About() {
               </p>
             </div>
             <i className="fa fa-quote-right text-6xl max-sm:text-2xl mb-4 text-gray-400  dark:text-darkTextPrimary "></i>
-            <p className="text-gray-600 dark:text-darkTextPrimary flex justify-center my-3 max-sm:px-5 max-lg:px-5 text-xl items-center max-md:text-lg max-sm:text-base">
+            <p className="text-gray-600 font-montserrat dark:text-darkTextPrimary flex justify-center my-3 max-sm:px-5 max-lg:px-5 text-xl items-center max-md:text-lg max-sm:text-base">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Accusamus quidem necessitatibus earum magni, esse voluptates
               facere perferendis animi reiciendis est, libero dolores dolor fuga

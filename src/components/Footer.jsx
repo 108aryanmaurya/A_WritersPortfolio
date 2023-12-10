@@ -13,55 +13,50 @@ export default function Footer() {
               </h1>
               <NewsletterCard />
             </div>
-            <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-              <div>
-                <ul className="text-gray-500 dark:text-gray-400 font-medium">
-                  <li className="mb-4">
-                    <Link to="/" className="hover:underline">
-                      More Blogs
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/" className="hover:underline">
-                      About
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <ul className="text-gray-500 dark:text-gray-400 font-medium">
-                  <li className="mb-4">
-                    <Link to="/" className="hover:underline ">
-                      Contact
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/" className="hover:underline">
-                      Books
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <ul className="text-gray-500 dark:text-gray-400 font-medium">
-                  <li className="mb-4">
-                    <Link to="/" className="hover:underline">
-                      Privacy Policy
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/" className="hover:underline">
-                      Terms &amp; Conditions
-                    </Link>
-                  </li>
-                </ul>
-              </div>
+            <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3  font-montserrat">
+              <ul className="text-gray-600  font-medium">
+                <li className="mb-4">
+                  <Link to="/" className="hover:underline">
+                    More Blogs
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/" className="hover:underline">
+                    About
+                  </Link>
+                </li>
+              </ul>
+              <ul className="text-gray-600  font-medium">
+                <li className="mb-4">
+                  <Link to="/" className="hover:underline ">
+                    Contact
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/" className="hover:underline">
+                    Books
+                  </Link>
+                </li>
+              </ul>
+
+              <ul className="text-gray-600  font-medium">
+                <li className="mb-4">
+                  <Link to="/" className="hover:underline">
+                    Privacy Policy
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/" className="hover:underline">
+                    Terms &amp; Conditions
+                  </Link>
+                </li>
+              </ul>
             </div>
           </div>
           <hr className="my-6 border-gray-200  lg:my-8" />
-          <div className="sm:flex sm:items-center sm:justify-between">
-            <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-              <Link to="/" className="hover:underline font-serif mr-3">
+          <div className="flex items-center justify-between">
+            <span className="text-sm text-gray-600 sm:text-center  font-montserrat">
+              <Link to="/" className="font-Authorfont hover:underline mr-1">
                 A.M Gautam
               </Link>
               © 2024{" "}
@@ -69,25 +64,25 @@ export default function Footer() {
             <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
               <Link
                 to="/"
-                className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                className="text-gray-600 hover:text-gray-600 hover:scale-110"
               >
                 <i className="fa fa-facebook"></i>
               </Link>
               <Link
                 to="/"
-                className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                className="text-gray-600 hover:text-gray-600 hover:scale-110"
               >
                 <i className="fa fa-linkedin"></i>
               </Link>
               <Link
                 to="/"
-                className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                className="text-gray-600 hover:text-gray-600 hover:scale-110"
               >
                 <i className="fa fa-twitter"></i>
               </Link>
               <Link
                 to="/"
-                className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                className="text-gray-600 hover:text-gray-600 hover:scale-110"
               >
                 <i className="fa fa-instagram"></i>
               </Link>
