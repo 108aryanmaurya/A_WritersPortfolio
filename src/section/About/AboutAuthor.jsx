@@ -9,7 +9,7 @@ export default function AboutAuthor() {
           <img
             src={RandomPerson}
             alt="person"
-            className=" pb-4 pr-6 z-10 max-sm:pr-2 max-sm:pb-1  max-sm:h-[260px] h-[600px] "
+            className=" mb-4 mr-6 z-10 max-sm:mr-2 max-sm:mb-1  max-sm:h-[260px] bg-black h-[600px] "
           />
         </div>
         <div className="text-black flex font-Authorfont transform translate-y-10 -translate-x-40  max-md:-translate-x-0 text-center justify-center text-6xl max-md:text-2xl tracking-wide my-6 max-md:m-0 mt-0 max-md:ml-5  ">
