@@ -33,7 +33,7 @@ const AboutCrousel = () => {
       </p>
 
       <div className="flex max-md:flex-col max-md:gap-0  gap-10">
-        <div className="h-[350px] relative bg-black flex  justify-center items-center  max-md:w-[400px] max-md:h-[300px]   group w-[600px] mx-auto text-center">
+        <div className="h-[350px] relative bg-black flex  justify-center items-center w-full max-w-[500px] max-sm:max-w-full group mx-auto text-center">
           <img
             src={reviews[currentIndex]?.cover}
             alt=""
