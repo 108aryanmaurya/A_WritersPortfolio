@@ -22,9 +22,9 @@ const About = () => {
             className=" pb-4 pr-6 z-10 max-sm:pr-2 max-sm:pb-1  max-sm:h-[260px] h-[600px] "
           />
         </div>
-        <div className="head-title text-[60px]  flex font-serif items-center text-4xl max-md:text-2xl tracking-wide my-3 max-md:m-0 mt-0 max-md:ml-5">
-          <span>A</span>.M&nbsp;
-          <span>G</span>outam
+        <div className="text-black head-title flex font-serif transform translate-y-10 -translate-x-40  max-md:-translate-x-0 text-center justify-center text-6xl max-md:text-2xl tracking-wide my-6 max-md:m-0 mt-0 max-md:ml-5  ">
+          <span>A</span>ditya&nbsp;
+          <span>G</span>autam
         </div>
         <div className="bg-slate-200 max-md:hidden h-32  w-32 rounded-full  absolute  right-0 z-20"></div>
         <div className="bg-slate-200 h-72 top-72 w-72 max-md:hidden  rounded-full  absolute  right-32 z-20"></div>
