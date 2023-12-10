@@ -7,7 +7,7 @@ const About = () => {
         <img
           src={Aboutimg}
           alt="AboutTopImg"
-          className="object-cover object-bottom w-full h-full opacity-60"
+          className="object-cover object-bottom w-full h-full opacity-60 "
         />
         <p className="absolute bottom-10 max-sm:tracking-[6px] max-sm:text-[27px] text-white tracking-[11px] font-Oswald font-semibold text-[50px]  ">
           {" "}

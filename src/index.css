@@ -14,11 +14,17 @@
   src: local("proximanovaexcn-regular"),
     url(./fonts/proximanovaexcn-regular.otf) format("opentype");
 }
+@font-face {
+  font-family: "CooperHewitt-Light";
+  src: local("CooperHewitt-Light"),
+    url(./fonts/CooperHewitt-Light.otf) format("opentype");
+}
 .head-title {
   font-family: "Minerva-Modern-Regular";
 }
 .head-menu {
-  font-family: "proximanovaexcn-regular";
+  /* font-family: "proximanovaexcn-regular"; */
+  font-family: "CooperHewitt-Light";
 }
 * {
   margin: 0;

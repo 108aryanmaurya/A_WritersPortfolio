@@ -23,15 +23,18 @@ export default function SideNav(props) {
           <div className="flex w-auto mt-24">
             <ul className="flex-1 flex flex-col items-center gap-8">
               {navLinks.map((item) => (
-                <li key={item.label} className="px-2">
+                <li
+                  key={item.label}
+                  className={`px-2 ${
+                    (location.pathname === "/" && item.href === "/home") ||
+                    location.pathname === item.href
+                      ? "border-b-[1px] border-b-gray-600"
+                      : ""
+                  }`}
+                >
                   <Link
                     to={item.href}
-                    className={`head-menu tracking-wider leading-normal text-2xl dark:hover:text-secondary hover:text-primaryMain text-slate-gray dark:text-darkTextMain text-black ${
-                      (location.pathname === "/" && item.href === "/home") ||
-                      location.pathname === item.href
-                        ? "underline"
-                        : ""
-                    }`}
+                    className={`head-menu text-lg text-slate-gray`}
                   >
                     {item.label}
                   </Link>
