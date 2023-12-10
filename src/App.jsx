@@ -10,10 +10,10 @@ import ScrollProgress from "./components/ScrollProgress";
 import SideNav from "./components/SideNav";
 const App = () => {
   return (
-    <main className=" select-none  ">
-      <Router>
+    <Router>
+      <ScrollProgress />
+      <main className="container select-none">
         <Navbar></Navbar>
-        <ScrollProgress />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Home" element={<Home />} />
@@ -22,8 +22,8 @@ const App = () => {
           <Route path="/About" element={<About></About>} />
           <Route path="/Contact" element={<Contact />} />
         </Routes>
-      </Router>
-    </main>
+      </main>
+    </Router>
   );
 };
 
