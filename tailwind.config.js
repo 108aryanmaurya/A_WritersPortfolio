@@ -12,7 +12,8 @@ export default {
         Oswald: ['Oswald', "sans-serif"],
         palanquin: ["Palanquin", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"],
-
+        Authorfont: [" Minerva-Modern-Regular", "sans-serif"],
+        CooperHevitt: ["CooperHewitt-Light", "sans-serif"]
       },
     }
   },

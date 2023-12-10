@@ -48,7 +48,7 @@ const Navbar = () => {
           <div
             className={` ${location.pathname === "/About" ? "text-" : ""} ${
               showNav ? "text-black" : ""
-            } head-title flex font-serif transition-all duration-300 items-center text-4xl max-md:text-2xl tracking-wide my-3 max-md:m-0 mt-0 max-md:ml-5`}
+            } font-Authorfont flex  transition-all duration-300 items-center text-4xl max-md:text-2xl tracking-wide my-3 max-md:m-0 mt-0 max-md:ml-5`}
           >
             <span>A</span>ditya&nbsp;
             <span>G</span>autam

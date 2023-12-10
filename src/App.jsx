@@ -10,7 +10,7 @@ import ScrollProgress from "./components/ScrollProgress";
 import SideNav from "./components/SideNav";
 const App = () => {
   return (
-    <main className=" select-none  ">
+    <main className=" ">
       <Router>
         <Navbar></Navbar>
         <ScrollProgress />
