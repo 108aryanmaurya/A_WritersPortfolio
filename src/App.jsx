@@ -10,7 +10,7 @@ import ScrollProgress from "./components/ScrollProgress";
 import SideNav from "./components/SideNav";
 const App = () => {
   return (
-    <main className="bg-slate-300/20 select-none ">
+    <main className="  select-none  ">
       <Router>
         <Navbar></Navbar>
         <ScrollProgress />
@@ -21,7 +21,6 @@ const App = () => {
           <Route path="/Blog" element={<Blog></Blog>} />
           <Route path="/About" element={<About></About>} />
           <Route path="/Contact" element={<Contact />} />
-
         </Routes>
       </Router>
     </main>

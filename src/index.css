@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -27,6 +29,7 @@
   scroll-behavior: smooth;
 }
 body {
+  background-color: rgb(248 250 252);
   overflow-x: hidden;
 }
 @layer components {

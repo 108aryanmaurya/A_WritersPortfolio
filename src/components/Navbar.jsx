@@ -41,7 +41,7 @@ const Navbar = () => {
         >
           <nav className="flex flex-col max-md:flex-row max-md:justify-between my-5 max-md:my-2 justify-center items-center w-full">
             <div className="head-title flex font-serif items-center text-4xl max-md:text-2xl tracking-wide my-3 max-md:m-0 mt-0 max-md:ml-5">
-              <span>A</span>ditya&nbsp;
+              <span>A</span>.M&nbsp;
               <span>G</span>outam
             </div>
 

@@ -9,7 +9,10 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        Oswald: ['Oswald', "sans-serif"]
+        Oswald: ['Oswald', "sans-serif"],
+        palanquin: ["Palanquin", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"],
+
       },
     }
   },
