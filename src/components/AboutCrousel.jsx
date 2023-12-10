@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { crausoel } from "./constants";
+import { rightArrow } from "../assets/icons";
 
 const AboutCrousel = () => {
   const [reviews, setReviews] = useState(crausoel);
@@ -53,21 +54,21 @@ const AboutCrousel = () => {
             <i className="fa fa-chevron-right text-white  text-lg w-5 h-3"></i>
           </button> */}
         </div>
-        <div className="mx-7   w-[50%] max-sm:w-[100%] max-md:mx-0  flex flex-col  gap-4 max-md:gap-0 ">
-          <div>
+        <div className="mx-7 max-md:mt-3  w-[50%] max-sm:w-[100%] max-md:mx-0  flex flex-col  gap-4 max-md:gap-0 ">
+          <div className="leading-7">
             <p className="text-[30px] text-white ">The Avacado Toast </p>
             <span className="italic text-[18px] font-[50] font-Oswald tracking-wider text-slate-300">
               -BY A.M GAUTAM
             </span>
           </div>
-          <div className="font-montserrat max-md:mx-2  h-[50%]  text-slate-400 text-justify">
+          <div className="font-montserrat max-md:mx-2 max-md:mt-2 max-md:h-[60%]  h-[50%]  text-slate-400 text-justify">
             {reviews[currentIndex]?.description.length > 600
               ? reviews[currentIndex]?.description.substring(600) + "..."
               : reviews[currentIndex]?.description}
           </div>
-          <div className=" max-sm:p-1  max-md:m-2    text-white   border-2 p-2     max-sm:text-[14px] w-[30%]   border-white">
+          <div className=" max-sm:p-1  max-md:m-2  flex   text-white   border-2 p-2     max-sm:text-[14px] w-auto  justify-center items-center  border-white">
             <span>READ MORE</span>
-            <i className="fa px-1 pl-2 text-[24px] max-sm:text-[16px] fa-arrow-right"></i>
+            <img src={rightArrow} alt="arrow" className=" text-white" />
           </div>
         </div>
       </div>

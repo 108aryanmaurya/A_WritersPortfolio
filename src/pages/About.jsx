@@ -1,4 +1,5 @@
 import React from "react";
+
 import { Aboutimg, RandomPerson } from "../assets/images";
 import AboutCrousel from "../components/AboutCrousel";
 const About = () => {
@@ -15,7 +16,7 @@ const About = () => {
           AUTHOR BIOGRAPHY
         </p>
       </div>
-      <div className="relative  p-16 max-sm:p-0 max-sm:mt-4  max-sm:ml-4  justify-center items-center h-[600px]">
+      <div className="relative  p-16 max-sm:p-0 max-sm:mt-4  max-sm:ml-4  justify-center items-center ">
         <div className="float-left ">
           <img
             src={RandomPerson}
@@ -24,7 +25,6 @@ const About = () => {
           />
         </div>
         <div className="text-black flex font-Authorfont transform translate-y-10 -translate-x-40  max-md:-translate-x-0 text-center justify-center text-6xl max-md:text-2xl tracking-wide my-6 max-md:m-0 mt-0 max-md:ml-5  ">
-
           <span>A</span>.M&nbsp;
           <span>G</span>autam
         </div>
@@ -61,7 +61,7 @@ const About = () => {
         </div>
         {/* <div className="h-96 bg-slate-300 mt-8"> </div> */}
       </div>
-      <div className="mt-[550px] max-sm:mt-[360px]">
+      <div className="">
         <AboutCrousel></AboutCrousel>
       </div>
     </section>
