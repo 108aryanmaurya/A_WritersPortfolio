@@ -1,5 +1,3 @@
-import rightArrow from './rightArrow.svg'
+import ArrowRight from "./arrow-right.svg";
 
-export {
-    rightArrow
-}
+export { ArrowRight };
