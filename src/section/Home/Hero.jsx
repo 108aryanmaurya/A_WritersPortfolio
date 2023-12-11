@@ -17,8 +17,18 @@ export default function Hero() {
             </h1>{" "}
           </div>
           <div className="transition-all ease-in-out duration-200 absolute bg-gray-800 top-0 right-0 w-[70%] h-full ">
+            <span
+              type="submit"
+              class="m-2 max-sm:m-1 absolute top-0 right-0 text-white bg-[#B564F7] max-sm:text-[10px] max-sm:px-2 max-sm:py-1 px-3 py-2 justify-center flex items-center cursor-pointer hover:bg-[#bb80ec] font-semibold"
+            >
+              Buy now
+            </span>
             <div className="w-full h-full flex justify-end items-center">
-              <img src={book} className="h-[300px] mr-10" alt="" />
+              <img
+                src={book}
+                className="h-[350px] max-xl:h-[300px] max-lg:h-[250px] max-md:h-[200px] max-sm:h-[170px] mr-10 max-md:mr-7 max-sm:mr-2"
+                alt=""
+              />
             </div>
           </div>
           {/* <div className="w-full absolute h-full bg-[rgba(0,0,0,.4)] z-10 "></div> */}
