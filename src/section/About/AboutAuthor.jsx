@@ -4,7 +4,7 @@ import { RandomPerson } from "../../assets/images";
 export default function AboutAuthor() {
   return (
     <>
-      <div className="relative  p-16 max-sm:p-0 max-sm:mt-4  max-sm:ml-4  justify-center items-center">
+      <div className="relative  p-16 max-sm:p-0 max-md:mt-8  max-sm:ml-4  justify-center items-center">
         <div className="float-left ">
           <img
             src={RandomPerson}
@@ -22,7 +22,6 @@ export default function AboutAuthor() {
         <div className="bg-slate-200 -z-50 h-48 top-[600px] w-48 max-lg:hidden  rounded-full  absolute  right-4 "></div>
         <div className="text-[18px]  text-justify bg-white w-[60%] max-lg:w-[80%] max-md:w-[80%] max-sm:w-[85%] max-sm:p-2 max-sm:leading-[17px] max-md:text-[16px] max-sm:text-[15px] font-montserrat   max-sm:ml-8 max-sm:mt-14  ml-24 mt-24  p-14  max-sm:pt-5   ">
           <span className="text-[35px]  ml-3 mr-1 font-serif ">L</span>
-
           orem ipsum dolor sit amet, consectetur adipisicing elit. Illo dolorum
           iure nesciunt enim dignissimos cumque voluptatum eos, possimus odio
           error perferendis nihil atque laudantium rem quos esse cupiditate
