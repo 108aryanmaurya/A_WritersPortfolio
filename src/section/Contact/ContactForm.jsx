@@ -14,14 +14,14 @@ export default function ContactForm() {
                 id="name"
                 type="text"
                 placeholder="FIRST NAME"
-                class="w-full h-12 px-4 bg-transparent outline-none text-white border border-solid border-gray-400 hover:border-gray-600  transition duration-300 ease-in-out focus:border-gray-600 focus:scale-105 hover:bg-gray-600 focus:bg-gray-600 hover:text-white"
+                class="w-full h-12 px-4 bg-transparent outline-none text-white border border-solid border-gray-400  transition duration-300 ease-in-out focus:scale-105 hover:bg-gray-600 focus:bg-gray-600 hover:text-white"
                 required
               />
               <input
                 id="name"
                 type="text"
                 placeholder="LAST NAME"
-                class="w-full h-12 px-4 bg-transparent outline-none text-white border border-solid border-gray-400 hover:border-gray-600  transition duration-300 ease-in-out focus:border-gray-600 focus:scale-105 hover:bg-gray-600 focus:bg-gray-600 hover:text-white"
+                class="w-full h-12 px-4 bg-transparent outline-none text-white border border-solid border-gray-400  transition duration-300 ease-in-out focus:scale-105 hover:bg-gray-600 focus:bg-gray-600 hover:text-white"
                 required
               />
             </div>
@@ -29,14 +29,14 @@ export default function ContactForm() {
               id="email"
               type="text"
               placeholder="E-MAIL"
-              class="w-full h-12 px-4 bg-transparent outline-none text-white border border-solid border-gray-400 hover:border-gray-600  transition duration-300 ease-in-out focus:border-gray-600 focus:scale-105 hover:bg-gray-600 focus:bg-gray-600 hover:text-white"
+              class="w-full h-12 px-4 bg-transparent outline-none text-white border border-solid border-gray-400  transition duration-300 ease-in-out focus:scale-105 hover:bg-gray-600 focus:bg-gray-600 hover:text-white"
               required
             />
             <textarea
               id="message"
               placeholder="MESSAGE"
               cols={4}
-              class="w-full h-24 p-4 bg-transparent outline-none text-white border border-solid border-gray-400 hover:border-gray-600  transition duration-300 ease-in-out focus:border-gray-600 focus:scale-105 hover:bg-gray-600 focus:bg-gray-600  hover:text-white"
+              class="w-full h-24 p-4 bg-transparent outline-none text-white border border-solid border-gray-400  transition duration-300 ease-in-out focus:scale-105 hover:bg-gray-600 focus:bg-gray-600 hover:text-white"
               required
             ></textarea>
             <button
