@@ -1,5 +1,5 @@
 import React from "react";
-
+import SocialLinks from "../../components/SocialLinks";
 export default function ContactInfo() {
   return (
     <>
@@ -31,6 +31,9 @@ export default function ContactInfo() {
               <li>info@rcwlitagency.com</li>
             </ul>
           </div>
+        </div>
+        <div className="flex gap-5 text-xl py-4 sm:mt-0">
+          <SocialLinks />
         </div>
       </div>
     </>

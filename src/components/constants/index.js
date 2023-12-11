@@ -1,16 +1,13 @@
 import { book1, book2, book3, book4, book5 } from "../../assets/images";
-import { cover1, cover3, cover4, cover5 } from "../../assets/images"
+import { cover1, cover3, cover4, cover5 } from "../../assets/images";
 export const navLinks = [
   { href: "/home", label: "Home" },
   { href: "/Work", label: "Work" },
-  { href: "/Writing-Journey", label: "Writing-Journey" },
+  { href: "/News&Events", label: "News & Events" },
   { href: "/Blog", label: "Blog" },
   { href: "/About", label: "About" },
   { href: "/Contact", label: "Contact" },
 ];
-
-
-
 
 export const crausoel = [
   {
@@ -56,7 +53,8 @@ export const covers = [
   {
     cover: cover4,
     title: "Titile4",
-    description: "recusandae quo quibusdam deleniti eius distinctio exercitationem perspiciatis voluptatem iste harum quis, doloribus repellendus! Similique dicta temporibus trum! Laborum aperiam quas praesentium quo consequuntur"
+    description:
+      "recusandae quo quibusdam deleniti eius distinctio exercitationem perspiciatis voluptatem iste harum quis, doloribus repellendus! Similique dicta temporibus trum! Laborum aperiam quas praesentium quo consequuntur",
   },
   {
     cover: cover5,
