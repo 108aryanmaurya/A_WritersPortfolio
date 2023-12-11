@@ -1,3 +1,5 @@
 import ArrowRight from "./arrow-right.svg";
-
-export { ArrowRight };
+import ArrowRightBlack from "./arrow-rightblack.svg";
+import Cart from "./shopping-cart.svg"
+import Download from './download.svg'
+export { ArrowRight, ArrowRightBlack, Cart, Download };
