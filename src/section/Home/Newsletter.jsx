@@ -1,5 +1,5 @@
 import React from "react";
-import NewsletterCard from "../../pages/NewsletterCard";
+import NewsletterCard from "../../components/NewsletterCard";
 export default function Newsletter() {
   return (
     <>

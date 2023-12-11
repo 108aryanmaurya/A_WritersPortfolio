@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Contact() {
+export default function ContactForm() {
   return (
     <>
       <section class="bg-gray-900  px-20 max-sm:px-6 py-32 max-sm:py-16">

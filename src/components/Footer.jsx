@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import NewsletterCard from "../pages/NewsletterCard";
+import NewsletterCard from "./NewsletterCard";
 export default function Footer() {
   return (
     <>
