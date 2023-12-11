@@ -1,5 +1,5 @@
 import { book1, book2, book3, book4, book5 } from "../../assets/images";
-
+import { cover1, cover3, cover4, cover5 } from "../../assets/images"
 export const navLinks = [
   { href: "/home", label: "Home" },
   { href: "/Work", label: "Work" },
@@ -7,6 +7,9 @@ export const navLinks = [
   { href: "/About", label: "About" },
   { href: "/Contact", label: "Contact" },
 ];
+
+
+
 
 export const crausoel = [
   {
@@ -33,5 +36,31 @@ export const crausoel = [
     cover: book5,
     description:
       "Impedit accusantium voluptates corporis itaque beatae, repellendus enim harum laboriosam excepturi quaerat non est! Voluptates, vero consequatur exercitationem tempora recusandae dolore sapiente dicta dignissimos alias corrupti placeat optio, quisquam pariatur!Nostrum labore molestiae laboriosam, tenetur, expedita culpa, dolore recusandae at voluptatibus nihil nisi ullam dolorem esse! Qui tempora quae optio dolorem animi eaque nostrum, modi commodi facere! Nemo, ipsam alias!Incidunt amet laudantium aperiam, provident maxime necessitatibus perferendis dicta neque asperiores cum sit fuga omnis eos architecto rem similique possimus qui? Quaerat commodi quae beatae sequi rem minus, recusandae maxime?",
+  },
+];
+export const covers = [
+  {
+    cover: cover1,
+    title: "Titile1",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Hic nihil porro delectus aspernatur nemo aut pariatur expedita commodi blanditiis, cum fuga esse dicta animi ? Sapiente.Corrupti eos ea ab quo consectetur sunt modi, sapiente temporibus",
+  },
+
+  {
+    cover: cover3,
+    title: "Titile3",
+    description:
+      "A assumenda excepturi ut quia expedita, cum odio nemo vitae Possimus ea veniam accusantium alias tempore accusamus, dolore omnis cumque sapiente consequatur hic ipsum excepturi, ipusto? Iure libero eos recusandae quo.",
+  },
+  {
+    cover: cover4,
+    title: "Titile4",
+    description: "recusandae quo quibusdam deleniti eius distinctio exercitationem perspiciatis voluptatem iste harum quis, doloribus repellendus! Similique dicta temporibus trum! Laborum aperiam quas praesentium quo consequuntur"
+  },
+  {
+    cover: cover5,
+    title: "Titile5",
+    description:
+      "Impedit accusantium voluptates corporis itaque beatae, repellendus enim harum laboriosam excepturi quaerat non est! Voluptates, vero consequatur exercitationem tempora recusandae doloqui? Quaerat commodi quae beatae sequi rem minus, recusandae maxime?",
   },
 ];

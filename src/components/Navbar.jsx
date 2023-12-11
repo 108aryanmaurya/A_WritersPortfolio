@@ -36,7 +36,8 @@ const Navbar = () => {
       >
         <nav
           className={` ${
-            location.pathname === "/About"
+            location.pathname === "/About" ||
+            location.pathname.includes("/Book")
               ? " !text-white absolute flex-row justify-between px-10 max-md:px-0 "
               : " !text-black  relative flex-col justify-center "
           } top-0 flex  max-md:flex-row max-md:justify-between py-5 max-md:py-2 items-center w-full`}

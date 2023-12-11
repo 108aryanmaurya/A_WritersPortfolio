@@ -8,17 +8,19 @@ import Work from "./pages/Work";
 import Blog from "./pages/Blog";
 import ScrollProgress from "./components/ScrollProgress";
 import Footer from "./components/Footer";
+import SingleBookLayout from "./Layout/SingleBookLayout";
+
 const App = () => {
   return (
     <Router>
       <ScrollProgress />
-      <main className="container select-none">
-
+      <main className=" container select-none">
         <Navbar></Navbar>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Home" element={<Home />} />
           <Route path="/Work" element={<Work />} />
+          <Route path="/Book/:book" element={<SingleBookLayout />} />
           <Route path="/Blog" element={<Blog></Blog>} />
           <Route path="/About" element={<About></About>} />
           <Route path="/Contact" element={<Contact />} />
