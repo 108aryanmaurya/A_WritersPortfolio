@@ -8,6 +8,7 @@ import Work from "./pages/Work";
 import Blog from "./pages/Blog";
 import ScrollProgress from "./components/ScrollProgress";
 import Footer from "./components/Footer";
+import WritingJourney from "./pages/WritingJourney";
 import SingleBookLayout from "./Layout/SingleBookLayout";
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/Home" element={<Home />} />
           <Route path="/Work" element={<Work />} />
+          <Route path="/Writing-Journey" element={<WritingJourney />} />
           <Route path="/Book/:book" element={<SingleBookLayout />} />
           <Route path="/Blog" element={<Blog></Blog>} />
           <Route path="/About" element={<About></About>} />

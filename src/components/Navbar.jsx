@@ -40,7 +40,7 @@ const Navbar = () => {
             location.pathname.includes("/Book")
               ? " !text-white absolute flex-row justify-between px-10 max-md:px-0 "
               : " !text-black  relative flex-col justify-center "
-          } top-0 flex  max-md:flex-row max-md:justify-between py-5 max-md:py-2 items-center w-full`}
+          } top-0 flex  max-md:flex-row max-md:justify-between py-5 pb-8 max-md:py-2 items-center w-full`}
         >
           <div
             className={` ${location.pathname === "/About" ? "text-" : ""} ${
@@ -82,7 +82,7 @@ const Navbar = () => {
               className="hidden max-md:block outline-none"
               onClick={NavStatus}
             >
-              <button className="relative group outline-none hover:bg-transparent">
+              <div className="relative group outline-none hover:bg-transparent">
                 <div className="relative flex overflow-hidden items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all duration-200 ">
                   <div className="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 origin-center overflow-hidden">
                     <div
@@ -135,7 +135,7 @@ const Navbar = () => {
                     </div>
                   </div>
                 </div>
-              </button>
+              </div>
             </div>
           </div>
         </nav>
