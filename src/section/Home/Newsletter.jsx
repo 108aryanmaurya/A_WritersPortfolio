@@ -9,9 +9,9 @@ export default function Newsletter() {
             Newsletter
           </h1>
           <p class="text-center mt-2  font-montserrat">
-            Stay up to date with our latest Reads and News
+            Stay up to date with Aditya's latest Reads and News
           </p>
-          <div className="mt-10 mb-5">
+          <div className="mt-10 max-sm:mt-5 mb-5">
             <NewsletterCard />
           </div>
           <p class="text-center  font-montserrat">

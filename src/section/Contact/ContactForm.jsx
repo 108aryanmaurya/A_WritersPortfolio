@@ -3,15 +3,12 @@ import React from "react";
 export default function ContactForm() {
   return (
     <>
-      <section class="bg-gray-900  px-20 max-sm:px-6 py-32 max-sm:py-16">
+      <section class="bg-gray-900  max-sm:px-6 py-12 max-sm:py-16">
         <div class="flex justify-evenly items-center max-sm:flex-col gap-5">
-          <form id="form" class="w-[50%] max-sm:w-[90%]  font-montserrat">
-            <h1 class="text-4xl text-white font-bold font-CooperHevitt">
+          <form id="form" class="w-[70%] max-sm:w-[90%]  font-montserrat">
+            <h1 class="text-4xl pb-4 text-white font-bold font-CooperHevitt max-lg:text-center">
               Get in touch
             </h1>
-            <p class="pt-2 text-white pb-4  font-montserrat">
-              Please fill in the form
-            </p>
             <div className="flex">
               <input
                 id="name"
