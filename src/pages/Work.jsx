@@ -41,36 +41,60 @@ export default function Work() {
   };
 
   return (
-    <section className=" bg-gray-50 relative  pt-2">
-      <div className="top-5 pr-2 sticky  gap-1 items-center justify-end flex ">
+    <>
+      <section className=" bg-white  relative max-md:pt-0  pt-2">
+        <div className="md:top-5 max-md:justify-evenly w-full  pr-2 max-md:bg-white  max-md:bottom-0  max-md:border-t-[1px] max-md:border-gray-300 fixed max-md:flex max  max-md:pr-1 gap-1 items-center max-md:text-[13px]  justify-end flex max-md:items-center    max-md:py-[2px]  ">
+          <div
+            className=" max-md:border-none  max-sm:p-1   max-md:m-1   w-auto 
+          max-md:text-[15px]   max-w-[200px] flex justify-center items-center flex-row text-black   border-2 max-md:p-1 p-2 gap-2  border-black"
+            onClick={scrollToBooks}
+          >
+            <span>BOOKS</span>
+          </div>
+          <div
+            className="  max-md:border-none  max-sm:p-1    max-md:m-1   w-auto max-w-[200px] max-md:text-[15px] flex justify-center items-center flex-row text-black   border-2 p-2 gap-2    border-black"
+            onClick={scrollToArticle}
+          >
+            <span>ARTICLES</span>
+          </div>
+          <div
+            className=" max-md:border-none  max-sm:p-1  max-md:m-1   w-auto max-w-[200px] flex justify-center items-center flex-row text-black   border-2 p-2 gap-2 max-md:text-[15px]   border-black"
+            onClick={scrollToNews}
+          >
+            <span>NEWS & MEDIA</span>
+          </div>
+        </div>
+        <div ref={Bookref}>
+          <Books></Books>
+        </div>
+        <div ref={Articleref}>
+          <Article></Article>
+        </div>
+        <div ref={Newsref}>
+          <News></News>
+        </div>
+      </section>
+      {/* <div className="top-5 max-md:justify-center  pr-2 sticky max-md:bg-white  max-md:bottom-0    max-md:pr-1 gap-1 items-center max-md:text-[13px]  justify-end flex max-md:items-center  max-md:gap-3 max-md:py-[2px] ">
         <div
-          className="  max-sm:p-1 max-md:mt-6  max-md:m-2   w-auto max-w-[200px] flex justify-center items-center flex-row text-black   border-2 p-2 gap-2 max-sm:text-[14px]    border-black"
+          className=" max-md:border-none  max-sm:p-1   max-md:m-1   w-auto 
+          max-md:text-[13px]   max-w-[200px] flex justify-center items-center flex-row text-black   border-2 max-md:p-1 p-2 gap-2  border-black"
           onClick={scrollToBooks}
         >
           <span>BOOKS</span>
         </div>
         <div
-          className=" max-sm:p-1  max-md:mt-6  max-md:m-2   w-auto max-w-[200px] flex justify-center items-center flex-row text-black   border-2 p-2 gap-2 max-sm:text-[14px]   border-black"
+          className="  max-md:border-none  max-sm:p-1    max-md:m-1   w-auto max-w-[200px] max-md:text-[13px] flex justify-center items-center flex-row text-black   border-2 p-2 gap-2    border-black"
           onClick={scrollToArticle}
         >
           <span>ARTICLES</span>
         </div>
         <div
-          className=" max-sm:p-1 max-md:mt-6 max-md:m-2   w-auto max-w-[200px] flex justify-center items-center flex-row text-black   border-2 p-2 gap-2 max-sm:text-[14px]   border-black"
+          className=" max-md:border-none  max-sm:p-1  max-md:m-1   w-auto max-w-[200px] flex justify-center items-center flex-row text-black   border-2 p-2 gap-2 max-md:text-[13px]   border-black"
           onClick={scrollToNews}
         >
           <span>NEWS & MEDIA</span>
         </div>
-      </div>
-      <div ref={Bookref}>
-        <Books></Books>
-      </div>
-      <div ref={Articleref}>
-        <Article></Article>
-      </div>
-      <div ref={Newsref}>
-        <News></News>
-      </div>
-    </section>
+      </div> */}
+    </>
   );
 }

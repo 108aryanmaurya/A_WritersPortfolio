@@ -11,7 +11,9 @@ import cover3 from "./cover3.jpg";
 import cover4 from "./cover4.jpg";
 import cover5 from "./cover5.jpg";
 import book from "./book.png";
+import Synopsis from './Synopsis.jpg'
 export {
+  Synopsis,
   Abouttopimg,
   book,
   Aboutimg,

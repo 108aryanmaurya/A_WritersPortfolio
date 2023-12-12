@@ -63,3 +63,23 @@ export const covers = [
       "Impedit accusantium voluptates corporis itaque beatae, repellendus enim harum laboriosam excepturi quaerat non est! Voluptates, vero consequatur exercitationem tempora recusandae doloqui? Quaerat commodi quae beatae sequi rem minus, recusandae maxime?",
   },
 ];
+
+
+
+export const articles = [
+  {
+    title: "A assumenda excepturi ut quia expedita, cum odio nemo vitae Possimus ea veniam ",
+    description: "Voluptates, vero consequatur exercitationem tempora recusandae doloqui? Quaerat commodi quae beatae sequi rem minus, recusandae maxime?"
+
+  },
+  {
+    title: "Impedit accusantium voluptates corporis itaque beatae, ",
+    description: "xercitationem perspiciatis voluptatem iste harum quis, doloribus repellendus! Similique dicta temporibus trum! Laborum aperiam quas praesentium quo consequuntu"
+
+  },
+  {
+    title: "recusandae quo quibusdam deleniti eius distinctio exercitationem, ",
+    description: "ea veniam accusantium alias tempore accusamus, dolore omnis cumque sapiente consequatur hic ipsum excepturi, ipusto? Iure libero eos recusandae quo."
+
+  },
+]
