@@ -6,7 +6,7 @@ export default function WritingJourney() {
       <section>
         <div class=" text-black py-8">
           <div class="container mx-auto flex flex-col items-start md:flex-row mb-12 md:mb-24">
-            <div class="flex flex-col w-full sticky md:top-36 lg:w-1/3 mt-2 md:mt-12 px-8">
+            <div class="flex flex-col w-full sticky md:top-44 lg:w-1/3 mt-2 md:mt-12 px-8">
               <p class="font-bold text-text-gray-700 uppercase tracking-loose font-Oswald">
                 Working Process
               </p>
@@ -20,10 +20,10 @@ export default function WritingJourney() {
             </div>
             <div class="ml-0 md:ml-12 lg:w-2/3 sticky">
               <div class="container mx-auto w-full h-full">
-                <div class="relative wrap overflow-hidden p-10 h-full">
+                <div class="relative wrap overflow-hidden p-10 max-sm:px-2 h-full">
                   <div class="border-2-2 border-[#FFC100] right-[50%] rounded-sm border-yellow-555 absolute h-full border"></div>
                   <div class="border-2-2 border-[#FFC100] left-[50%] rounded-sm border-yellow-555 absolute h-full border"></div>
-                  <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                  <div class=" flex justify-between flex-row-reverse items-center w-full left-timeline">
                     <div class="order-1 w-5/12"></div>
                     <div class="order-1 w-5/12 px-1 py-4 text-right">
                       <p class="mb-3 text-base text-text-gray-700">
@@ -39,7 +39,7 @@ export default function WritingJourney() {
                       </p>
                     </div>
                   </div>
-                  <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                  <div class=" flex justify-between items-center w-full right-timeline">
                     <div class="order-1 w-5/12"></div>
                     <div class="order-1  w-5/12 px-1 py-4 text-left">
                       <p class="mb-3 text-base text-text-gray-700">
@@ -55,7 +55,7 @@ export default function WritingJourney() {
                       </p>
                     </div>
                   </div>
-                  <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                  <div class=" flex justify-between flex-row-reverse items-center w-full left-timeline">
                     <div class="order-1 w-5/12"></div>
                     <div class="order-1 w-5/12 px-1 py-4 text-right">
                       <p class="mb-3 text-base text-text-gray-700">
@@ -74,7 +74,7 @@ export default function WritingJourney() {
                     </div>
                   </div>
 
-                  <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                  <div class=" flex justify-between items-center w-full right-timeline">
                     <div class="order-1 w-5/12"></div>
 
                     <div class="order-1  w-5/12 px-1 py-4">

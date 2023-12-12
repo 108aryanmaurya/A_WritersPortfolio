@@ -42,22 +42,22 @@ const AboutCrousel = () => {
         </div>
         <div className="mx-7 max-lg:mx-0 max-sm:p-2 text-center items-center justify-center  w-[50%] max-md:w-[100%] flex flex-col max-md:py-5 gap-5 max-md:gap-0 ">
           <div>
-            <p className="text-[30px] max-sm:pl-2 text-white font-Gamiliademo ">
+            <p className="text-[30px] 2xl:text-[35px] max-sm:pl-2 text-white font-Gamiliademo ">
               The Lorem Ipsum
             </p>
-            <span className="italic max-sm:pl-2 text-[18px] font-[50] font-Oswald tracking-wider text-slate-300">
+            <span className="italic max-sm:pl-2 text-[18px] 2xl:text-[22px] font-[50] font-Oswald tracking-wider text-slate-300">
               -BY A.M GAUTAM
             </span>
           </div>
-          <div className="font-montserrat max-md:mx-2 max-md:mt-3 h-auto  text-slate-400 text-justify max-md:text-center">
+          <div className="font-montserrat max-md:mx-2 max-md:mt-3 h-auto 2xl:text-[18px] text-slate-400 text-justify max-md:text-center">
             {reviews[currentIndex]?.description &&
             reviews[currentIndex]?.description.length > 300
               ? reviews[currentIndex]?.description.slice(0, 300) + "..."
               : reviews[currentIndex]?.description}
           </div>
-          <div className=" max-sm:p-1  max-md:mt-4 max-md:m-2 max-md:max-w-[150px]  w-auto max-w-[200px] flex justify-center items-center flex-row text-white    border-2 p-2   max-sm:text-[14px]   border-white">
+          <div className="max-sm:p-1 max-sm:px-4 px-5 max-md:mt-4 max-md:m-2 max-md:max-w-[150px]  w-auto max-w-[200px] flex justify-center items-center flex-row text-white  border-2 p-2   max-sm:text-[14px]   border-white">
             <span>READ MORE</span>
-            <img src={ArrowRight} className="px-1 pl-2" alt="" />
+            <img src={ArrowRight} className="pl-1" alt="" />
           </div>
         </div>
       </div>
