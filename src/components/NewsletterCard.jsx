@@ -29,12 +29,12 @@ export default function NewsletterCard({ onSubscribe }) {
           name="email"
           id="email"
           placeholder="your@email.com"
-          class="w-full bg-transparent py-3 pl-5 pr-20 border-2 border-solid border-black rounded-0 outline-none placeholder:text-black/50"
+          class="w-full bg-transparent 2xl:text-xl py-3 pl-5 pr-20 border-2 border-solid border-black rounded-0 outline-none placeholder:text-black/50"
           required
         />
         <button
           type="submit"
-          class="absolute h-full right-0 bg-black text-white px-5 flex items-center cursor-pointer hover:bg-black/80"
+          class="absolute h-full 2xl:text-xl right-0 bg-black text-white px-5 flex items-center cursor-pointer hover:bg-black/80"
         >
           Subscribe
         </button>

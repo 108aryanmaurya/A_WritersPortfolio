@@ -10,14 +10,14 @@ export default function About() {
               <img
                 src="https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
                 alt=""
-                className="w-52 h-52 rounded-full"
+                className="2xl:w-56 2xl:h-56  w-52 h-52 rounded-full"
               />
-              <p className="leading-relaxed text-gray-500 text-2xl max-sm:xl max-lg:text-md text-lightTextMain dark:text-darkTextMain my-5 font-Authorfont">
+              <p className="leading-relaxed text-gray-500 text-2xl 2xl:text-3xl max-sm:xl max-lg:text-md text-lightTextMain dark:text-darkTextMain my-5 font-Authorfont">
                 A.M Gautam
               </p>
             </div>
             <i className="fa fa-quote-right text-6xl max-sm:text-2xl mb-4 text-gray-400  dark:text-darkTextPrimary "></i>
-            <p className="text-gray-600 font-montserrat dark:text-darkTextPrimary flex justify-center my-3 max-sm:px-5 max-lg:px-5 text-xl items-center max-md:text-lg max-sm:text-base">
+            <p className="text-gray-600 font-montserrat dark:text-darkTextPrimary flex justify-center my-3 max-sm:px-5 max-lg:px-5 text-xl 2xl:text-2xl items-center max-md:text-lg max-sm:text-base">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Accusamus quidem necessitatibus earum magni, esse voluptates
               facere perferendis animi reiciendis est, libero dolores dolor fuga
