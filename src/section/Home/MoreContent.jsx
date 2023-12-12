@@ -1,4 +1,5 @@
 import React from "react";
+import { ArrowRight } from "../../assets/icons";
 
 const cardData = [
   {
@@ -55,6 +56,10 @@ export default function MoreContent() {
               <p className="mt-2 max-w-sm text-gray-200 max-sm:text-center  font-montserrat ">
                 {card.description}
               </p>
+              <div className=" max-sm:p-1 my-4 max-md:mt-4 max-md:m-2 max-md:max-w-[150px]  w-auto max-w-[200px] flex justify-center items-center flex-row text-white    border-2 p-2   max-sm:text-[14px]   border-white">
+                READ MORE
+                <img src={ArrowRight} className="w-8 px-1 pl-2" alt="" />
+              </div>
             </div>
           ))}
         </div>

@@ -45,13 +45,13 @@ const Navbar = () => {
           <div
             className={` ${location.pathname === "/About" ? "text-" : ""} ${
               showNav ? "text-black" : ""
-            } font-Authorfont flex transition-all duration-300 items-center text-4xl max-md:text-2xl tracking-wide my-3 max-md:m-0 mt-0 max-md:ml-5`}
+            } font-Authorfont flex transition-all duration-300 items-center text-4xl 2xl:text-[2.50rem] max-md:text-2xl tracking-wide my-3 max-md:m-0 mt-0 max-md:ml-5`}
           >
             <span>A</span>.M&nbsp;
             <span>G</span>autam
           </div>
 
-          <div className="flex items-center w-auto">
+          <div className="flex items-center w-auto 2xl:my-2">
             <ul className="flex-1 flex items-center gap-8 max-md:hidden">
               {navLinks.map((item) => (
                 <li
@@ -71,7 +71,7 @@ const Navbar = () => {
                 >
                   <Link
                     to={item.href}
-                    className={`font-CooperHevitt text-lg text-slate-gray`}
+                    className={`font-CooperHevitt text-lg 2xl:text-2xl  text-slate-gray`}
                   >
                     {item.label}
                   </Link>

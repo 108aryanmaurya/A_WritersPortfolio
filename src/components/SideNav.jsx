@@ -19,13 +19,13 @@ export default function SideNav(props) {
                   className={`px-2 ${
                     (location.pathname === "/" && item.href === "/home") ||
                     location.pathname === item.href
-                      ? "border-b-[1px] border-b-gray-600"
+                      ? "border-b-[1px] border-b-gray-600 "
                       : ""
                   }`}
                 >
                   <Link
                     to={item.href}
-                    className={`font-CooperHevitt text-lg text-slate-gray`}
+                    className={`font-CooperHevitt text-lg max-sm:text-xl text-slate-gray`}
                   >
                     {item.label}
                   </Link>
