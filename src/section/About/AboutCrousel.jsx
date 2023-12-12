@@ -28,11 +28,11 @@ const AboutCrousel = () => {
 
   return (
     <section className="mx-auto flex px-24 bg-gray-900 flex-col my-10 max-sm:mt-20 max-md:py-3  py-24 max-sm:px-0">
-      <p className="font-CooperHevitt  max-md:my-2 font-semibold tracking-[5px]  text-[40px] ml-10 text-gray-200 max-md:text-center  max-sm:text-[22px] ">
+      <p className="font-CooperHevitt  max-md:my-2 font-semibold tracking-[5px]  text-[40px] text-gray-200 max-md:text-center  max-sm:text-[22px] ">
         WORKS BY A.M GAUTAM
       </p>
 
-      <div className="flex max-md:flex-col max-md:gap-0 max-md:my-3  my-16  gap-10">
+      <div className="flex max-md:flex-col max-md:gap-0 max-md:my-3  my-8  gap-10">
         <div className="h-[350px] relative  flex  justify-center items-center w-full max-w-[500px]  max-md:h-[80%] max-md:max-w-full group mx-auto text-center">
           <img
             src={reviews[currentIndex]?.cover}
@@ -42,7 +42,7 @@ const AboutCrousel = () => {
         </div>
         <div className="mx-7 max-sm:p-2 text-center justify-center items-center  w-[50%] max-sm:w-[100%] max-md:mx-0  flex flex-col   gap-4 max-md:gap-0 ">
           <div>
-            <p className="text-[30px] max-sm:pl-2 text-white font-serif ">
+            <p className="text-[30px] max-sm:pl-2 text-white font-Gamiliademo ">
               The Lorem Ipsum
             </p>
             <span className="italic max-sm:pl-2 text-[18px] font-[50] font-Oswald tracking-wider text-slate-300">

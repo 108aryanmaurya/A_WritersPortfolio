@@ -49,7 +49,7 @@ export default function MoreContent() {
                 className="h-64 w-64 object-cover"
               />
 
-              <h3 className="mt-4 text-lg font-bold text-white sm:text-xl font-Authorfont">
+              <h3 className="mt-4 text-lg font-semibold text-white sm:text-xl font-Gamiliademo tracking-wider">
                 {card.title}
               </h3>
 

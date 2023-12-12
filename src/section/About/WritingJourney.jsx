@@ -7,14 +7,14 @@ export default function WritingJourney() {
         <div class=" text-black py-8">
           <div class="container mx-auto flex flex-col items-start md:flex-row mb-12 md:mb-24">
             <div class="flex flex-col w-full sticky md:top-36 lg:w-1/3 mt-2 md:mt-12 px-8">
-              <p class="text-text-gray-700 uppercase tracking-loose font-Oswald">
+              <p class="font-bold text-text-gray-700 uppercase tracking-loose font-Oswald">
                 Working Process
               </p>
               <p class="text-3xl md:text-4xl leading-normal md:leading-relaxed mb-2 font-CooperHevitt">
                 My Writing Journey
               </p>
               <p class="text-sm md:text-base text-gray-900 mb-4 font-montserrat">
-                Here’s your guide to the tech fest 2021 process. Go through all
+                Here's your guide to the tech fest 2021 process. Go through all
                 the steps to know the exact process of the fest.
               </p>
             </div>
