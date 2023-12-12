@@ -45,19 +45,19 @@ export default function Work() {
       <div className="top-5 max-md:justify-center  pr-2 sticky max-md:bg-white  max-md:top-0   max-md:pr-1 gap-1 items-center max-md:text-[13px]  justify-end flex max-md:items-center  max-md:gap-3 max-md:py-[2px] ">
         <div
           className=" max-md:border-none  max-sm:p-1   max-md:m-1   w-auto 
-          max-md:text-[11px]   max-w-[200px] flex justify-center items-center flex-row text-black   border-2 max-md:p-1 p-2 gap-2  border-black"
+          max-md:text-[13px]   max-w-[200px] flex justify-center items-center flex-row text-black   border-2 max-md:p-1 p-2 gap-2  border-black"
           onClick={scrollToBooks}
         >
           <span>BOOKS</span>
         </div>
         <div
-          className="  max-md:border-none  max-sm:p-1    max-md:m-1   w-auto max-w-[200px] max-md:text-[11px] flex justify-center items-center flex-row text-black   border-2 p-2 gap-2    border-black"
+          className="  max-md:border-none  max-sm:p-1    max-md:m-1   w-auto max-w-[200px] max-md:text-[13px] flex justify-center items-center flex-row text-black   border-2 p-2 gap-2    border-black"
           onClick={scrollToArticle}
         >
           <span>ARTICLES</span>
         </div>
         <div
-          className=" max-md:border-none  max-sm:p-1  max-md:m-1   w-auto max-w-[200px] flex justify-center items-center flex-row text-black   border-2 p-2 gap-2 max-md:text-[11px]   border-black"
+          className=" max-md:border-none  max-sm:p-1  max-md:m-1   w-auto max-w-[200px] flex justify-center items-center flex-row text-black   border-2 p-2 gap-2 max-md:text-[13px]   border-black"
           onClick={scrollToNews}
         >
           <span>NEWS & MEDIA</span>
