@@ -22,7 +22,7 @@ export default function BlogCards() {
 
   return (
     <>
-      <div className="flex gap-16 max-md:gap-10 max-sm:gap-5 flex-col px-32 max-sm:px-0 mt-5 max-md:mt-0">
+      <div className="flex gap-16 max-md:gap-10 max-sm:gap-7 flex-col px-32 max-sm:px-0 mt-5 max-md:mt-0">
         {blogs.map((blog, index) => (
           <div
             key={index}
@@ -38,7 +38,7 @@ export default function BlogCards() {
               />
             </div>
 
-            <div className="px-8 pb-8 max-md:p-8">
+            <div className="px-8 pb-8 max-md:p-8 max-sm:pt-4">
               <h1 className="pb-2 max-sm:pb-2 text-4xl relative font-Gamiliademo capitalize">
                 {blog.title}
               </h1>
