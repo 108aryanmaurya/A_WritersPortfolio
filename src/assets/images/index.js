@@ -13,9 +13,15 @@ import cover5 from "./cover5.jpg";
 import book from "./book.png";
 import Synopsis from './Synopsis.jpg'
 import Articlehero from './Artilcehero.jpg'
-import article1 from './article1.jpg'
+import article2 from './article2.jpg'
+import article3 from './article3.jpg'
+import campaign1 from './campaign1.jpg'
+import campaign2 from './campaign2.jpg'
 export {
-  article1,
+  campaign1,
+  campaign2,
+  article2,
+  article3,
   Articlehero,
   Synopsis,
   Abouttopimg,

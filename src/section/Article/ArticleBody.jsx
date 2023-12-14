@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Articlehero, article1 } from "../../assets/images";
+import { Articlehero, article2, article3 } from "../../assets/images";
 import { singleArticle } from "../../components/constants";
 
 const ArticleBody = () => {
@@ -21,8 +21,8 @@ const ArticleBody = () => {
           console.log(i);
           console.log(singleArticle[0]?.description?.charAt(i));
           if (arr.length == 1) {
-            arr.push(singleArticle[0]?.description?.substring(k, i - 220));
-            i = i - 220;
+            arr.push(singleArticle[0]?.description?.substring(k, i - 300));
+            i = i - 300;
           } else {
             arr.push(singleArticle[0]?.description?.substring(k, i));
           }
@@ -58,10 +58,10 @@ const ArticleBody = () => {
           Lorem, ipsum dolor sit amet consectetur adipisicing elit.
         </div>
 
-        <div className="box-border">
+        <div className="box-border ">
           <div
             key={index}
-            className="break-inside-avoid mt-5 font-montserrat max-md:text-[11px] max-md:leading-3 flex relative justify-between text-justify"
+            className=" break-inside-avoid mt-5 font-palanquin max-md:text-[11.5px] max-md:leading-3 flex relative justify-between text-justify"
           >
             <div className="w-[48%]">
               {articleslice[0]}
@@ -71,7 +71,7 @@ const ArticleBody = () => {
             </div>
             <div className="w-[48%]">
               <div className="">
-                <img src={Articlehero} className="h-full" alt="" />
+                <img src={article3} className="h-full" alt="" />
               </div>
               <div className="mt-1">{articleslice[1]}</div>
             </div>
@@ -82,7 +82,7 @@ const ArticleBody = () => {
               return (
                 <div
                   key={index}
-                  className="break-inside-avoid mt-5 font-montserrat max-md:text-[11px] max-md:leading-3 flex relative justify-between text-justify"
+                  className="break-inside-avoid mt-5 font-palanquin max-md:text-[11px] max-md:leading-3 flex relative justify-between text-justify"
                 >
                   <div className="w-[48%]">{articleslice[index++]}</div>
                   <div className="w-[48%]">{articleslice[index++]}</div>
