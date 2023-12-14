@@ -12,7 +12,11 @@ import cover4 from "./cover4.jpg";
 import cover5 from "./cover5.jpg";
 import book from "./book.png";
 import Synopsis from './Synopsis.jpg'
+import Articlehero from './Artilcehero.jpg'
+import article1 from './article1.jpg'
 export {
+  article1,
+  Articlehero,
   Synopsis,
   Abouttopimg,
   book,

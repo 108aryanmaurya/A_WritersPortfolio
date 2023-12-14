@@ -27,8 +27,9 @@ const Books = () => {
               }}
             />
 
-            <p className="font-serif mt-4 max-md:mt-1 tracking-[2px] max-md:text-[19px] text-[30px] font-[300] text-gray-900">
-              {singleBook.title}
+            <p className="font-Gamiliademo mt-4 max-md:mt-1 tracking-[2px] max-md:text-[19px] text-[30px] font-[300] text-gray-900">
+              {/* {singleBook.title} */}
+              The Two Towers
             </p>
             <div className="text-justify max-md:text-[12px] font-montserrat  text-gray-900 w-[40%] max-md:w-[60%]">
               {singleBook.description}

@@ -43,7 +43,7 @@ export default function Work() {
   return (
     <>
       <section className=" bg-white  relative max-md:pt-0  pt-2">
-        <div className="md:top-5 max-md:justify-evenly w-full  pr-2 max-md:bg-white  max-md:bottom-0  max-md:border-t-[1px] max-md:border-gray-300 fixed max-md:flex max  max-md:pr-1 gap-1 items-center max-md:text-[13px]  justify-end flex max-md:items-center    max-md:py-[2px]  ">
+        <div className="md:top-5 max-md:justify-evenly w-full  pr-2 max-md:bg-white  max-md:bottom-0  max-md:border-t-[1px] sticky max-md:border-gray-300  max-md:fixed max-md:flex max  max-md:pr-1 gap-1 items-center max-md:text-[13px]  justify-end flex max-md:items-center    max-md:py-[2px]  ">
           <div
             className=" max-md:border-none  max-sm:p-1   max-md:m-1   w-auto 
           max-md:text-[15px]   max-w-[200px] flex justify-center items-center flex-row text-black   border-2 max-md:p-1 p-2 gap-2  border-black"

@@ -10,6 +10,8 @@ import ScrollProgress from "./components/ScrollProgress";
 import Footer from "./components/Footer";
 import SingleBookLayout from "./Layout/SingleBookLayout";
 import NewsEvents from "./pages/NewsEvents";
+import SingleArticleLayout from "./Layout/SingleArticleLayout";
+
 const App = () => {
   return (
     <Router>
@@ -22,6 +24,7 @@ const App = () => {
           <Route path="/Work" element={<Work />} />
           <Route path="/News&Events" element={<NewsEvents />} />
           <Route path="/Book/:book" element={<SingleBookLayout />} />
+          <Route path="/Article/:article" element={<SingleArticleLayout />} />
           <Route path="/Blog" element={<Blog></Blog>} />
           <Route path="/About" element={<About></About>} />
           <Route path="/Contact" element={<Contact />} />
