@@ -7,11 +7,11 @@ const AboutBook = () => {
       className="relative h-full w-full
      flex  p-16 max-sm:p-0 max-sm:mt-4 justify-start   max-sm:ml-4 max-md:justify-start  items-center"
     >
-      <div className="  p-12 ml-20 max-md:pl-2 max-md:my-10 max-md:ml-0 bg-slate-200 max-md:pr-20 max-md:p-3  pr-64 ">
+      <div className="  p-12 ml-20 max-md:pl-2 max-md:my-16 max-md:ml-2 bg-slate-200 max-md:pr-20 max-md:p-3  pr-64 ">
         <img
           src={cover1}
           alt="person"
-          className="   max-sm:mr-2   max-sm:mb-1  max-md:h-[200px]   bg-black h-[600px] "
+          className="   max-sm:mr-2   max-sm:mb-1  max-md:h-[210px]   bg-black h-[600px] "
         />
       </div>
 
@@ -20,7 +20,7 @@ const AboutBook = () => {
       <div className="bg-slate-200 h-48 top-[600px] w-48 max-md:hidden  rounded-full  absolute  right-4 "></div> */}
       <div
         className="text-[18px] z-30 absolute
-       max-md:right-3 max-md:top-0 bg-white  top-10 right-20 text-justify  w-[40%] max-md:w-[65%] max-md:p-3 max-md:text-[11px]  max-md:leading-[15px] font-montserrat   max-sm:ml-8 max-md:mt-0     mt-24 h-auto p-14 max-  "
+       max-md:right-6 max-md:top-4 bg-white  top-10 right-20 text-justify  w-[40%] max-md:w-[70%] max-md:p-3 max-md:text-[13px]  max-md:leading-[15px] font-montserrat   max-sm:ml-8 max-md:mt-0     mt-24 h-auto p-14 max-  "
       >
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo dolorum
         iure nesciunt enim dignissimos cumque voluptatum eos, possimus odio
