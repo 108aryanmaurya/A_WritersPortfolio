@@ -46,6 +46,19 @@ body {
   transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
 }
 
+.synopsis-text {
+  /* display: inline-block; */
+  /* margin: 0; */
+  /* line-height: 1em; */
+  /* font-family: Helvetica, Arial, sans-serif; */
+  /* font-weight: bold; */
+  /* font-size: 200px; */
+  background: linear-gradient(to right, #070707 58.4%, #ffffff 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 ::-webkit-scrollbar {
   width: 7px;
 }

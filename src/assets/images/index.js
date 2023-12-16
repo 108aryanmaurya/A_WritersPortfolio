@@ -17,7 +17,12 @@ import article2 from './article2.jpg'
 import article3 from './article3.jpg'
 import campaign1 from './campaign1.jpg'
 import campaign2 from './campaign2.jpg'
+import download from './download.jpg'
+import realdownload from './realdownload.jpg'
 export {
+
+  realdownload,
+  download,
   campaign1,
   campaign2,
   article2,
