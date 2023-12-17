@@ -67,7 +67,7 @@ font-Gamiliademo  w-[80%] max-md:w-[90%] mx-auto  text-[45px] max-md:text-[30px]
         </div>
 
         <div className="text-[16px]   text-justify max-lg:w-[100%] max-md:w-[100%]  max-md:leading-[18px] max-md:text-[13px]  font-montserrat          ">
-          <span className="text-[35px]  ml-3 mr-1 max-md:mr-0 font-serif ">
+          <span className="text-[20px]  ml-3 mr-1 max-md:mr-0 font-serif ">
             L
           </span>
           {singleArticle[0].description}
