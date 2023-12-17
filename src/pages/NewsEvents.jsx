@@ -1,10 +1,15 @@
 import React from "react";
 import { campaign1, campaign2 } from "../assets/images";
 import { ArrowRightBlack } from "../assets/icons";
-
+import Hero from "../section/NewsEvents/Hero";
+import Cards from "../section/NewsEvents/Cards";
 export default function NewsEvents() {
   return (
     <section>
+      <div className="grid">
+        <Hero />
+      </div>
+      <Cards />
       <div className="flex justify-center items-start  gap-16">
         <img src={campaign1} alt="" className="w-[40%]" />
         <div className="w-[50%] flex flex-col gap-6 ">

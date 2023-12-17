@@ -1,7 +1,7 @@
 import React from "react";
 import { ArrowRightBlack } from "../../assets/icons";
 
-export default function BlogCards() {
+export default function Cards() {
   const blogs = [
     {
       title: "The Twin towers",
@@ -22,7 +22,7 @@ export default function BlogCards() {
 
   return (
     <>
-      <div className="flex gap-16 max-md:gap-10 max-sm:gap-7 flex-col px-32 max-sm:px-0 mt-5 max-md:mt-0">
+      <div className="flex gap-16 max-md:gap-10 max-sm:gap-7 py-20 flex-col px-32 max-sm:px-0 mt-5 max-md:mt-0">
         {blogs.map((blog, index) => (
           <div
             key={index}

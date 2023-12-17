@@ -1,18 +1,19 @@
 import React from "react";
-import Hero from "../section/Home/Hero";
+import Hero from "../section/NewsEvents/Hero";
 import About from "../section/Home/About";
 import MoreContent from "../section/Home/MoreContent";
 import Newsletter from "../section/Home/Newsletter";
-import Contact from "../section/Contact/ContactForm";
+import HomeHero from "../section/Home/HomeHero";
 export default function Home() {
   return (
     <>
-      <div className="grid">
-        <Hero />
-      </div>
+      <HomeHero />
       <About />
       <MoreContent />
       <Newsletter />
+      <div className="grid">
+        <Hero />
+      </div>
     </>
   );
 }
