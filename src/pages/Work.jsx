@@ -1,7 +1,8 @@
 import React, { useRef, useState } from "react";
 import Books from "../section/Work/Books";
 import Article from "../section/Work/Articles";
-import News from "../section/Work/News";
+import News from "../section/Work/Stories";
+import Stories from "../section/Work/Stories";
 
 export default function Work() {
   const [currentSec, setcurrentSec] = useState("book");
@@ -44,7 +45,7 @@ export default function Work() {
   return (
     <>
       <section className=" bg-white  relative max-md:pt-0  pt-2">
-        <div className="md:top-5 max-md:justify-evenly w-full  pr-2   max-md:bottom-0  max-md:border-t-[1px] sticky max-md:border-gray-300  max-md:fixed max-md:flex max  max-md:pr-1 gap-1 items-center max-md:text-[16px]  justify-end flex max-md:items-center    max-md:py-[3px] max-md:bg-black  ">
+        <div className="md:top-5 max-md:justify-evenly w-full  pr-2   max-md:bottom-0  max-md:border-t-[1px] sticky max-md:border-gray-300  max-md:fixed max-md:flex max  max-md:pr-1 gap-1 items-center max-md:text-[16px]  justify-end flex max-md:items-center    max-md:py-[3px] max-md:bg-black z-50 ">
           <div
             className={` max-md:border-none  max-sm:p-1   max-md:m-1   w-auto 
           max-md:text-[17px]   max-w-[200px] flex justify-center items-center flex-row   ${
@@ -58,6 +59,21 @@ export default function Work() {
             }}
           >
             <span>BOOKS</span>
+          </div>
+
+          <div
+            className={` max-md:border-none  max-sm:p-1   max-md:m-1   w-auto 
+           max-md:text-[17px]   max-w-[200px] flex justify-center items-center flex-row   ${
+             currentSec == "story"
+               ? "bg-black text-white max-md:text-white"
+               : " max-md:text-slate-400 max-md:bg-black bg-white text-black"
+           }  border-2 max-md:p-1 p-2 gap-2  border-black`}
+            onClick={() => {
+              setcurrentSec("story");
+              scrollToNews();
+            }}
+          >
+            <span>STORIES</span>
           </div>
           <div
             className={` max-md:border-none  max-sm:p-1   max-md:m-1   w-auto 
@@ -73,29 +89,15 @@ export default function Work() {
           >
             <span>ARTICLES</span>
           </div>
-          <div
-            className={` max-md:border-none  max-sm:p-1   max-md:m-1   w-auto 
-           max-md:text-[17px]   max-w-[200px] flex justify-center items-center flex-row   ${
-             currentSec == "story"
-               ? "bg-black text-white max-md:text-white"
-               : " max-md:text-slate-400 max-md:bg-black bg-white text-black"
-           }  border-2 max-md:p-1 p-2 gap-2  border-black`}
-            onClick={() => {
-              setcurrentSec("story");
-              scrollToNews();
-            }}
-          >
-            <span>STORIES</span>
-          </div>
         </div>
         <div ref={Bookref}>
           <Books></Books>
         </div>
+        <div ref={Newsref}>
+          <Stories></Stories>
+        </div>
         <div ref={Articleref}>
           <Article></Article>
-        </div>
-        <div ref={Newsref}>
-          <News></News>
         </div>
       </section>
       {/* <div className="top-5 max-md:justify-center  pr-2 sticky max-md:bg-white  max-md:bottom-0    max-md:pr-1 gap-1 items-center max-md:text-[13px]  justify-end flex max-md:items-center  max-md:gap-3 max-md:py-[2px] ">

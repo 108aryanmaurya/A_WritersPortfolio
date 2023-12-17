@@ -62,7 +62,7 @@ font-Gamiliademo  w-[80%] max-md:w-[90%] mx-auto  text-[45px] max-md:text-[30px]
           <img
             src={article2}
             alt="person"
-            className=" pb-1 pr-6  z-10 max-md:pr-2 max-md:pb-[3px]    max-md:w-[200px] w-[600px]  "
+            className=" pb-1 pr-6  z-10 max-md:pr-2 max-md:pb-[1px]    max-md:w-[200px] w-[600px]  "
           />
         </div>
 
