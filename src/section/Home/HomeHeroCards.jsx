@@ -6,7 +6,7 @@ const HomeHeroCards = ({ imageSrc, backgroundColor }) => {
     <div className="slide w-[800px] max-sm:w-full rounded h-full flex-shrink-0 snap-center overflow-hidden">
       <div className="w-full h-full flex flex-row group text-center relative uppercase overflow-hidden">
         <div
-          className={`bg-${backgroundColor} transition-all ease-in-out duration-200 z-[1] w-[80%] h-full  [clip-path:polygon(0%_0%,65%_0%,100%_100%,0%_100%)]`}
+          className={`${backgroundColor} transition-all ease-in-out duration-200 z-[1] w-[80%] h-full  [clip-path:polygon(0%_0%,65%_0%,100%_100%,0%_100%)]`}
         >
           <div class="w-[70%] h-full flex justify-center items-center flex-col text-left space-y-2 p-3">
             <div>

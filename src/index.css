@@ -26,6 +26,11 @@
   src: local("CooperHewitt-Light"),
     url(./fonts/CooperHewitt-Light.otf) format("opentype");
 }
+@font-face {
+  font-family: "Vultura-Regular";
+  src: local("Vultura-Regular"),
+    url(./fonts/Vultura-Regular.otf) format("opentype");
+}
 
 * {
   margin: 0;
