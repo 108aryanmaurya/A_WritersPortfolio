@@ -49,51 +49,67 @@ const ArticleBody = () => {
   }, [arr]);
 
   return (
-    <section>
-      <div className="flex w-[60%] max-md:w-[90%] mx-auto flex-col  justify-center mt-10 items-center max-md:leading-4">
-        <div
-          className="
-       font-Gamiliademo    text-[45px] max-md:text-[30px] max-md:leading-9 "
-        >
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+    <div className="relative max-md:w-full w-[90%] mx-auto p-16 max-sm:p-0 max-md:mt-8   justify-center items-center">
+      <div
+        className="
+font-Gamiliademo  w-[80%] max-md:w-[90%] mx-auto  text-[45px] max-md:text-[30px] max-md:leading-9 "
+      >
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      </div>
+
+      <div className="mt-10 w-[100%] max-md:p-4  p-5   bg-white ">
+        <div className="float-left ">
+          <img
+            src={article2}
+            alt="person"
+            className=" pb-1 pr-6  z-10 max-md:pr-2 max-md:pb-[1px]    max-md:w-[200px] w-[600px]  "
+          />
         </div>
 
-        <div className="box-border ">
-          <div
-            key={index}
-            className=" break-inside-avoid mt-5 font-palanquin max-md:text-[11.5px] max-md:leading-3 flex relative justify-between text-justify"
-          >
-            <div className="w-[48%]">
-              {articleslice[0]}
-              <div className="">
-                {/* <img src={Articlehero} className="h-full mt-1" alt="" /> */}
-              </div>
-            </div>
-            <div className="w-[48%]">
-              <div className="">
-                <img src={article3} className="h-full" alt="" />
-              </div>
-              <div className="mt-1">{articleslice[1]}</div>
-            </div>
-          </div>
-
-          {articleslice?.map((art) => {
-            if (index <= articleslice.length) {
-              return (
-                <div
-                  key={index}
-                  className="break-inside-avoid mt-5 font-palanquin max-md:text-[11px] max-md:leading-3 flex relative justify-between text-justify"
-                >
-                  <div className="w-[48%]">{articleslice[index++]}</div>
-                  <div className="w-[48%]">{articleslice[index++]}</div>
-                </div>
-              );
-            }
-          })}
+        <div className="text-[16px]   text-justify max-lg:w-[100%] max-md:w-[100%]  max-md:leading-[18px] max-md:text-[13px]  font-montserrat          ">
+          <span className="text-[20px]  ml-3 mr-1 max-md:mr-0 font-serif ">
+            L
+          </span>
+          {singleArticle[0].description}
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
 export default ArticleBody;
+
+// <div className="box-border ">
+// <div
+//   key={index}
+//   className=" break-inside-avoid mt-5 font-palanquin max-md:text-[11.5px] max-md:leading-3 flex relative justify-between text-justify"
+// >
+//   <div className="w-[48%]">
+//     {articleslice[0]}
+//     <div className="">
+//       {/* <img src={Articlehero} className="h-full mt-1" alt="" /> */}
+//     </div>
+//   </div>
+//   <div className="w-[48%]">
+//     <div className="">
+//       <img src={article3} className="h-full" alt="" />
+//     </div>
+//     <div className="mt-1">{articleslice[1]}</div>
+//   </div>
+// </div>
+
+// {articleslice?.map((art) => {
+//   if (index <= articleslice.length) {
+//     return (
+//       <div
+//         key={index}
+//         className="break-inside-avoid mt-5 font-palanquin max-md:text-[11px] max-md:leading-3 flex relative justify-between text-justify"
+//       >
+//         <div className="w-[48%]">{articleslice[index++]}</div>
+//         <div className="w-[48%]">{articleslice[index++]}</div>
+//       </div>
+//     );
+//   }
+// })}
+
+// </div>
