@@ -23,7 +23,7 @@ const Books = () => {
               alt=""
               className=" h-full max-md:w-[45%] w-[25%]"
               onClick={() => {
-                // navigate(`/Book/${singleBook.title}`);
+                navigate(`/Book/${singleBook.title}`);
               }}
             />
 
@@ -38,7 +38,7 @@ const Books = () => {
               <div
                 className=" max-sm:p-1 max-md:mt-2  max-md:m-1   w-auto max-w-[200px] flex justify-center items-center flex-row text-black   border-2 p-2 gap-2 max-md:gap-1 max-sm:text-[14px]   border-black"
                 onClick={() => {
-                  // navigate(`/Book/${singleBook.title}`);
+                  navigate(`/Book/${singleBook.title}`);
                 }}
               >
                 <span>READ MORE</span>

@@ -57,7 +57,7 @@ font-Gamiliademo  w-[80%] max-md:w-[90%] mx-auto  text-[45px] max-md:text-[30px]
         Lorem, ipsum dolor sit amet consectetur adipisicing elit.
       </div>
 
-      <div className="mt-10 w-[100%] max-md:p-4  p-5   bg-white ">
+      <div className="mt-10 w-[100%]  max-md:p-4  p-10  bg-white ">
         <div className="float-left ">
           <img
             src={article2}
