@@ -5,7 +5,6 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Work from "./pages/Work";
-import Blog from "./pages/Blog";
 import ScrollProgress from "./components/ScrollProgress";
 import Footer from "./components/Footer";
 import SingleBookLayout from "./Layout/SingleBookLayout";
@@ -25,7 +24,6 @@ const App = () => {
           <Route path="/News&Events" element={<NewsEvents />} />
           <Route path="/Book/:book" element={<SingleBookLayout />} />
           <Route path="/Article/:article" element={<SingleArticleLayout />} />
-          <Route path="/Blog" element={<Blog></Blog>} />
           <Route path="/About" element={<About></About>} />
           <Route path="/Contact" element={<Contact />} />
         </Routes>
