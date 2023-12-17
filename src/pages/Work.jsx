@@ -1,9 +1,10 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import Books from "../section/Work/Books";
 import Article from "../section/Work/Articles";
 import News from "../section/Work/News";
 
 export default function Work() {
+  const [currentSec, setcurrentSec] = useState("book");
   const Bookref = useRef(null);
   const Articleref = useRef(null);
   const Newsref = useRef(null);
@@ -45,23 +46,46 @@ export default function Work() {
       <section className=" bg-white  relative max-md:pt-0  pt-2">
         <div className="md:top-5 max-md:justify-evenly w-full  pr-2   max-md:bottom-0  max-md:border-t-[1px] sticky max-md:border-gray-300  max-md:fixed max-md:flex max  max-md:pr-1 gap-1 items-center max-md:text-[16px]  justify-end flex max-md:items-center    max-md:py-[3px] max-md:bg-black  ">
           <div
-            className=" max-md:border-none  max-sm:p-1   max-md:m-1   w-auto 
-          max-md:text-[17px]   max-w-[200px] flex justify-center items-center flex-row text-black  max-md:text-white  border-2 max-md:p-1 p-2 gap-2  border-black"
-            onClick={scrollToBooks}
+            className={` max-md:border-none  max-sm:p-1   max-md:m-1   w-auto 
+          max-md:text-[17px]   max-w-[200px] flex justify-center items-center flex-row   ${
+            currentSec == "book"
+              ? "bg-black text-white max-md:text-white"
+              : " max-md:text-slate-400 max-md:bg-black bg-white text-black"
+          }  border-2 max-md:p-1 p-2 gap-2  border-black`}
+            onClick={() => {
+              setcurrentSec("book");
+              scrollToBooks();
+            }}
           >
             <span>BOOKS</span>
           </div>
           <div
-            className="  max-md:border-none  max-md:text-white max-sm:p-1    max-md:m-1   w-auto max-w-[200px] max-md:text-[17px] flex justify-center items-center flex-row text-black   border-2 p-2 gap-2    border-black"
-            onClick={scrollToArticle}
+            className={` max-md:border-none  max-sm:p-1   max-md:m-1   w-auto 
+          max-md:text-[17px]   max-w-[200px] flex justify-center items-center flex-row   ${
+            currentSec == "article"
+              ? "bg-black text-white max-md:text-white"
+              : " max-md:text-slate-400 max-md:bg-black bg-white text-black"
+          }  border-2 max-md:p-1 p-2 gap-2  border-black`}
+            onClick={() => {
+              setcurrentSec("article");
+              scrollToArticle();
+            }}
           >
             <span>ARTICLES</span>
           </div>
           <div
-            className=" max-md:border-none max-md:text-white  max-sm:p-1  max-md:m-1   w-auto max-w-[200px] flex justify-center items-center flex-row text-black   border-2 p-2 gap-2 max-md:text-[17px]   border-black"
-            onClick={scrollToNews}
+            className={` max-md:border-none  max-sm:p-1   max-md:m-1   w-auto 
+           max-md:text-[17px]   max-w-[200px] flex justify-center items-center flex-row   ${
+             currentSec == "story"
+               ? "bg-black text-white max-md:text-white"
+               : " max-md:text-slate-400 max-md:bg-black bg-white text-black"
+           }  border-2 max-md:p-1 p-2 gap-2  border-black`}
+            onClick={() => {
+              setcurrentSec("story");
+              scrollToNews();
+            }}
           >
-            <span>NEWS & MEDIA</span>
+            <span>STORIES</span>
           </div>
         </div>
         <div ref={Bookref}>

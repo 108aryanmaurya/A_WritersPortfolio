@@ -21,7 +21,7 @@ const Books = () => {
             <img
               src={singleBook.cover}
               alt=""
-              className=" h-full max-md:w-[40%] w-[25%]"
+              className=" h-full max-md:w-[45%] w-[25%]"
               onClick={() => {
                 // navigate(`/Book/${singleBook.title}`);
               }}

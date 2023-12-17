@@ -49,25 +49,27 @@ const ArticleBody = () => {
   }, [arr]);
 
   return (
-    <div className="relative  w-[80%] mx-auto p-16 max-sm:p-0 max-md:mt-8  max-sm:ml-4  justify-center items-center">
+    <div className="relative max-md:w-full w-[90%] mx-auto p-16 max-sm:p-0 max-md:mt-8   justify-center items-center">
       <div
         className="
-font-Gamiliademo  w-[75%] mx-auto  text-[45px] max-md:text-[30px] max-md:leading-9 "
+font-Gamiliademo  w-[80%] max-md:w-[90%] mx-auto  text-[45px] max-md:text-[30px] max-md:leading-9 "
       >
         Lorem, ipsum dolor sit amet consectetur adipisicing elit.
       </div>
 
-      <div className="mt-10 p-5  bg-white ">
+      <div className="mt-10 w-[100%]  p-5 max-md:p-0  bg-white ">
         <div className="float-left ">
           <img
-            src={article3}
+            src={Articlehero}
             alt="person"
-            className=" pb-1 pr-6 z-10 max-sm:pr-2 max-sm:pb-1 max-xl:h-[550px] max-lg:h-[500px] max-md:h-[400px]  max-sm:h-[260px] h-[600px]  "
+            className=" pb-1 pr-6  z-10 max-md:pr-0 max-md:pb-3   max-md:w-[100%] w-[600px]  "
           />
         </div>
 
-        <div className="text-[18px]   text-justify max-lg:w-[80%] max-md:w-[80%] max-sm:w-[85%] max-sm:p-2 max-sm:leading-[17px] max-md:text-[16px] max-sm:text-[15px] font-montserrat   max-sm:ml-8 max-sm:mt-14    max-sm:pt-5   ">
-          <span className="text-[35px]  ml-3 mr-1 font-serif ">L</span>
+        <div className="text-[16px]   text-justify max-lg:w-[100%] max-md:w-[100%] max-md:p-4 max-sm:leading-[17px] max-md:text-[16px]  font-montserrat          ">
+          <span className="text-[35px]  ml-3 mr-1 max-md:mr-0 font-serif ">
+            L
+          </span>
           {singleArticle[0].description}
         </div>
       </div>
