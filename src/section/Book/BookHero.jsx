@@ -11,7 +11,7 @@ const BookHero = ({ bookdetails }) => {
       />
       <p className="absolute bottom-10 max-sm:tracking-[6px] max-sm:text-[27px] text-white tracking-[11px] font-Oswald font-semibold text-[50px]  ">
         {" "}
-        {bookdetails?.title}
+        BOOK
       </p>
     </div>
   );
