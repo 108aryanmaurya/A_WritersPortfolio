@@ -60,13 +60,13 @@ font-Gamiliademo  w-[80%] max-md:w-[90%] mx-auto  text-[45px] max-md:text-[30px]
       <div className="mt-10 w-[100%]  p-5 max-md:p-0  bg-white ">
         <div className="float-left ">
           <img
-            src={Articlehero}
+            src={article2}
             alt="person"
             className=" pb-1 pr-6  z-10 max-md:pr-0 max-md:pb-3   max-md:w-[100%] w-[600px]  "
           />
         </div>
 
-        <div className="text-[16px]   text-justify max-lg:w-[100%] max-md:w-[100%] max-md:p-4 max-sm:leading-[17px] max-md:text-[16px]  font-montserrat          ">
+        <div className="text-[16px]   text-justify max-lg:w-[100%] max-md:w-[100%] max-md:p-4 max-md:leading-[18px] max-md:text-[15px]  font-montserrat          ">
           <span className="text-[35px]  ml-3 mr-1 max-md:mr-0 font-serif ">
             L
           </span>
