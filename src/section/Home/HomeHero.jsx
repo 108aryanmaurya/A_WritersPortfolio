@@ -1,7 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
 import { heroright, heroleft } from "../../assets/icons";
 import HomeHeroCards from "./HomeHeroCards";
-import "./HomeHero.css";
 export default function HomeHero() {
   const slidesContainerRef = useRef(null);
   const [slideWidth, setSlideWidth] = useState(0);
