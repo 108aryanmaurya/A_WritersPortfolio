@@ -3,7 +3,7 @@ import React from "react";
 export default function About() {
   return (
     <>
-      <div className="my-32 max-sm:mt-12 max-sm:my-24 mx-auto ">
+      <div className="my-28 max-sm:mt-12 max-sm:my-24 mx-auto ">
         <div className="relative flex">
           <div className="xl:w-[60%] lg:w-3/4 w-full mx-auto text-center">
             <div className="w-full flex flex-col justify-center items-center">

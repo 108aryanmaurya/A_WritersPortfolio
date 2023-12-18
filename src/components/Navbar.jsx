@@ -32,7 +32,7 @@ const Navbar = () => {
       {showNav && <SideNav NavStatus={NavStatus}></SideNav>}
       <section
         id="navbar"
-        className="relative top-0 select-none z-[100] transition-all ease-in-out duration-300"
+        className=" bg-white relative top-0 select-none z-[100] transition-all ease-in-out duration-300"
       >
         <nav
           className={` ${

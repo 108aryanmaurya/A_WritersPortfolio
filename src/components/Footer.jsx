@@ -5,14 +5,14 @@ import SocialLinks from "./SocialLinks";
 export default function Footer() {
   return (
     <>
-      <footer className="bg-white mt-5">
+      <footer className="bg-white mt-5 border-t-2 border-gray-200">
         <div className=" w-full py-6 max-lg:py-2 px-20 max-lg:px-5">
           <div className="flex max-lg:flex-col">
             <div className="max-lg:my-5 max-lg:mb-10 w-[60%] max-lg:w-full">
-              <h1 class="text-xl my-1 font-bold mb-3 max-sm:mb-0 font-CooperHevitt 2xl:text-2xl">
-                Susbcribe to our Newsletter
-              </h1>
               <div className=" w-[70%] my-2 max-lg:w-[90%] max-sm:w-full">
+                <h1 class="text-xl my-1 font-bold mb-3 text-center max-sm:mb-0 font-CooperHevitt 2xl:text-2xl">
+                  Susbcribe to our Newsletter
+                </h1>
                 <NewsletterCard />
               </div>
             </div>
