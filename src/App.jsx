@@ -10,11 +10,12 @@ import Footer from "./components/Footer";
 import SingleBookLayout from "./Layout/SingleBookLayout";
 import NewsEvents from "./pages/NewsEvents";
 import SingleArticleLayout from "./Layout/SingleArticleLayout";
-
+import ScrollToTop from "./components/ScrollToTop";
 const App = () => {
   return (
     <Router>
       <ScrollProgress />
+      <ScrollToTop />
       <main className=" container select-none">
         <Navbar></Navbar>
         <Routes>

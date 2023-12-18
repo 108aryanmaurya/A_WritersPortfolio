@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { navLinks } from "./constants";
 import SideNav from "./SideNav";
-
+import { mainBlogBlack, mainLogoWhite } from "../assets/icons";
 const Navbar = () => {
   const location = useLocation();
   const [showNav, setNav] = useState(false);
@@ -41,15 +41,22 @@ const Navbar = () => {
             location.pathname.includes("/Article")
               ? " !text-white absolute flex-row justify-between px-10 max-md:px-0 "
               : " !text-black  relative flex-col justify-center "
-          } top-0 flex  max-md:flex-row max-md:justify-between py-5 pb-8 max-md:py-2 items-center w-full`}
+          } top-0 flex  max-md:flex-row max-md:justify-between py-2 pb-8 max-md:py-2 items-center w-full`}
         >
           <div
-            className={` ${location.pathname === "/About" ? "text-" : ""} ${
-              showNav ? "text-black" : ""
-            } font-Authorfont flex transition-all duration-300 items-center text-4xl 2xl:text-[2.50rem] max-md:text-2xl tracking-wide my-3 max-md:m-0 mt-0 max-md:ml-5`}
+            className={`transition-all duration-300 items-center my-3 max-md:m-0 mt-0 max-md:ml-5`}
           >
-            <span>A</span>.M&nbsp;
-            <span>G</span>autam
+            {location.pathname.includes("/About") ||
+            location.pathname.includes("/Book") ||
+            location.pathname.includes("/Article") ? (
+              <img
+                src={showNav ? mainBlogBlack : mainLogoWhite}
+                className="h-16 max-sm:h-14"
+                alt=""
+              />
+            ) : (
+              <img src={mainBlogBlack} className="h-16 max-sm:h-14" alt="" />
+            )}
           </div>
 
           <div className="flex items-center w-auto 2xl:my-2">
@@ -88,7 +95,9 @@ const Navbar = () => {
                   <div className="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 origin-center overflow-hidden">
                     <div
                       className={`${
-                        location.pathname === "/About"
+                        location.pathname.includes("/About") ||
+                        location.pathname.includes("/Book") ||
+                        location.pathname.includes("/Article")
                           ? " bg-white "
                           : " bg-black "
                       } h-[2px] w-7 transform transition-all duration-300 origin-left ${
@@ -97,7 +106,9 @@ const Navbar = () => {
                     ></div>
                     <div
                       className={`${
-                        location.pathname === "/About"
+                        location.pathname.includes("/About") ||
+                        location.pathname.includes("/Book") ||
+                        location.pathname.includes("/Article")
                           ? " bg-white "
                           : " bg-black "
                       } h-[2px] w-7 rounded transform transition-all duration-300 ${
@@ -106,7 +117,9 @@ const Navbar = () => {
                     ></div>
                     <div
                       className={`${
-                        location.pathname === "/About"
+                        location.pathname.includes("/About") ||
+                        location.pathname.includes("/Book") ||
+                        location.pathname.includes("/Article")
                           ? " bg-white "
                           : " bg-black "
                       } h-[2px] w-7 transform transition-all duration-300 origin-left ${
