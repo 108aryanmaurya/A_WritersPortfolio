@@ -5,6 +5,7 @@ import SocialLinks from "./SocialLinks";
 export default function Footer() {
   return (
     <>
+
       <footer className="bg-white pt-10">
         <div className=" w-full py-6 max-lg:py-2 px-20 max-lg:px-5">
           <div className="flex max-lg:flex-col">
