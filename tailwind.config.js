@@ -3,8 +3,6 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-
-
       fontFamily: {
         Oswald: ["Oswald", "sans-serif"],
         palanquin: ["Palanquin", "sans-serif"],
@@ -12,6 +10,7 @@ export default {
         Authorfont: ["Minerva-Modern-Regular", "sans-serif"],
         CooperHevitt: ["CooperHewitt-Light", "sans-serif"],
         Gamiliademo: ["GamiliademoRegular-mL9Ev", "sans-serif"],
+        VulturaRegular: ["Vultura-Regular", "sans-serif"],
       },
     },
   },
