@@ -63,12 +63,12 @@ export default function HomeHero() {
     {
       imageSrc:
         "https://images.pexels.com/photos/3026364/pexels-photo-3026364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      backgroundColor: "bg-violet-200",
+      backgroundColor: "bg-violet-400",
     },
     {
       imageSrc:
         "https://images.pexels.com/photos/3026364/pexels-photo-3026364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      backgroundColor: "bg-green-200",
+      backgroundColor: "bg-green-400",
     },
   ];
   return (
@@ -80,7 +80,7 @@ export default function HomeHero() {
         <div className="relative">
           <div
             ref={slidesContainerRef}
-            className="slides-container h-[350px] 2xl:h-[400px] max-sm:h-[300px] flex snap-x snap-mandatory overflow-hidden overflow-x-auto space-x-2 rounded max-md:rounded-none scroll-smooth no-scrollbar"
+            className="slides-container z-[999] h-[350px] 2xl:h-[400px] max-sm:h-[300px] flex snap-x snap-mandatory overflow-hidden overflow-x-auto space-x-2 rounded max-md:rounded-none scroll-smooth no-scrollbar "
           >
             {slideData.map((slide, index) => (
               <HomeHeroCards key={index} {...slide} />

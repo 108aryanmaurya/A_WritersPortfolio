@@ -3,13 +3,13 @@ import React from "react";
 
 const HomeHeroCards = ({ imageSrc, backgroundColor }) => {
   return (
-    <div className="slide w-[800px] max-sm:w-full rounded h-full flex-shrink-0 snap-center overflow-hidden">
+    <div className="relative w-[1000px] max-xl:w-[900px] max-lg:w-[700px] 2xl:w-[1200px] max-sm:w-full rounded h-full flex-shrink-0 snap-center overflow-hidden">
       <div className="w-full h-full flex flex-row group text-center relative uppercase overflow-hidden">
         <div
           className={`${backgroundColor} transition-all ease-in-out duration-200 z-[1] w-[80%] h-full  [clip-path:polygon(0%_0%,65%_0%,100%_100%,0%_100%)]`}
         >
           <div class="w-[70%] h-full flex justify-center items-center flex-col text-left space-y-2 p-3">
-            <div>
+            <div className="ml-10">
               <h3 class="font-black text-gray-800 md:text-3xl text-xl">
                 Lorem Ipsum dolor
               </h3>
@@ -39,6 +39,7 @@ const HomeHeroCards = ({ imageSrc, backgroundColor }) => {
             />
           </div>
         </div>
+        {/* <div className="w-full absolute h-full bg-[rgba(0,0,0,.4)] z-[9999] "></div> */}
       </div>
     </div>
   );
