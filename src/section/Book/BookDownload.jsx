@@ -4,8 +4,8 @@ import { Download } from "../../assets/icons";
 
 const BookDownload = () => {
   return (
-    <section className="flex  ml-56 max-md:ml-2 max-md:mt-14 mt-36 items-center relative">
-      <div className="w-[700px] max-md:w-[250px]  p-22 z-30  ">
+    <section className="flex  ml-56 max-md:ml-2 max-md:mt-14 mt-32 items-center relative">
+      <div className="w-[600px] max-md:w-[250px]  p-22 z-30  ">
         <img src={Download2} alt="" className="" />
       </div>
 

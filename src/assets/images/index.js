@@ -28,7 +28,9 @@ import AMGautam from './AMGautam.png'
 import AMGautam2 from './AMGautam2.png'
 import AMGautam3 from './AMGautam3.png'
 import AMG from './AMG.png'
+import Bookhero from './Bookhero.jpg'
 export {
+  Bookhero,
   Download2,
   AMG,
   AMGautam3,
