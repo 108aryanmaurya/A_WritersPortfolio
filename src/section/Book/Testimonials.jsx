@@ -8,7 +8,7 @@ const Testimonials = () => {
       <div className="w-full  max-md:h-[600px] top-0  h-[800px] bg-black     max-md:py-0   max-md:bg-black max-md:blur-[0px]  ">
         <img
           src={reviewhero}
-          className="w-full  object-cover  opacity-50  max-md:opacity-[0.29]  h-full"
+          className="w-full  object-cover    max-md:opacity-[0.29]  h-full"
           alt=""
         />
       </div>
