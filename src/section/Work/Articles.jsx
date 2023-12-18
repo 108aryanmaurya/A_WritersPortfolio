@@ -7,7 +7,7 @@ const Article = () => {
   const navigate = useNavigate();
 
   return (
-    <section className="max-md:mt-10  mt-20 ">
+    <section className="max-md:pt-1 max-md:mt-5 pt-2  mt-10">
       <div className=" text-center text-[29px] my-12 max-md:my-2 font-[100] font-CooperHevitt">
         ARTICLE
       </div>
