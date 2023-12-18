@@ -1,5 +1,6 @@
-import { book1, book2, book3, book4, book5 } from "../../assets/images";
+import { book1, book2, book3, book4, book5, story1, story2, story3, story4, story5, story6, } from "../../assets/images";
 import { cover1, cover3, cover4, cover5 } from "../../assets/images";
+
 export const navLinks = [
   { href: "/home", label: "Home" },
   { href: "/Work", label: "Work" },
@@ -7,6 +8,28 @@ export const navLinks = [
   { href: "/About", label: "About" },
   { href: "/Contact", label: "Contact" },
 ];
+
+
+export const storyCover = [
+  {
+    cover: story1
+  },
+  {
+    cover: story2
+  },
+  {
+    cover: story3
+  },
+  {
+    cover: story4
+  },
+  {
+    cover: story5
+  },
+  {
+    cover: story6
+  },
+]
 
 export const crausoel = [
   {

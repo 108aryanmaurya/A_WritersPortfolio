@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { navLinks } from "./constants";
 import SideNav from "./SideNav";
+import { AMG, AMGautam, AMGautam2, AMGautam3 } from "../assets/images";
 
 const Navbar = () => {
   const location = useLocation();
@@ -32,7 +33,7 @@ const Navbar = () => {
       {showNav && <SideNav NavStatus={NavStatus}></SideNav>}
       <section
         id="navbar"
-        className="relative top-0 select-none z-[100] transition-all ease-in-out duration-300"
+        className="bg-white relative top-0 select-none z-[100] transition-all ease-in-out duration-300"
       >
         <nav
           className={` ${
@@ -40,19 +41,21 @@ const Navbar = () => {
             location.pathname.includes("/Book") ||
             location.pathname.includes("/Article")
               ? " !text-white absolute flex-row justify-between px-10 max-md:px-0 "
-              : " !text-black  relative flex-col justify-center "
-          } top-0 flex  max-md:flex-row max-md:justify-between py-5 pb-8 max-md:py-2 items-center w-full`}
+              : " !text-black bg-slate-100  relative flex-col justify-center "
+          } top-0 flex  max-md:flex-row max-md:justify-between py-3 pb-8 max-md:py-2 items-center w-full `}
         >
-          <div
+          {/* <div
             className={` ${location.pathname === "/About" ? "text-" : ""} ${
               showNav ? "text-black" : ""
             } font-Authorfont flex transition-all duration-300 items-center text-4xl 2xl:text-[2.50rem] max-md:text-2xl tracking-wide my-3 max-md:m-0 mt-0 max-md:ml-5`}
           >
             <span>A</span>.M&nbsp;
             <span>G</span>autam
+          </div> */}
+          <div className="pb-8  ">
+            <img src={AMG} alt="" className="w-[240px] " />
           </div>
-
-          <div className="flex items-center w-auto 2xl:my-2">
+          <div className="flex items-center w-auto 2xl:mb-2">
             <ul className="flex-1 flex items-center gap-8 max-md:hidden">
               {navLinks.map((item) => (
                 <li
