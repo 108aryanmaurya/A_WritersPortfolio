@@ -3,6 +3,8 @@ import { Link, useLocation } from "react-router-dom";
 import { navLinks } from "./constants";
 import SideNav from "./SideNav";
 import { mainBlogBlack, mainLogoWhite } from "../assets/icons";
+import { AMG, AMGautam, AMGautam2, AMGautam3 } from "../assets/images";
+
 const Navbar = () => {
   const location = useLocation();
   const [showNav, setNav] = useState(false);
@@ -33,6 +35,7 @@ const Navbar = () => {
       <section
         id="navbar"
         className=" bg-white relative top-0 select-none z-[100] transition-all ease-in-out duration-300"
+
       >
         <nav
           className={` ${
@@ -57,9 +60,9 @@ const Navbar = () => {
             ) : (
               <img src={mainBlogBlack} className="h-16 max-sm:h-14" alt="" />
             )}
-          </div>
 
-          <div className="flex items-center w-auto 2xl:my-2">
+          </div>
+          <div className="flex items-center w-auto 2xl:mb-2">
             <ul className="flex-1 flex items-center gap-8 max-md:hidden">
               {navLinks.map((item) => (
                 <li
