@@ -29,7 +29,9 @@ import AMGautam2 from './AMGautam2.png'
 import AMGautam3 from './AMGautam3.png'
 import AMG from './AMG.png'
 import Bookhero from './Bookhero.jpg'
+import reviewhero from './reviewhero.jpg'
 export {
+  reviewhero,
   Bookhero,
   Download2,
   AMG,

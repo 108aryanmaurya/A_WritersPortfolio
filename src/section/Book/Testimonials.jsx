@@ -1,12 +1,13 @@
 import React from "react";
 import { ReaderReview } from "../../components/constants";
+import { reviewhero } from "../../assets/images";
 
 const Testimonials = () => {
   return (
     <section className=" relative  flex flex-col items-center text-slate-200 mt-28 max-md:mt-7 max-md:py-8">
       <div className="w-full  max-md:h-[600px] top-0  h-[800px] bg-black     max-md:py-0   max-md:bg-black max-md:blur-[0px]  ">
         <img
-          src="https://images.unsplash.com/photo-1468657988500-aca2be09f4c6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGRhcmt8ZW58MHx8MHx8fDA%3D"
+          src={reviewhero}
           className="w-full  object-cover  opacity-50  max-md:opacity-[0.29]  h-full"
           alt=""
         />
