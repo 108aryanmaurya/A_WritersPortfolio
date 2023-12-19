@@ -2,6 +2,7 @@ import React from "react";
 import { covers } from "../../components/constants";
 import { ArrowRightBlack, Cart, Download } from "../../assets/icons";
 import { useNavigate } from "react-router";
+import { Bookcover } from "../../assets/images";
 
 const Books = () => {
   const navigate = useNavigate();
@@ -15,17 +16,19 @@ const Books = () => {
       <div className=" flex flex-col justify-center items-center mx-auto ">
         {covers?.map((singleBook) => (
           <div
-            className="flex flex-col max-md:mb-[59px]  mb-[100px] gap-2 justify-center items-center mx-auto"
+            className="flex flex-col max-md:mb-[59px]  mb-[100px] gap-2 justify-center items-center mx-auto "
             key={2}
           >
-            <img
-              src={singleBook.cover}
-              alt=""
-              className=" h-full max-md:w-[45%] w-[20%]"
-              onClick={() => {
-                navigate(`/Book/${singleBook.title.replace(/\s+/g, "-")}`);
-              }}
-            />
+            <div className=" px-20  max-md:px-3  bg-white">
+              <img
+                src={Bookcover}
+                alt=""
+                className=" h-full  max-md:w-[200px] w-[300px]  "
+                onClick={() => {
+                  navigate(`/Book/${singleBook.title.replace(/\s+/g, "-")}`);
+                }}
+              />
+            </div>
 
             <p className="font-Gamiliademo my-4 max-md:my-1 tracking-[2px] max-md:text-[19px] text-[38px] font-[300]  text-center  text-gray-900">
               {singleBook.title}

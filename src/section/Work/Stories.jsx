@@ -13,18 +13,28 @@ const Stories = () => {
   return (
     <section className="flex relative flex-col  items-center justify-center">
       <div className="text-center text-[29px] pt-4 max-md:text-[23px] max-md:pb-3 pb-7 font-[100] font-CooperHevitt   border-black">
-        STORIES
+        SHORT STORIES
       </div>
-      <div className=" grid grid-cols-3 max-md:grid-cols-2  gap-x-24 max-md:w-[90%] max-md:gap-x-10 max-md:gap-y-6 gap-y-20 my-10 max-md:my-6 justify-center ">
+      <div className=" grid grid-cols-3 max-md:grid-cols-2  gap-x-24 max-md:w-[90%] max-md:gap-x-10 max-md:gap-y-16 gap-y-20 my-10 max-md:my-6 justify-center ">
         {storyCover.map((ind) => {
           return (
-            <div key={2} className="z-50">
-              <img
-                src={ind.cover}
-                alt=""
-                className=" w-[240px]  max-md:w-full "
-              />
-            </div>
+            <section key={2} className="relative">
+              <div className="z-50  shadow-black shadow-xl">
+                <img
+                  src={ind.cover}
+                  alt=""
+                  className=" w-[240px] max-md:h-[280px]  h-[380px]  max-md:w-full "
+                />
+              </div>
+              <div className=" z-50 absolute max-md:left-3  w-[75%]  left-9 bottom-12 flex flex-col  max-md:bottom-5  gap-24  max-md:gap-10 max-md:w-[90%]">
+                <div className="tracking-widest  text-yellow-400 uppercase font-Gamiliademo max-md:text-[20px]  text-[28px] text-center ">
+                  {ind.title}
+                </div>
+                <div className="tracking-widest  text-yellow-400 uppercase font-Authorfont text-[20px] text-center ">
+                  By A.M. Gautam
+                </div>
+              </div>
+            </section>
           );
         })}
 
