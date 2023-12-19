@@ -11,31 +11,33 @@ import cover3 from "./cover3.jpg";
 import cover4 from "./cover4.jpg";
 import cover5 from "./cover5.jpg";
 import book from "./book.png";
-import Synopsis from "./Synopsis.jpg";
-import Articlehero from "./Artilcehero.jpg";
-import article2 from "./article2.jpg";
-import article3 from "./article3.jpg";
-import campaign1 from "./campaign1.jpg";
-import campaign2 from "./campaign2.jpg";
-import Download2 from "./Download2.jpg";
-import story1 from "./story1.jpg";
-import story2 from "./story2.jpg";
-import story3 from "./story3.jpg";
-import story4 from "./story4.jpg";
-import story5 from "./story5.jpg";
-import story6 from "./story6.jpg";
-import AMGautam from "./AMGautam.png";
-import AMGautam2 from "./AMGautam2.png";
-import AMGautam3 from "./AMGautam3.png";
-import AMG from "./AMG.png";
-import Bookhero from "./Bookhero.jpg";
-import reviewhero from "./reviewhero.jpg";
-import BookCover from "./BookCover.jpg";
-import TheGreatestIndianStoriesEverTold from "./The-Greatest-Indian-Stories-Ever-Told.png";
-import heroBannerImage from "./heroBannerImage.png";
+import Synopsis from './Synopsis.jpg'
+import Articlehero from './Artilcehero.jpg'
+import article2 from './article2.jpg'
+import article3 from './article3.jpg'
+import campaign1 from './campaign1.jpg'
+import campaign2 from './campaign2.jpg'
+import Download2 from './Download2.jpg'
+import story1 from './story1.jpg'
+import story2 from './story2.jpg'
+import story3 from './story3.jpg'
+import story4 from './story4.jpg'
+import story5 from './story5.jpg'
+import story6 from './story6.jpg'
+import AMGautam from './AMGautam.png'
+import AMGautam2 from './AMGautam2.png'
+import AMGautam3 from './AMGautam3.png'
+import AMG from './AMG.png'
+import Bookhero from './Bookhero.jpg'
+import reviewhero from './reviewhero.jpg'
+import Bookcover from './Bookcover.png'
+import TheGreatestIndianStoriesEverTold from './The-Greatest-Indian-Stories-Ever-Told.png'
+import heroBannerImage from "./heroBannerImage.png"
+
 export {
   heroBannerImage,
-  BookCover,
+  TheGreatestIndianStoriesEverTold,
+  Bookcover,
   reviewhero,
   Bookhero,
   Download2,
@@ -68,5 +70,4 @@ export {
   cover3,
   cover4,
   cover5,
-  TheGreatestIndianStoriesEverTold,
 };
