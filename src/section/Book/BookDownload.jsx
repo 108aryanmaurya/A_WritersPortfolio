@@ -13,7 +13,7 @@ const BookDownload = () => {
         <div className="font-Oswald max-md:text-[20px]  text-[28px]">
           Get a sample of book
         </div>
-        <div className="z-10  max-sm:p-1 max-md:mt-2  text-[20px] font-[400]  max-md:left-2  max-md:m-0     max-md:w-auto max-md:h-auto   flex justify-center uppercase items-center     text-blackborder-2  p-2 gap-2 uppercase max-md:gap-1 max-sm:text-[14px] border-2  max-md:border-[1px]  border-black">
+        <div className="z-10  max-sm:p-1 max-md:mt-2  text-[20px] font-[400]  max-md:left-2  max-md:m-0     max-md:w-auto max-md:h-auto   flex justify-center  items-center  max-md:font-[300]    text-blackborder-2  p-2 gap-2 uppercase max-md:gap-1 max-sm:text-[14px] border-2  max-md:border-[1px]  border-black">
           <span>Download</span>
         </div>
       </div>

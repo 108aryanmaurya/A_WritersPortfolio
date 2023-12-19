@@ -3,7 +3,7 @@ import { cover1, Bookhero } from "../../assets/images";
 
 const BookHero = ({ bookdetails }) => {
   return (
-    <div className="h-64   relative flex  bg-black justify-center max-sm:h-52 items-end ">
+    <div className="h-72   relative flex  bg-black justify-center max-sm:h-52 items-end ">
       <img
         src={Bookhero}
         alt="AboutTopImg"

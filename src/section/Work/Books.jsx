@@ -36,7 +36,7 @@ const Books = () => {
             </div>
             <div className="flex gap-7 max-md:gap-1">
               <div
-                className=" max-sm:p-1 max-md:mt-2  max-md:m-1   w-auto max-w-[200px] flex justify-center items-center flex-row text-black   border-2 p-2 gap-2 max-md:gap-1 max-sm:text-[14px]   border-black"
+                className=" max-sm:p-1 max-md:mt-2  max-md:m-1   w-auto max-w-[200px] flex justify-center items-center flex-row text-black   border-2 p-2 gap-2 max-md:gap-1 max-sm:text-[14px]  max-md:border-[1px] border-black"
                 onClick={() => {
                   navigate(`/Book/${singleBook.title}`);
                 }}
@@ -44,11 +44,11 @@ const Books = () => {
                 <span>READ MORE</span>
                 <img
                   src={ArrowRightBlack}
-                  className="w-8 px-1 max-md:pl-0 max-md:w-5 max-md:px-0 pl-2"
+                  className="w-8 px-1  max-md:pl-0 max-md:w-4  max-md:px-0 pl-2"
                   alt=""
                 />
               </div>
-              <div className=" max-sm:p-1 max-md:mt-2  max-md:m-1   w-auto max-w-[200px] flex justify-center items-center flex-row text-black   border-2 p-2 gap-2 max-md:gap-2 max-sm:text-[14px]   border-black">
+              <div className=" max-sm:p-1 max-md:mt-2  max-md:m-1   w-auto max-w-[200px] flex justify-center items-center flex-row text-black   border-2 p-2 gap-2 max-md:gap-2 max-sm:text-[14px] max-md:border-[1px]  border-black">
                 <span>ORDER NOW</span>
                 <img
                   src={Cart}
