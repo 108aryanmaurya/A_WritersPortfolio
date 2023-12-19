@@ -12,7 +12,8 @@ const AboutBook = ({ bookdetails }) => {
         <div className=" bg-slate-200   p-10 pl-16 ml-24  w-[50%]  ">
           <img
             // src="../../assets/images/BookCover.jpg"
-            src="https://firebasestorage.googleapis.com/v0/b/bluesky-e016b.appspot.com/o/bannerImages%2Fimg5.jpg?alt=media&token=f9e6c185-98aa-4062-a6b4-448f0f2bf81f"
+            src={bookdetails?.cover}
+            // src="https://firebasestorage.googleapis.com/v0/b/bluesky-e016b.appspot.com/o/bannerImages%2Fimg5.jpg?alt=media&token=f9e6c185-98aa-4062-a6b4-448f0f2bf81f"
             alt="person"
             className="  max-sm:pr-2  max-sm:pb-1 max-xl:h-[550px] max-lg:h-[500px] max-md:h-[400px] w-[380px]  h-[510px]  "
           />
