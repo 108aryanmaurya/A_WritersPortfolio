@@ -19,7 +19,7 @@ const Books = () => {
             className="flex flex-col max-md:mb-[59px]  mb-[100px] gap-2 justify-center items-center mx-auto "
             key={2}
           >
-            <div className=" px-20  max-md:px-3  bg-white">
+            <div className=" px-20 py-4 max-md:py-2 max-md:px-3  bg-white">
               <img
                 src={Bookcover}
                 alt=""

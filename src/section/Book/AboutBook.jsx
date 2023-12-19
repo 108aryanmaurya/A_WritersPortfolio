@@ -5,7 +5,7 @@ const AboutBook = ({ bookdetails }) => {
   console.log(bookdetails?.title);
   return (
     <>
-      <div className=" text-[50px] font-Gamiliademo text-center max-md:my-7 max-md:text-[25px] max-md:w-[70%] mx-auto max-md:leading-6 mt-16">
+      <div className=" text-[56px] tracking-wider font-Gamiliademo text-center max-md:my-12 max-md:text-[30px] max-md:w-[70%] mx-auto max-md:leading-9 mt-24">
         {bookdetails?.title}
       </div>
       <div className="relative  max-lg:hidden  p-16 max-sm:p-0 max-md:mt-8  max-sm:ml-4  justify-center items-center">
@@ -41,11 +41,11 @@ const AboutBook = ({ bookdetails }) => {
         </div>
       </div>
       <div className="relative lg:hidden  z-50 p-16 max-sm:p-0 max-md:mt-3  max-sm:ml-4  justify-center items-center">
-        <div className="float-left ">
+        <div className="float-left bottom-0  max-md:h-[220px]">
           <img
-            src="https://firebasestorage.googleapis.com/v0/b/bluesky-e016b.appspot.com/o/bannerImages%2Fimg5.jpg?alt=media&token=f9e6c185-98aa-4062-a6b4-448f0f2bf81f"
+            src={Bookcover}
             alt="person"
-            className=" pb-4 pr-6 z-10 max-sm:pr-2 max-sm:pb-1 max-xl:h-[550px] max-lg:h-[500px] max-md:h-[400px]  max-sm:h-[260px] h-[600px]  "
+            className=" pb-4 pr-6 z-10 max-md:pr-0 max-md:pb-8  max-xl:h-[550px] max-lg:h-[500px]    max-sm:h-[260px] h-[600px]  "
           />
         </div>
         <div className="text-black flex font-Authorfont transform translate-y-10 -translate-x-40 max-xl:-translate-x-30 max-lg:-translate-x-20  max-md:-translate-x-10 max-sm:-translate-x-0 text-center justify-center text-6xl max-xl:text-5xl max-lg:text-4xl max-md:text-3xl max-sm:text-2xl tracking-wide my-6 max-md:m-0 mt-0 max-md:ml-5  ">
