@@ -12,7 +12,7 @@ const AboutBook = ({ bookdetails }) => {
         <div className=" bg-slate-200   p-10 pl-16 ml-24  w-[50%]  ">
           <img
             // src="../../assets/images/BookCover.jpg"
-            src={bookdetails?.cover}
+            src="https://firebasestorage.googleapis.com/v0/b/bluesky-e016b.appspot.com/o/bannerImages%2Fimg5.jpg?alt=media&token=f9e6c185-98aa-4062-a6b4-448f0f2bf81f"
             alt="person"
             className="  max-sm:pr-2  max-sm:pb-1 max-xl:h-[550px] max-lg:h-[500px] max-md:h-[400px] w-[380px]  h-[510px]  "
           />
@@ -42,7 +42,7 @@ const AboutBook = ({ bookdetails }) => {
       <div className="relative lg:hidden  z-50 p-16 max-sm:p-0 max-md:mt-3  max-sm:ml-4  justify-center items-center">
         <div className="float-left ">
           <img
-            src={bookdetails?.cover}
+            src="https://firebasestorage.googleapis.com/v0/b/bluesky-e016b.appspot.com/o/bannerImages%2Fimg5.jpg?alt=media&token=f9e6c185-98aa-4062-a6b4-448f0f2bf81f"
             alt="person"
             className=" pb-4 pr-6 z-10 max-sm:pr-2 max-sm:pb-1 max-xl:h-[550px] max-lg:h-[500px] max-md:h-[400px]  max-sm:h-[260px] h-[600px]  "
           />
