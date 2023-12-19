@@ -14,7 +14,7 @@ const HomeHeroCards = ({ imageSrc, backgroundColor }) => {
                 Lorem Ipsum dolor
               </h3>
               <h3 class="font-black font-Authorfont tracking-wider mb-5 text-gray-800 md:text-xl text-xl">
-                -By A.M Gautam
+                -By A.M. Gautam
               </h3>
               <span
                 type="submit"

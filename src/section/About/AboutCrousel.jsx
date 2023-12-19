@@ -29,7 +29,7 @@ const AboutCrousel = () => {
   return (
     <section className="mx-auto flex px-24 max-lg:px-10 bg-gray-900 flex-col my-10 max-sm:mt-20 max-md:py-3  py-24 max-sm:px-0">
       <p className="font-CooperHevitt   max-md:my-2 font-semibold tracking-[5px]  text-[40px] pl-8 max-md:pl-0 text-gray-200 max-md:text-center  max-sm:text-[22px] ">
-        WORKS BY A.M GAUTAM
+        WORKS BY A.M. GAUTAM
       </p>
 
       <div className="flex max-md:flex-col max-md:gap-0 max-md:my-3  my-8  gap-10">
@@ -46,7 +46,7 @@ const AboutCrousel = () => {
               The Lorem Ipsum
             </p>
             <span className="italic max-sm:pl-2 text-[18px] 2xl:text-[22px] font-[50] font-Oswald tracking-wider text-slate-300">
-              -BY A.M GAUTAM
+              -BY A.M. GAUTAM
             </span>
           </div>
           <div className="font-montserrat max-md:mx-2 max-md:mt-3 h-auto 2xl:text-[18px] text-slate-400 text-justify max-md:text-center">

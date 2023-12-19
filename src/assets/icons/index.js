@@ -4,13 +4,13 @@ import Cart from "./shopping-cart.svg";
 import Download from "./download.svg";
 import heroright from "./heroright.svg";
 import heroleft from "./heroleft.svg";
-import mainBlogBlack from "./mainBlogBlack.png";
-import mainLogoWhite from "./mainLogoWhite.png";
+import AMGautmaBlack from "./A-M-Gautam-Black.png";
+import AMGautmaWhite from "./A-M-Gautam-White.png";
 export {
   ArrowRight,
   ArrowRightBlack,
-  mainBlogBlack,
-  mainLogoWhite,
+  AMGautmaBlack,
+  AMGautmaWhite,
   Cart,
   Download,
   heroleft,

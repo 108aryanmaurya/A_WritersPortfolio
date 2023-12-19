@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { navLinks } from "./constants";
 import SideNav from "./SideNav";
-import { mainBlogBlack, mainLogoWhite } from "../assets/icons";
+import { AMGautmaBlack, AMGautmaWhite } from "../assets/icons";
 import { AMG, AMGautam, AMGautam2, AMGautam3 } from "../assets/images";
 
 const Navbar = () => {
@@ -34,8 +34,8 @@ const Navbar = () => {
       {showNav && <SideNav NavStatus={NavStatus}></SideNav>}
       <section
         id="navbar"
-        className=" bg-white relative top-0 select-none z-[100] transition-all ease-in-out duration-300"
-
+        className={`bg-white  
+        } border-white relative top-0 select-none z-[100] transition-all ease-in-out duration-300`}
       >
         <nav
           className={` ${
@@ -44,25 +44,28 @@ const Navbar = () => {
             location.pathname.includes("/Article")
               ? " !text-white absolute flex-row justify-between px-10 max-md:px-0 "
               : " !text-black  relative flex-col justify-center "
-          } top-0 flex  max-md:flex-row max-md:justify-between py-2 pb-8 max-md:py-2 items-center w-full`}
+          } top-0 flex  max-md:flex-row max-md:justify-between py-2 pb-6 max-md:py-2 items-center w-full`}
         >
           <div
-            className={`transition-all duration-300 items-center my-3 max-md:m-0 mt-0 max-md:ml-5`}
+            className={`transition-all duration-300 items-center max-md:m-0 mt-0 max-md:ml-2a`}
           >
             {location.pathname.includes("/About") ||
             location.pathname.includes("/Book") ||
             location.pathname.includes("/Article") ? (
               <img
-                src={showNav ? mainBlogBlack : mainLogoWhite}
-                className="h-16 max-sm:h-14"
+                src={showNav ? AMGautmaBlack : AMGautmaWhite}
+                className="h-16 2xl:h-20 max-md:h-14 max-sm:h-12"
                 alt=""
               />
             ) : (
-              <img src={mainBlogBlack} className="h-16 max-sm:h-14" alt="" />
+              <img
+                src={AMGautmaBlack}
+                className="h-16 2xl:h-20 max-md:h-14 max-sm:h-12 "
+                alt=""
+              />
             )}
-
           </div>
-          <div className="flex items-center w-auto 2xl:mb-2">
+          <div className="flex items-center w-auto mt-2 max-sm:mt-0 2xl:mb-2">
             <ul className="flex-1 flex items-center gap-8 max-md:hidden">
               {navLinks.map((item) => (
                 <li

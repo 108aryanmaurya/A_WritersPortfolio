@@ -1,0 +1,9 @@
+.book-cover {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIRUd3Ozk63qNZMNtvrYiWMYUv1uAREyv1ERQh6OmwbdOOxE83f6SrYUSRW-TIUgVRhfg&usqp=CAU);
+  background-repeat: repeat;
+  background-position: right;
+  -webkit-background-clip: text;
+  text-shadow: -1px -1px 1px rgba(135, 0, 0, 0.267);
+  -webkit-text-fill-color: transparent;
+  -webkit-font-smoothing: antialiased;
+}

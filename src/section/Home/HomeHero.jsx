@@ -5,8 +5,7 @@ import HomeHeroCards from "./HomeHeroCards";
 export default function HomeHero() {
   const slidesContainerRef = useRef(null);
   const [slideWidth, setSlideWidth] = useState(0);
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const [direction, setDirection] = useState(1); // 1 for forward, -1 for backward
+  const [direction, setDirection] = useState(1);
 
   useEffect(() => {
     const updateSlideWidth = () => {
@@ -55,17 +54,17 @@ export default function HomeHero() {
     {
       imageSrc:
         "https://images.pexels.com/photos/6263568/pexels-photo-6263568.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      backgroundColor: "bg-white",
+      backgroundColor: "bg-red-100",
     },
     {
       imageSrc:
         "https://images.pexels.com/photos/3026364/pexels-photo-3026364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      backgroundColor: "bg-violet-400",
+      backgroundColor: "bg-violet-100",
     },
     {
       imageSrc:
         "https://images.pexels.com/photos/3026364/pexels-photo-3026364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      backgroundColor: "bg-green-400",
+      backgroundColor: "bg-green-100",
     },
   ];
 
@@ -78,7 +77,7 @@ export default function HomeHero() {
         <div className="relative">
           <div
             ref={slidesContainerRef}
-            className="slides-container z-[999] h-[350px] 2xl:h-[400px] max-sm:h-[300px] flex snap-x snap-mandatory overflow-hidden overflow-x-auto space-x-2 rounded max-md:rounded-none scroll-smooth no-scrollbar "
+            className="slides-container z-[999] h-[350px] 2xl:h-[400px] max-sm:h-[300px] flex snap-x snap-mandatory overflow-hidden overflow-x-auto space-x-4 max-sm:space-x-0 rounded max-md:rounded-none scroll-smooth no-scrollbar "
           >
             {slideData.map((slide, index) => (
               <HomeHeroCards key={index} {...slide} />
