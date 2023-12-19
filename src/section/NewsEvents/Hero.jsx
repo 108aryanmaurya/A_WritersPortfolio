@@ -1,28 +1,44 @@
 import React from "react";
-import { book } from "../../assets/images";
+import { TheGreatestIndianStoriesEverTold } from "../../assets/images";
 export default function Hero() {
   return (
     <>
       <div
         className={`relative bigger max-sm:min-h-[250px]  min-h-[500px] max-2xl:min-h-[380px]`}
       >
-        <div className="w-full h-full group text-center relative uppercase overflow-hidden">
-          <div
-            className="bg-white  transition-all ease-in-out duration-200 absolute top-0 z-[1] w-[80%] h-full  [clip-path:polygon(0%_0%,65%_0%,100%_100%,0%_100%)] bg-cover bg-no-repeat"
-            // style={{
-            //   backgroundImage: `url(https://www.shutterstock.com/image-photo/hand-holding-book-read-alone-600nw-2039738759.jpg)`,
-            // }}
-          >
+        <div className="w-full h-full group text-center relative overflow-hidden">
+          <div className="transition-all ease-in-out duration-200 absolute bg-pink-100 top-0  w-[50%] h-full ">
+            <span
+              type="submit"
+              class="m-2 max-sm:m-1 2xl:text-xl absolute top-0 left-0 text-white bg-[#B564F7] max-sm:text-[10px] max-sm:px-2 max-sm:py-1 px-3 py-2 justify-center flex items-center cursor-pointer hover:bg-[#bb80ec] font-semibold"
+            >
+              Buy now
+            </span>
+            <div className="w-full h-full flex justify-start items-center">
+              <img
+                src={TheGreatestIndianStoriesEverTold}
+                className="h-[400px] ml-10 2xl:h-[500px] max-xl:h-[300px] max-lg:h-[250px] max-md:h-[200px] max-sm:h-[170px] mr-10 max-md:mr-7 max-sm:mr-2"
+                alt=""
+              />
+            </div>
+          </div>
+          <div className="bg-white  transition-all ease-in-out duration-200 absolute top-0 right-0 z-[1] w-[80%] h-full flex justify-end [clip-path:polygon(100%_100%,30%_100%,0%_0%,100%_0%)] bg-cover bg-no-repeat">
             <div class="w-[70%] h-full flex justify-center items-center flex-col space-y-2 p-3">
-              <h3 class="font-black text-gray-800 md:text-3xl text-xl">
-                Lorem Ipsum dolor
+              <h3 class="font-black text-gray-800 text-6xl uppercase">
+                The Greatest Indian Stories Ever Told
               </h3>
-              <h3 class="font-black font-Authorfont tracking-wider text-gray-800 md:text-xl text-xl">
+              <h3 class="font-black font-Authorfont tracking-wider text-2xl text-gray-800">
                 -By A.M Gautam
               </h3>
               <p class="md:text-lg text-gray-800 text-base max-sm:text-[10px]">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Officiis.
+                The Greatest Indian Stories Ever Told is a selection of some of
+                the finest literary short fiction written by Indian writers
+                since the genre came into being in the country in the late
+                nineteenth century. Including early masters of the form,
+                contemporary stars, as well as brilliant writers who came of age
+                in the twenty-first century, this anthology takes in its sweep
+                stories from the various regions, languages, and literatures of
+                India.
               </p>
 
               <div className="flex ">
@@ -74,22 +90,6 @@ export default function Hero() {
               </div>
             </div>
           </div>
-          <div className="transition-all ease-in-out duration-200 absolute bg-gray-800 top-0 right-0 w-[55%] h-full ">
-            <span
-              type="submit"
-              class="m-2 max-sm:m-1 2xl:text-xl absolute top-0 right-0 text-white bg-[#B564F7] max-sm:text-[10px] max-sm:px-2 max-sm:py-1 px-3 py-2 justify-center flex items-center cursor-pointer hover:bg-[#bb80ec] font-semibold"
-            >
-              Buy now
-            </span>
-            <div className="w-full h-full flex justify-end items-center">
-              <img
-                src={book}
-                className="h-[350px] 2xl:h-[400px] max-xl:h-[300px] max-lg:h-[250px] max-md:h-[200px] max-sm:h-[170px] mr-10 max-md:mr-7 max-sm:mr-2"
-                alt=""
-              />
-            </div>
-          </div>
-          {/* <div className="w-full absolute h-full bg-[rgba(0,0,0,.4)] z-10 "></div> */}
         </div>
       </div>
     </>

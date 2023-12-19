@@ -54,17 +54,17 @@ export default function HomeHero() {
     {
       imageSrc:
         "https://images.pexels.com/photos/6263568/pexels-photo-6263568.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      backgroundColor: "bg-white",
+      backgroundColor: "bg-red-100",
     },
     {
       imageSrc:
         "https://images.pexels.com/photos/3026364/pexels-photo-3026364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      backgroundColor: "bg-violet-400",
+      backgroundColor: "bg-violet-100",
     },
     {
       imageSrc:
         "https://images.pexels.com/photos/3026364/pexels-photo-3026364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      backgroundColor: "bg-green-400",
+      backgroundColor: "bg-green-100",
     },
   ];
 

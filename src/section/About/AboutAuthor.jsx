@@ -30,7 +30,7 @@ export default function AboutAuthor() {
           RabindranathTagore, Krishna Sobti, and Ruskin Bond. He has twice been
           longlisted for the TFA Award in Creative Writing, and in 2020 he won
           the Short Story Prize from Defenestration, where he was then invited
-          to serve as a judge for future contests. A.M. Gautam’s debut essay
+          to serve as a judge for future contests. A.M. Gautam's debut essay
           collection is forthcoming from The Aleph Book Company.
         </div>
       </div>
