@@ -5,7 +5,7 @@ const AboutBook = ({ bookdetails }) => {
   console.log(bookdetails?.title);
   return (
     <>
-      <div className=" text-[50px] font-Gamiliademo text-center max-md:my-7 max-md:text-[25px] max-md:w-[70%] mx-auto max-md:leading-6 mt-12">
+      <div className=" text-[50px] font-Gamiliademo text-center max-md:my-7 max-md:text-[25px] max-md:w-[70%] mx-auto max-md:leading-6 mt-16">
         {bookdetails?.title}
       </div>
       <div className="relative  max-lg:hidden  p-16 max-sm:p-0 max-md:mt-8  max-sm:ml-4  justify-center items-center">

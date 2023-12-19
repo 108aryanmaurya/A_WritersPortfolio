@@ -2,11 +2,12 @@ import React from "react";
 import ArticleHero from "../section/Article/ArticleHero";
 import ArticleBody from "../section/Article/ArticleBody";
 
-const SingleArticlePage = () => {
+const SingleArticlePage = ({ articledata }) => {
+  console.log(articledata);
   return (
     <section>
       <ArticleHero></ArticleHero>
-      <ArticleBody></ArticleBody>
+      <ArticleBody articledata={articledata}></ArticleBody>
     </section>
   );
 };
