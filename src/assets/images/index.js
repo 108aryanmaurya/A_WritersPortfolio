@@ -30,7 +30,9 @@ import AMGautam3 from './AMGautam3.png'
 import AMG from './AMG.png'
 import Bookhero from './Bookhero.jpg'
 import reviewhero from './reviewhero.jpg'
+import BookCover from './BookCover.jpg'
 export {
+  BookCover,
   reviewhero,
   Bookhero,
   Download2,

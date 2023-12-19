@@ -10,7 +10,7 @@ const SingleBookLayout = () => {
   useEffect(() => {
     setcover(
       covers.filter((bookcover) => {
-        return book == bookcover.title;
+        return book === bookcover.title.replace(/\s+/g, "-");
       })
     );
     console.log(cover);

@@ -8,9 +8,9 @@ export default function About() {
           <div className="xl:w-[60%] lg:w-3/4 w-full mx-auto text-center">
             <div className="w-full flex flex-col justify-center items-center">
               <img
-                src="https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                src="https://lh3.googleusercontent.com/pw/ABLVV85D7meutv_6vpScXzib2drsyc0b5iuJzE7qAPhOkZLgAH_9xRt34reh_z5wwCDgQodWfKcO1VDgbqdHywHvr37guFsOMEz_BT5nfv-PK8WK4fN6BsAW_XX3_FVCptCPQdyxtzR3fBtVYPvSAUQnkRAEYw=w685-h913-s-no-gm?authuser=0"
                 alt=""
-                className="2xl:w-56 2xl:h-56  w-52 h-52 rounded-full"
+                className="2xl:w-56 2xl:h-56  object-cover object-top w-52 h-52 rounded-full"
               />
               <p className="leading-relaxed text-gray-500 text-2xl 2xl:text-3xl max-sm:xl max-lg:text-md text-lightTextMain dark:text-darkTextMain my-5 font-Authorfont">
                 A.M Gautam

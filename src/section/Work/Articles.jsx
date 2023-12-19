@@ -17,7 +17,7 @@ const Article = () => {
             key={2}
             className=" flex max-md:gap-0 flex-col gap-4"
             onClick={() => {
-              navigate(`/Article/${art.title.replace(" ", "-")}`);
+              navigate(`/Article/${art.title.replace(/\s+/g, "-")}`);
             }}
           >
             <div className="flex ">
