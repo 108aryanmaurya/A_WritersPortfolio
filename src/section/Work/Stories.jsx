@@ -30,7 +30,7 @@ const Stories = () => {
                 <div className="tracking-widest  text-yellow-400 uppercase font-Gamiliademo max-md:text-[18px]  text-[28px] text-center ">
                   {ind.title}
                 </div>
-                <div className="tracking-widest  text-yellow-400 uppercase font-Authorfont text-[20px] max-md:text-[14px] text-center ">
+                <div className="tracking-widest  text-yellow-500 uppercase font-Authorfont text-[20px]  font-light max-md:text-[14px] text-center ">
                   By A.M. Gautam
                 </div>
               </div>

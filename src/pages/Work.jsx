@@ -45,7 +45,7 @@ export default function Work() {
   return (
     <>
       <section className=" bg-slate-100   relative max-md:pt-0  py-2">
-        <div className="md:top-5  max-md:justify-evenly w-full  pr-2   max-md:bottom-0  max-md:border-t-[1px] sticky max-md:border-gray-300  max-md:fixed max-md:flex max  max-md:pr-1 gap-1 items-center max-md:text-[16px]  justify-end flex max-md:items-center    max-md:py-[3px] max-md:bg-black z-[60] ">
+        <div className="md:top-5  max-md:justify-evenly w-full  pr-2   max-md:bottom-0  max-md:border-t-[1px] sticky max-md:border-gray-300  max-md:fixed max-md:flex max  max-md:pr-1 gap-1 items-center max-md:text-[16px]  justify-end flex max-md:items-center    max-md:py-[10px] max-md:bg-black z-[60] ">
           <div
             className={` max-md:border-none  max-sm:p-1   max-md:m-1   w-auto 
           max-md:text-[17px]   max-w-[200px] flex justify-center items-center flex-row   ${
