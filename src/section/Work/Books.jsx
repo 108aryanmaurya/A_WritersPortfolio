@@ -30,7 +30,7 @@ const Books = () => {
               />
             </div>
 
-            <p className="font-Gamiliademo my-4 max-md:my-1 tracking-[2px] max-md:text-[19px] text-[38px] font-[300]  text-center  text-gray-900">
+            <p className="font-Gamiliademo my-4 max-md:my-1 tracking-[2px] max-md:text-[19px] text-[38px] font-[300]  text-center  text-gray-900 max-md:w-[70%]">
               {singleBook.title}
               {/* The Two Towers */}
             </p>
