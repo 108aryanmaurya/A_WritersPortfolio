@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { navLinks } from "./constants";
 import SideNav from "./SideNav";
-import { mainBlogBlack, mainLogoWhite } from "../assets/icons";
+import { AMGautmaBlack, AMGautmaWhite } from "../assets/icons";
 import { AMG, AMGautam, AMGautam2, AMGautam3 } from "../assets/images";
 
 const Navbar = () => {
@@ -34,12 +34,7 @@ const Navbar = () => {
       {showNav && <SideNav NavStatus={NavStatus}></SideNav>}
       <section
         id="navbar"
-        className={`bg-white  ${
-          location.pathname === "/About" ||
-          location.pathname.includes("/Book") ||
-          location.pathname.includes("/Article")
-            ? ""
-            : " border-b-[1px] "
+        className={`bg-white  
         } border-white relative top-0 select-none z-[100] transition-all ease-in-out duration-300`}
       >
         <nav
@@ -58,13 +53,13 @@ const Navbar = () => {
             location.pathname.includes("/Book") ||
             location.pathname.includes("/Article") ? (
               <img
-                src={showNav ? mainBlogBlack : mainLogoWhite}
+                src={showNav ? AMGautmaBlack : AMGautmaWhite}
                 className="h-16 2xl:h-20 max-md:h-14 max-sm:h-12"
                 alt=""
               />
             ) : (
               <img
-                src={mainBlogBlack}
+                src={AMGautmaBlack}
                 className="h-16 2xl:h-20 max-md:h-14 max-sm:h-12 "
                 alt=""
               />

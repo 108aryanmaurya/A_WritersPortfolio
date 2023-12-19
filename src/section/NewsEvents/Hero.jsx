@@ -1,5 +1,10 @@
 import React from "react";
-import { TheGreatestIndianStoriesEverTold } from "../../assets/images";
+import {
+  TheGreatestIndianStoriesEverTold,
+  heroBannerImage,
+} from "../../assets/images";
+import "./hero.css";
+import { ArrowRightBlack } from "../../assets/icons";
 export default function Hero() {
   return (
     <>
@@ -7,53 +12,59 @@ export default function Hero() {
         className={`relative bigger max-sm:min-h-[250px]  min-h-[500px] max-2xl:min-h-[380px]`}
       >
         <div className="w-full h-full group text-center relative overflow-hidden">
-          <div className="transition-all ease-in-out duration-200 absolute bg-pink-100 top-0  w-[50%] max-sm:w-[60%] h-full ">
-            <span
-              type="submit"
-              class="m-2 max-sm:m-1 2xl:text-xl absolute top-0 left-0 text-white bg-[#B564F7] max-sm:text-[10px] max-sm:px-2 max-sm:py-1 px-3 py-2 justify-center flex items-center cursor-pointer hover:bg-[#bb80ec] font-semibold uppercase"
-            >
-              Available
-            </span>
+          <div className="transition-all ease-in-out duration-200 absolute bg-pink-200 top-0  w-[50%] max-sm:w-[60%] h-full ">
             <div className="w-full h-full flex justify-start items-center">
               <img
                 src={TheGreatestIndianStoriesEverTold}
-                className="h-[400px] ml-10 max-md:ml-5 max-sm:ml-0 2xl:h-[500px] max-xl:h-[350px] max-lg:h-[300px] max-md:h-[250px] max-sm:h-[200px] mr-10 max-md:mr-7 max-sm:mr-2"
+                className="h-[400px] ml-10 max-md:ml-5 max-sm:ml-0 2xl:h-[500px] max-xl:h-[350px] max-lg:h-[300px] max-md:h-[250px] max-sm:h-[220px] mr-10 max-md:mr-7 max-sm:mr-2"
                 alt=""
               />
             </div>
           </div>
-          <div className="bg-white  transition-all ease-in-out duration-200 absolute top-0 right-0 z-[1] w-[80%] max-sm:w-[70%] h-full flex justify-end [clip-path:polygon(100%_100%,30%_100%,0%_0%,100%_0%)] bg-cover bg-no-repeat">
+          <div className="bg-pink-100  transition-all ease-in-out duration-200 absolute top-0 right-0 z-[1] w-[80%] max-sm:w-[70%] h-full flex justify-end [clip-path:polygon(100%_100%,30%_100%,0%_0%,100%_0%)] bg-cover bg-no-repeat">
+            <img
+              src={heroBannerImage}
+              className="-z-50 absolute w-full opacity-60"
+              alt=""
+            />
             <div class="w-[70%] h-full flex justify-center items-center flex-col space-y-2 p-3">
-              <h3 class="font-black text-gray-800 text-6xl max-xl:text-5xl max-lg:text-3xl max-md:text-xl max-sm:text-lg uppercase">
+              <h3 class="font-black text-gray-800 text-6xl 2xl:text-7xl max-xl:text-5xl max-lg:text-3xl max-md:text-xl max-sm:text-lg uppercase book-cover">
                 The Greatest Indian Stories Ever Told
               </h3>
               <h3 class="font-black font-Authorfont tracking-wider text-2xl max-sm:text-[15px] text-gray-800">
-                -By A.M Gautam
+                -By A.M. Gautam
               </h3>
-              <p class="md:text-lg text-right text-gray-800 text-base max-sm:text-[10px] max-xl:line-clamp-4 max-md:line-clamp-3">
-                The Greatest Indian Stories Ever Told is a selection of some of
-                the finest literary short fiction written by Indian writers
-                since the genre came into being in the country in the late
-                nineteenth century. Including early masters of the form,
-                contemporary stars, as well as brilliant writers who came of age
-                in the twenty-first century, this anthology takes in its sweep
-                stories from the various regions, languages, and literatures of
-                India.
-              </p>
+              <div>
+                <span class="md:text-lg inline text-right text-gray-800 text-base font-CooperHevitt max-sm:text-[10px] line-clamp-4 max-md:line-clamp-2 ">
+                  The Greatest Indian Stories Ever Told is a selection of some
+                  of the finest literary short fiction written by Indian writers
+                  since the genre came into being in the country in the late
+                  nineteenth century. Including early masters of the form,
+                  contemporary stars, as well as brilliant writers who came of
+                  age in the twenty-first century, this anthology takes in its
+                  sweep stories from the various regions, languages, and
+                  literatures of India.
+                </span>
+                <span className="font-CooperHevitt"></span>
+              </div>
 
-              <div className="flex ">
-                <span
-                  type="submit"
-                  class="m-2 max-sm:m-1  top-0 right-0 text-white bg-[#B564F7] max-sm:text-[10px] max-sm:px-2 max-sm:py-1 px-3 py-2 justify-center flex items-center cursor-pointer hover:bg-[#bb80ec] font-semibold"
-                >
-                  Read Sample Copy
-                </span>
-                <span
-                  type="submit"
-                  class="m-2 max-sm:m-1  top-0 right-0 text-white bg-[#B564F7] max-sm:text-[10px] max-sm:px-2 max-sm:py-1 px-3 py-2 justify-center flex items-center cursor-pointer hover:bg-[#bb80ec] font-semibold"
-                >
-                  Buy now
-                </span>
+              <div className="flex gap-5">
+                <div className="max-sm:p-1 max-md:mt-2  max-md:m-0   w-auto max-w-[200px] flex justify-center items-center flex-row text-black px-2 py-1 border-2 p2 gap-2 max-md:gap-1 max-sm:text-[14px]   border-black">
+                  <span>READ MORE</span>
+                  <img
+                    src={ArrowRightBlack}
+                    className="w-8 px-1 max-md:pl-0 max-md:w-5 max-md:px-0 pl-2"
+                    alt=""
+                  />
+                </div>
+                <div className="max-sm:p-1 max-sm:hidden max-md:mt-2  max-md:m-0 py-1  w-auto max-w-[200px] flex justify-center items-center flex-row text-black px-2  border-2 p2 gap-2 max-md:gap-1 max-sm:text-[14px]   border-black">
+                  <span>BUY NOW</span>
+                  <img
+                    src={ArrowRightBlack}
+                    className="w-8 px-1 max-md:pl-0 max-md:w-5 max-md:px-0 pl-2"
+                    alt=""
+                  />
+                </div>
               </div>
               <div class="hidden justify-between item-center absolute bottom-0 ">
                 <div class="flex items-center">

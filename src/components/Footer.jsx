@@ -64,7 +64,7 @@ export default function Footer() {
                 to="/"
                 className="font-Authorfont text-base 2xl:text-2xl hover:underline mr-1"
               >
-                A.M Gautam
+                A.M. Gautam
               </Link>
               © 2024{" "}
             </span>

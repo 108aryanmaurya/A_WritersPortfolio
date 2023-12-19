@@ -32,7 +32,9 @@ import Bookhero from "./Bookhero.jpg";
 import reviewhero from "./reviewhero.jpg";
 import BookCover from "./BookCover.jpg";
 import TheGreatestIndianStoriesEverTold from "./The-Greatest-Indian-Stories-Ever-Told.png";
+import heroBannerImage from "./heroBannerImage.png";
 export {
+  heroBannerImage,
   BookCover,
   reviewhero,
   Bookhero,
