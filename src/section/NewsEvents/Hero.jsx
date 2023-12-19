@@ -30,11 +30,8 @@ export default function Hero() {
             ></div>
 
             <div class="w-[75%] max-sm:w-[80%] h-full flex justify-center items-center flex-col space-y-2 p-3">
-              <h3 class="font-black text-gray-800 text-6xl 2xl:text-7xl max-xl:text-5xl max-lg:text-3xl max-md:text-xl max-sm:text-lg uppercase book-cover">
+              <h3 class="font-black text-gray-800 text-6xl 2xl:text-7xl max-xl:text-5xl max-lg:text-3xl max-md:text-xl max-sm:text-[20px] uppercase book-cover max-sm:font-extrabold">
                 The Greatest Indian Stories Ever Told
-              </h3>
-              <h3 class="font-black font-Authorfont tracking-wider text-2xl max-sm:text-[15px] text-gray-800">
-                -By A.M. Gautam
               </h3>
               <div>
                 <span class="md:text-lg inline text-right max-sm:text-center max-sm:leading-4 text-gray-800 text-base font-CooperHevitt max-sm:text-[10px] line-clamp-4 max-md:line-clamp-3 ">
@@ -47,19 +44,18 @@ export default function Hero() {
                   sweep stories from the various regions, languages, and
                   literatures of India.
                 </span>
-                <span className="font-CooperHevitt"></span>
               </div>
 
-              <div className="flex gap-5">
-                <div className="max-sm:p-1 max-md:mt-2  max-md:m-0   w-auto max-w-[200px] flex justify-center items-center flex-row text-black px-2 py-1 border-2 p2 gap-2 max-md:gap-1 max-sm:text-[14px]   border-black">
+              <div className="flex gap-5 pt-5 max-sm:pt-0">
+                <div className="max-sm:p-1 max-md:mt-2  max-md:m-0   w-auto max-w-[200px] flex justify-center items-center flex-row text-black px-2 py-1 border-2 p2 gap-2 max-md:gap-1 max-sm:text-[12px]   border-black">
                   <span>READ MORE</span>
                   <img
                     src={ArrowRightBlack}
-                    className="w-8 px-1 max-md:pl-0 max-md:w-5 max-md:px-0 pl-2"
+                    className="w-8 px-1 max-md:pl-0 max-md:w-5 max-sm:w-4 max-md:px-0 pl-2"
                     alt=""
                   />
                 </div>
-                <div className="max-sm:p-1 max-sm:hidden max-md:mt-2  max-md:m-0 py-1  w-auto max-w-[200px] flex justify-center items-center flex-row text-black px-2  border-2 p2 gap-2 max-md:gap-1 max-sm:text-[14px]   border-black">
+                <div className="max-sm:p-1 max-sm:hidden max-md:mt-2  max-md:m-0 py-1  w-auto max-w-[200px] flex justify-center items-center flex-row text-black px-2  border-2 p2 gap-2 max-md:gap-1 max-sm:text-[12px]   border-black">
                   <span>BUY NOW</span>
                   <img
                     src={ArrowRightBlack}
