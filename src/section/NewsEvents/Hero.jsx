@@ -7,7 +7,7 @@ export default function Hero() {
         className={`relative bigger max-sm:min-h-[250px]  min-h-[500px] max-2xl:min-h-[380px]`}
       >
         <div className="w-full h-full group text-center relative overflow-hidden">
-          <div className="transition-all ease-in-out duration-200 absolute bg-pink-100 top-0  w-[50%] h-full ">
+          <div className="transition-all ease-in-out duration-200 absolute bg-pink-100 top-0  w-[50%] max-sm:w-[60%] h-full ">
             <span
               type="submit"
               class="m-2 max-sm:m-1 2xl:text-xl absolute top-0 left-0 text-white bg-[#B564F7] max-sm:text-[10px] max-sm:px-2 max-sm:py-1 px-3 py-2 justify-center flex items-center cursor-pointer hover:bg-[#bb80ec] font-semibold uppercase"
@@ -22,7 +22,7 @@ export default function Hero() {
               />
             </div>
           </div>
-          <div className="bg-white  transition-all ease-in-out duration-200 absolute top-0 right-0 z-[1] w-[80%] h-full flex justify-end [clip-path:polygon(100%_100%,30%_100%,0%_0%,100%_0%)] bg-cover bg-no-repeat">
+          <div className="bg-white  transition-all ease-in-out duration-200 absolute top-0 right-0 z-[1] w-[80%] max-sm:w-[70%] h-full flex justify-end [clip-path:polygon(100%_100%,30%_100%,0%_0%,100%_0%)] bg-cover bg-no-repeat">
             <div class="w-[70%] h-full flex justify-center items-center flex-col space-y-2 p-3">
               <h3 class="font-black text-gray-800 text-6xl max-xl:text-5xl max-lg:text-3xl max-md:text-xl max-sm:text-lg uppercase">
                 The Greatest Indian Stories Ever Told
