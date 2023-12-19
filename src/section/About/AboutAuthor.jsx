@@ -13,10 +13,7 @@ export default function AboutAuthor() {
             className=" pb-4  pr-6 z-10 max-sm:pr-2 max-sm:pb-1 max-xl:h-[550px] max-lg:h-[500px] max-md:h-[235px]   h-[500px]  "
           />
         </div>
-        <div className="text-black flex font-Authorfont transform translate-y-10 -translate-x-40 max-xl:-translate-x-30 max-lg:-translate-x-20  max-md:-translate-x-10 max-sm:-translate-x-0 text-center justify-center text-6xl max-xl:text-5xl max-lg:text-4xl max-md:text-3xl max-sm:text-2xl tracking-wide my-6 max-md:m-0 mt-0 max-md:ml-5  ">
-          <span>A</span>.M.&nbsp;
-          <span>G</span>autam
-        </div>
+        <div className="text-black flex font-Authorfont transform translate-y-10  my-3 max-md:m-0 mt-0 max-md:ml-2  "></div>
 
         <div className="bg-slate-200 -z-50 max-lg:hidden h-28  w-28 right-1 rounded-full  absolute  "></div>
         <div className="bg-slate-200 -z-50  h-72 top-72 w-72 max-lg:hidden  rounded-full  absolute  right-32 "></div>
