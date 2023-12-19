@@ -34,8 +34,7 @@ const Navbar = () => {
       {showNav && <SideNav NavStatus={NavStatus}></SideNav>}
       <section
         id="navbar"
-        className=" bg-white relative top-0 select-none z-[100] transition-all ease-in-out duration-300"
-
+        className=" bg-white border-b-[1px] border-gray-100 relative top-0 select-none z-[100] transition-all ease-in-out duration-300"
       >
         <nav
           className={` ${
@@ -60,7 +59,6 @@ const Navbar = () => {
             ) : (
               <img src={mainBlogBlack} className="h-16 max-sm:h-14" alt="" />
             )}
-
           </div>
           <div className="flex items-center w-auto 2xl:mb-2">
             <ul className="flex-1 flex items-center gap-8 max-md:hidden">
