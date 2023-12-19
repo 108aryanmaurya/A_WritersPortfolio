@@ -60,7 +60,7 @@ export const crausoel = [
 ];
 export const covers = [
   {
-    cover: BookCover,
+    cover: "https://firebasestorage.googleapis.com/v0/b/bluesky-e016b.appspot.com/o/bannerImages%2Fimg5.jpg?alt=media&token=f9e6c185-98aa-4062-a6b4-448f0f2bf81f",
     title: "The Greatest Indian Stories Ever Told",
     description:
       "he Greatest Indian Stories Ever Told is a selection of some of the finest literary short fiction written by Indian writers since the genre came into being in the country in the late nineteenth century. Including early masters of the form, contemporary stars, as well as brilliant writers who came of age in the twenty-first century, this anthology takes in its sweep stories from the various regions, languages, and literatures of India. These authors are some of the most feted in the annals of Indian literature and have, between them, won virtually every major literary prize on offer—including the Nobel Prize for Literature, the Jnanpith Award, the Sahitya Akademi Award, and numerous state, national, and international honours.",
