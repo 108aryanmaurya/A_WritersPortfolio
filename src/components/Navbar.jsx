@@ -52,7 +52,7 @@ const Navbar = () => {
           } top-0 flex  max-md:flex-row max-md:justify-between py-2 pb-6 max-md:py-2 items-center w-full`}
         >
           <div
-            className={`transition-all duration-300 items-center max-md:m-0 mt-0 max-md:ml-5`}
+            className={`transition-all duration-300 items-center max-md:m-0 mt-0 max-md:ml-2`}
           >
             {location.pathname.includes("/About") ||
             location.pathname.includes("/Book") ||

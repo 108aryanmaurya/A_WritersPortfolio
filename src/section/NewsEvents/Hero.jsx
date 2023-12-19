@@ -30,7 +30,7 @@ export default function Hero() {
               <h3 class="font-black font-Authorfont tracking-wider text-2xl text-gray-800">
                 -By A.M Gautam
               </h3>
-              <p class="md:text-lg text-gray-800 text-base max-sm:text-[10px]">
+              <p class="md:text-lg text-right text-gray-800 text-base max-sm:text-[10px]">
                 The Greatest Indian Stories Ever Told is a selection of some of
                 the finest literary short fiction written by Indian writers
                 since the genre came into being in the country in the late
