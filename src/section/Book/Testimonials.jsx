@@ -13,10 +13,10 @@ const Testimonials = () => {
         />
       </div>
 
-      <div className="absolute text-center top-36 max-md:top-12  text-[36px]  font-[100] font-Gamiliademo tracking-[6px] max-md:tracking-[4px] max-md:text-[24px] uppercase">
+      <div className="absolute text-center top-36 max-md:top-12  text-[36px]  font-[100] font-Gamiliademo tracking-[6px] max-md:tracking-[4px] max-md:text-[24px] uppercase border-b-2 border-slate-300">
         testimonials
       </div>
-      <div className="flex flex-col top-56 max-md:top-24 text-slate-300 absolute max-md:gap-5 gap-10 text-justify px-6 max-md:mt-3 mt-8 w-[60%] mx-auto max-md:w-[90%]  leading-4 font-montserrat justify-center ">
+      <div className="flex flex-col top-56 max-md:top-24 text-[20px] text-slate-300 absolute max-md:gap-5 gap-10 text-justify px-6 max-md:mt-3 mt-8 w-[60%] mx-auto max-md:w-[90%]  leading-6 font-montserrat justify-center ">
         {ReaderReview.map((review) => {
           return (
             <div key={1} className="">

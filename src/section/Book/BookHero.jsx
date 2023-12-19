@@ -5,8 +5,7 @@ const BookHero = ({ bookdetails }) => {
   return (
     <div className="h-64   relative flex  bg-black justify-center max-sm:h-52 items-end ">
       <img
-        src="https://images.unsplash.com/photo-1647205552933-12e3dfdb77b5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG1pY2hlbGFuZ2VsbydzJTIwZGF2aWR8ZW58MHx8MHx8fDA%3D"
-        // src={Bookhero}
+        src={Bookhero}
         alt="AboutTopImg"
         className="object-cover max-md:object-bottom w-full h-full opacity-30 "
       />
