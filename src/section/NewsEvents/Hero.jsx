@@ -10,27 +10,27 @@ export default function Hero() {
           <div className="transition-all ease-in-out duration-200 absolute bg-pink-100 top-0  w-[50%] h-full ">
             <span
               type="submit"
-              class="m-2 max-sm:m-1 2xl:text-xl absolute top-0 left-0 text-white bg-[#B564F7] max-sm:text-[10px] max-sm:px-2 max-sm:py-1 px-3 py-2 justify-center flex items-center cursor-pointer hover:bg-[#bb80ec] font-semibold"
+              class="m-2 max-sm:m-1 2xl:text-xl absolute top-0 left-0 text-white bg-[#B564F7] max-sm:text-[10px] max-sm:px-2 max-sm:py-1 px-3 py-2 justify-center flex items-center cursor-pointer hover:bg-[#bb80ec] font-semibold uppercase"
             >
-              Buy now
+              Available
             </span>
             <div className="w-full h-full flex justify-start items-center">
               <img
                 src={TheGreatestIndianStoriesEverTold}
-                className="h-[400px] ml-10 2xl:h-[500px] max-xl:h-[300px] max-lg:h-[250px] max-md:h-[200px] max-sm:h-[170px] mr-10 max-md:mr-7 max-sm:mr-2"
+                className="h-[400px] ml-10 max-md:ml-5 max-sm:ml-0 2xl:h-[500px] max-xl:h-[350px] max-lg:h-[300px] max-md:h-[250px] max-sm:h-[200px] mr-10 max-md:mr-7 max-sm:mr-2"
                 alt=""
               />
             </div>
           </div>
           <div className="bg-white  transition-all ease-in-out duration-200 absolute top-0 right-0 z-[1] w-[80%] h-full flex justify-end [clip-path:polygon(100%_100%,30%_100%,0%_0%,100%_0%)] bg-cover bg-no-repeat">
             <div class="w-[70%] h-full flex justify-center items-center flex-col space-y-2 p-3">
-              <h3 class="font-black text-gray-800 text-6xl uppercase">
+              <h3 class="font-black text-gray-800 text-6xl max-xl:text-5xl max-lg:text-3xl max-md:text-xl max-sm:text-base uppercase">
                 The Greatest Indian Stories Ever Told
               </h3>
-              <h3 class="font-black font-Authorfont tracking-wider text-2xl text-gray-800">
+              <h3 class="font-black font-Authorfont tracking-wider text-2xl max-sm:text-[15px] text-gray-800">
                 -By A.M Gautam
               </h3>
-              <p class="md:text-lg text-right text-gray-800 text-base max-sm:text-[10px]">
+              <p class="md:text-lg text-right text-gray-800 text-base max-sm:text-[10px] max-xl:line-clamp-4 max-md:line-clamp-3">
                 The Greatest Indian Stories Ever Told is a selection of some of
                 the finest literary short fiction written by Indian writers
                 since the genre came into being in the country in the late
