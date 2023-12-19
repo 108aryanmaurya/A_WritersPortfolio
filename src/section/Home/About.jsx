@@ -8,7 +8,7 @@ export default function About() {
           <div className="xl:w-[60%] lg:w-3/4 w-full mx-auto text-center">
             <div className="w-full flex flex-col justify-center items-center">
               <img
-                src="https://lh3.googleusercontent.com/pw/ABLVV86cyImtS_xEm7ZZQLZZi9tR_XSUe8UD94ZxAMZdpGTee1W6Gf7lvFETSo-ZzO8qYLniqY7n4Sssk6qgY6COjYeE6Bgf3pJ16keNeM_mMW4FQFrfT3isKULBdQvjL-ecauKmhPjGFzdllwoW5Q1mS1jWYg=w685-h913-s-no-gm?authuser=0"
+                src="https://lh3.googleusercontent.com/pw/ABLVV85D7meutv_6vpScXzib2drsyc0b5iuJzE7qAPhOkZLgAH_9xRt34reh_z5wwCDgQodWfKcO1VDgbqdHywHvr37guFsOMEz_BT5nfv-PK8WK4fN6BsAW_XX3_FVCptCPQdyxtzR3fBtVYPvSAUQnkRAEYw=w685-h913-s-no-gm?authuser=0"
                 alt=""
                 className="2xl:w-56 2xl:h-56  object-cover object-top w-52 h-52 rounded-full"
               />

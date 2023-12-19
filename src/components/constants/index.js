@@ -1,17 +1,5 @@
-import {
-  BookCover,
-  book1,
-  book2,
-  book3,
-  book4,
-  book5,
-  story1,
-  story2,
-  story3,
-  story4,
-  story5,
-  story6,
-} from "../../assets/images";
+
+import { Bookcover, book1, book2, book3, book4, book5, story1, story2, story3, story4, story5, story6, } from "../../assets/images";
 import { cover1, cover3, cover4, cover5 } from "../../assets/images";
 
 export const navLinks = [
@@ -24,22 +12,34 @@ export const navLinks = [
 
 export const storyCover = [
   {
-    cover: story1,
+
+    title: "Upside Down",
+    cover: "https://images.unsplash.com/photo-1528459105426-b9548367069b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHRleHR1cmUlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww"
   },
   {
-    cover: story2,
+    title: "The Alligator of Aligarh",
+
+    cover: "https://images.unsplash.com/photo-1571829604981-ea159f94e5ad?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
-    cover: story3,
+    title: "A Man in a Little Town",
+
+    cover: "https://images.unsplash.com/photo-1585314062340-f1a5a7c9328d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dGV4dHVyZSUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D"
   },
   {
-    cover: story4,
+    title: "Fifty-Nine Times but One",
+
+    cover: "https://plus.unsplash.com/premium_photo-1675805899734-bda8b6d54439?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDV8fHRleHR1cmUlMjB3YWxsJTIwY29sb3J8ZW58MHx8MHx8fDA%3D"
   },
   {
-    cover: story5,
+    title: "Into the Night",
+
+    cover: "https://plus.unsplash.com/premium_photo-1675805923307-780f7e5bd7d6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTd8fHRleHR1cmUlMjBib29rfGVufDB8fDB8fHww"
   },
   {
-    cover: story6,
+    title: "The Shadow Teacher",
+
+    cover: "https://images.unsplash.com/photo-1528459061998-56fd57ad86e3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE3fHx8ZW58MHx8fHx8"
   },
 ];
 
