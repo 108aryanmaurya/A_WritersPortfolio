@@ -16,18 +16,20 @@ export default function Hero() {
             <div className="w-full h-full flex justify-start items-center">
               <img
                 src={TheGreatestIndianStoriesEverTold}
-                className="h-[400px] ml-10 max-md:ml-5 max-sm:ml-0 2xl:h-[500px] max-xl:h-[350px] max-lg:h-[300px] max-md:h-[250px] max-sm:h-[220px] mr-10 max-md:mr-7 max-sm:mr-2"
+                className="h-[400px] ml-10 max-md:ml-5 max-sm:ml-0 2xl:h-[500px] max-xl:h-[350px] max-lg:h-[300px] max-md:h-[250px] max-sm:h-[230px] mr-10 max-md:mr-7 max-sm:mr-2"
                 alt=""
               />
             </div>
           </div>
-          <div className="bg-pink-100  transition-all ease-in-out duration-200 absolute top-0 right-0 z-[1] w-[80%] max-sm:w-[70%] h-full flex justify-end [clip-path:polygon(100%_100%,30%_100%,0%_0%,100%_0%)] bg-cover bg-no-repeat">
-            <img
-              src={heroBannerImage}
-              className="-z-50 absolute w-full opacity-60"
-              alt=""
-            />
-            <div class="w-[70%] h-full flex justify-center items-center flex-col space-y-2 p-3">
+          <div className="bg-pink-100  transition-all ease-in-out duration-200 absolute top-0 right-0 z-[1] w-[80%] max-sm:w-[75%] h-full flex justify-end [clip-path:polygon(100%_100%,30%_100%,0%_0%,100%_0%)] ">
+            <div
+              className="absolute -z-50 h-full w-full flex justify-end bg-cover bg-no-repeat opacity-60"
+              style={{
+                backgroundImage: `url(${heroBannerImage})`,
+              }}
+            ></div>
+
+            <div class="w-[75%] max-sm:w-[80%] h-full flex justify-center items-center flex-col space-y-2 p-3">
               <h3 class="font-black text-gray-800 text-6xl 2xl:text-7xl max-xl:text-5xl max-lg:text-3xl max-md:text-xl max-sm:text-lg uppercase book-cover">
                 The Greatest Indian Stories Ever Told
               </h3>
@@ -35,7 +37,7 @@ export default function Hero() {
                 -By A.M. Gautam
               </h3>
               <div>
-                <span class="md:text-lg inline text-right text-gray-800 text-base font-CooperHevitt max-sm:text-[10px] line-clamp-4 max-md:line-clamp-2 ">
+                <span class="md:text-lg inline text-right max-sm:text-center max-sm:leading-4 text-gray-800 text-base font-CooperHevitt max-sm:text-[10px] line-clamp-4 max-md:line-clamp-3 ">
                   The Greatest Indian Stories Ever Told is a selection of some
                   of the finest literary short fiction written by Indian writers
                   since the genre came into being in the country in the late
