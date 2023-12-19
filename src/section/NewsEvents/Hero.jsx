@@ -24,7 +24,7 @@ export default function Hero() {
           </div>
           <div className="bg-white  transition-all ease-in-out duration-200 absolute top-0 right-0 z-[1] w-[80%] h-full flex justify-end [clip-path:polygon(100%_100%,30%_100%,0%_0%,100%_0%)] bg-cover bg-no-repeat">
             <div class="w-[70%] h-full flex justify-center items-center flex-col space-y-2 p-3">
-              <h3 class="font-black text-gray-800 text-6xl max-xl:text-5xl max-lg:text-3xl max-md:text-xl max-sm:text-base uppercase">
+              <h3 class="font-black text-gray-800 text-6xl max-xl:text-5xl max-lg:text-3xl max-md:text-xl max-sm:text-lg uppercase">
                 The Greatest Indian Stories Ever Told
               </h3>
               <h3 class="font-black font-Authorfont tracking-wider text-2xl max-sm:text-[15px] text-gray-800">
