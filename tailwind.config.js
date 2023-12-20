@@ -12,6 +12,8 @@ export default {
         CooperHevitt: ["CooperHewitt-Light", "sans-serif"],
         Gamiliademo: ["GamiliademoRegular-mL9Ev", "sans-serif"],
         VulturaRegular: ["Vultura-Regular", "sans-serif"],
+        Mont: ["Mont-ExtraLightDEMO", "sans-serif"],
+        Slabo: ["Slabo27px-Regular", "sans-serif"],
       },
     },
   },

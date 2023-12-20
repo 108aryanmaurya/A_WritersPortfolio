@@ -15,8 +15,14 @@ const Synopsis1 = ({ bookdetails }) => {
         <div className=" z-30  text-[35px]  font-bold  max-md:text-[23px] absolute  left-40 max-md:top-8  font-[100] font-CooperHevitt     border-b-[3px] tracking-widest  text-white border-white ">
           SYNOPSIS
         </div>
-        <div className="z-20 mr-72 text-black  max-md:top-[84px] max-md:bg-slate-300 max-md:mr-0 bg-white text-[18px]   w-[40%]   max-md:text-[15px] max-md:leading-[19px] font-montserrat    max-md:ml-0  max-sm:mt-0  max-md:my-0  my-20 max-md:w-full max-md:p-4  p-10  text-justify  ">
-          T{bookdetails?.description}
+        <div className="z-20 mr-72 text-black  max-md:top-[84px] max-md:bg-white max-md:mr-0 bg-white text-[18px]   w-[40%]   max-md:text-[19px] max-md:leading-[24px] font-Slab max-md:py-6     max-md:ml-0  max-sm:mt-0  max-md:my-0  my-20 max-md:w-full max-md:p-4  p-10  text-justify  ">
+          <span className="text-[30px] font-[500] font-VulturaRegular">
+            {bookdetails?.description?.charAt(0)}
+          </span>
+          {bookdetails?.description?.substring(
+            1,
+            bookdetails?.description.length
+          )}
         </div>
       </div>
       <div className="w-[500px] max-md:hidden   bg-gray-300  absolute h-full right-0 top-0"></div>

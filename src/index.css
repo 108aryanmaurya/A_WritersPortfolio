@@ -13,6 +13,16 @@
   src: local("Minerva-Modern-Regular"),
     url(./fonts/Minerva-Modern-Regular.otf) format("opentype");
 }
+@font-face {
+  font-family: "Slabo27px-Regular";
+  src: local("Slabo27px-Regular"),
+    url(./fonts/Slabo27px-Regular.otf) format("opentype");
+}
+@font-face {
+  font-family: "Mont-ExtraLightDEMO";
+  src: local("Mont-ExtraLightDEMO"),
+    url(./fonts/Mont-ExtraLightDEMO.otf) format("opentype");
+}
 
 @font-face {
   font-family: "GamiliademoRegular-mL9Ev";
