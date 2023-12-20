@@ -55,7 +55,7 @@ const ArticleBody = ({ articledata }) => {
     <div className="relative max-md:w-full w-[90%] mx-auto p-16 max-sm:p-0 max-md:mt-8   justify-center items-center">
       <div
         className="
-font-Gamiliademo  w-[90%] max-md:w-[90%] mx-auto  text-[45px] max-md:text-[24px] max-md:leading-9 "
+font-Gamiliademo  w-[90%] max-md:w-[90%] mx-auto  text-[45px] max-md:text-[24px] max-md:leading-7 "
       >
         {articledata?.title}
       </div>
