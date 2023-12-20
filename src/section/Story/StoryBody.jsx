@@ -7,13 +7,7 @@ const StoryBody = ({ storydata }) => {
   console.log(storydata);
   return (
     <div className="relative max-md:w-full w-[90%] mx-auto p-16 max-sm:p-0 max-md:mt-8   justify-center items-center">
-      <div
-        className="
-font-Gamiliademo  w-[90%] max-md:w-[90%] mx-auto text-center  text-[45px] max-md:text-[24px] max-md:leading-7 "
-      >
-        {storydata?.title}
-      </div>
-      <div className="flex gap-28  my-6 max-md:flex-col justify-center  max-md:gap-0 max-md:my-3 w-[90%] mx-auto  ">
+      <div className="flex gap-28  my-6   justify-center  max-md:gap-5 max-md:my-3 w-[90%] mx-auto  ">
         <a href={storydata?.link} target="_blank" rel="noopener noreferrer">
           <div className="font-semibold flex justify-center items-center ">
             {" "}
@@ -34,12 +28,19 @@ font-Gamiliademo  w-[90%] max-md:w-[90%] mx-auto text-center  text-[45px] max-md
           </span>
         </div>
       </div>
+      <div
+        className="
+font-Gamiliademo  w-[90%] max-md:w-[90%] mx-auto text-center   text-[45px] max-md:text-[24px] max-md:leading-7 "
+      >
+        {storydata?.title}
+      </div>
+
       <div className="mt-10 max-md:mt-6 flex flex-col justify-center items-center   ">
         <div className=" ">
           <img
             src={article2}
             alt="person"
-            className=" pb-1 pr-6  z-10 max-md:pr-2 max-md:pb-[1px]    max-md:w-[200px] w-[70%] mx-auto "
+            className=" pb-1 pr-6  z-10 max-md:pr-2 max-md:pb-[1px]    max-md:w-[80%] w-[70%] mx-auto "
           />
         </div>
 
