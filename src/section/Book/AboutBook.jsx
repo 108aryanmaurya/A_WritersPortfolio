@@ -5,7 +5,7 @@ const AboutBook = ({ bookdetails }) => {
   console.log(bookdetails?.title);
   return (
     <>
-      <div className=" text-[56px] tracking-wider font-Gamiliademo text-center max-md:my-12 max-md:text-[30px] max-md:w-[70%] mx-auto max-md:leading-9 mt-24">
+      <div className=" text-[56px] tracking-wider font-Gamiliademo text-center max-md:my-9 max-md:text-[30px] max-md:w-[70%] mx-auto max-md:leading-9 mt-24">
         {bookdetails?.title}
       </div>
       <div className="relative  max-lg:hidden  p-16 max-sm:p-0 max-md:mt-8  max-sm:ml-4  justify-center items-center">
@@ -40,7 +40,7 @@ const AboutBook = ({ bookdetails }) => {
           asperiores."
         </div>
       </div>
-      <div className="relative lg:hidden  z-50 p-16 max-sm:p-0 max-md:mt-3  max-sm:ml-4  justify-center items-center">
+      <div className="relative lg:hidden  z-50 p-16 max-sm:p-0 max-md:mt-0  max-sm:ml-4  justify-center items-center">
         <div className="float-left bottom-0  max-md:h-[220px]">
           <img
             src={Bookcover}

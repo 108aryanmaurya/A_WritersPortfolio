@@ -15,7 +15,7 @@ const SingleBookPage = ({ bookdetails }) => {
     <section className="">
       <BookHero></BookHero>
       <AboutBook bookdetails={bookdetails}></AboutBook>
-      <BookSynopsis bookdetails={bookdetails}></BookSynopsis>
+      {/* <BookSynopsis bookdetails={bookdetails}></BookSynopsis> */}
       <Synopsis bookdetails={bookdetails}></Synopsis>
       <Testimonials bookdetails={bookdetails}></Testimonials>
       <BookDownload bookdetails={bookdetails}></BookDownload>
