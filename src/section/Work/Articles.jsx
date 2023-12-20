@@ -2,6 +2,7 @@ import React from "react";
 import { ArrowRightBlack } from "../../assets/icons";
 import { articles } from "../../components/constants";
 import { useNavigate } from "react-router";
+import DOMPurify from "dompurify";
 
 const Article = () => {
   const navigate = useNavigate();
@@ -28,11 +29,16 @@ const Article = () => {
                 ⟶
               </span>{" "}
             </div>
-            <div className="max-md:leading-4 w-[85%] max-md:truncate text-[23px] max-md:text-[18px] text-gray-600 ">
-              {art.description.length > 230
-                ? art.description.substring(0, 230) + " . . ."
-                : art.description}
-            </div>
+            <div
+              className="max-md:leading-4 leading-5 w-[85%] max-md:truncate text-[21px] max-md:text-[18px] text-gray-600 "
+              dangerouslySetInnerHTML={{
+                __html: DOMPurify.sanitize(
+                  art.description.length > 230
+                    ? art.description.substring(0, 230) + " . . ."
+                    : art.description
+                ),
+              }}
+            ></div>
           </div>
         ))}
       </div>
