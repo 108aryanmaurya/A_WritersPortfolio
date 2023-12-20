@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         Oswald: ["Oswald", "sans-serif"],
+        TimesNewRoman: ["Gupter", "sans-serif"],
         palanquin: ["Palanquin", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"],
         Authorfont: ["Minerva-Modern-Regular", "sans-serif"],

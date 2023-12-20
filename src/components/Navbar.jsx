@@ -41,6 +41,7 @@ const Navbar = () => {
           className={` ${
             location.pathname === "/About" ||
             location.pathname.includes("/Book") ||
+            location.pathname.includes("/Story") ||
             location.pathname.includes("/Article")
               ? " !text-white absolute flex-row justify-between px-10 max-md:px-0 "
               : " !text-black  relative flex-col justify-center "
@@ -51,6 +52,7 @@ const Navbar = () => {
           >
             {location.pathname.includes("/About") ||
             location.pathname.includes("/Book") ||
+            location.pathname.includes("/Story") ||
             location.pathname.includes("/Article") ? (
               <img
                 src={showNav ? AMGautmaBlack : AMGautmaWhite}
