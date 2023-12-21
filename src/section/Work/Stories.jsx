@@ -28,7 +28,7 @@ const Stories = () => {
                 navigate(`/Story/${ind.title.replace(/\s+/g, "-")}`);
               }}
             >
-              <div className="z-50  shadow-black bg-black max-md:shadow-xl max-md:shadow-gray-600  shadow-sm">
+              <div className="z-50  shadow-black bg-black max-md:shadow-xl max-md:shadow-gray-600  shadow-md">
                 <img
                   src={ind.cover}
                   alt=""

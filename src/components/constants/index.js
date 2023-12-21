@@ -1,5 +1,5 @@
 
-import { Bookcover, book1, book2, book3, book4, book5, story1, story2, story3, story4, story5, story6, } from "../../assets/images";
+import { Articlehero, Bookcover, book1, book2, book3, book4, book5, story1, story2, story3, story4, story5, story6, } from "../../assets/images";
 import { cover1, cover3, cover4, cover5 } from "../../assets/images";
 
 export const navLinks = [
@@ -136,13 +136,6 @@ export const articles = [
   },
 ];
 
-export const singleArticle = [
-  {
-    title: "Impedit accusantium voluptates corporis itaque beatae",
-    description:
-      "Impedit accusantium voluptates corporis itaque beatae, repellendus enim harum laboriosam excepturi quaerat non est! Voluptates, vero consequatur exercitationem tempora recusandae dolore sapiente dicta dignissimos alias corrupti placeat optio, quisquam pariatur!Nostrum labore molestiae laboriosam, tenetur, expedita culpa, Quia cum culpa rem doloremque sed officiis laborum omnis, sapiente ratione iste voluptatum laboriosam est, at dolor accusamus eaque corrupti ducimus! Unde hic facere amet ea vero libero totam atque!Laudantium et quae aliquam similique animi explicabo quam recusandae assumenda, sed nostrum, officiis delectus, error itaque possimus. Beatae sequi ipsam quibusdam, quo aliquam dolorem illo sint suscipit, rem asperiores perspiciatis.Praesentium, ex eveniet nam quis obcaecati animi hic nobis repudiandae vero, mollitia id veritatis doloribus rem. Minima voluptatem illum reiciendis consequatur eligendi aliquam alias molestias voluptatibus, quod cumque officiis rerum!dolore recusandae at voluptatibus nihil nisi ullam dolorem esse! Qui tempora quae optio dolorem animi eaque nostrum, modi commodi facere! Nemo, ipsam alias!Incidunt amet laudantium aperiam, provident maxime necessitatibus perferendis dicta neque asperiores cum sit fuga omnis eos architecto rem similique possimus qui? Quaerat commodi quae beatae sequi rem minus, recusandae maxime?Quia cum culpa rem doloremque sed officiis laborum omnis, sapiente ratione iste voluptatum laboriosam est, at dolor accusamus eaque corrupti ducimus! Unde hic facere amet ea vero libero totam atque!Laudantium et quae aliquam similique animi explicabo quam recusandae assumenda, sed nostrum, officiis delectus, error itaque possimus. Beatae sequi ipsam quibusdam, quo aliquam dolorem illo sint suscipit, rem asperiores perspiciatis.Praesentium, ex eveniet nam quis obcaecati animi hic nobis repudiandae vero, mollitia id veritatis doloribus rem. Minima voluptatem illum reiciendis consequatur eligendi aliquam alias molestias voluptatibus, quod cumque officiis rerum Impedit accusantium voluptates corporis itaque beatae, repellendus enim harum laboriosam excepturi quaerat non est! Voluptates, vero consequatur exercitationem tempora recusandae dolore sapiente dicta dignissimos alias corrupti placeat oti animi hic nobis repudiandae vero, mollitia id veritatis doloribus rem. Minima voluptatem illum reiciendis consequatur eligendi aliquam alias molestias voluptatibus, quod cumque officiis rerum!dolore recusandae at voluptatibus nihil nisi ullam dolorem esse! Qui tempora quae optio dolorem animi eaque nostrum, modi commodi facere! Nemo, ipsam alias!Incidunt amet laudantium aperiam, provident maxime necessitatibus perferendis dicta neque asperiores cum sit fuga omnis eos architecto rem similique possimus qui? Quaerat commodi quae beatae sequi rem minus, recusandae maxime?Quia cum culpa rem doloremque sed officiis laborum omnis, sapiente ratione iste voluptatum laboriosam est, at dolor accusamus eaque corrupti ducimus! Unde hic facere amet ea vero libero totam atque!Laudantium et quae aliquam stus, error itaque possimus. Beatae sequi ipsam quibusdam, quo aliquam dolorem illo sint suscipit, rem asperiores perspiciatis.Praesentium, ex eveniet nam quis obcaecati animi hic nobis repudiandae vero, mollitia id veritatis doloribus rem. Minima voluptatem illum reiciendis consequatur eligendi aliquam alias molestias voluptatibus, quod cumque officiis rerum Impedit accusantium voluptates corporis itaque beatae, repellendus enim harum laboriosam excepturi quaerat non est! Voluptates, vero consequatur exercitationem tempora recusandae dolore sapiente dicta dignissimos alias corrupti placeat optio, quisquam pariatur!Nostrum labore molestiae laboriosam, tenetur, expedita culpa, Quia cum culpa rem doloremque sed officiis laborum omnis, sapiente ratione iste voluptatum laboriosam est, at dolor accusamus eaque corrupti ducimus! Unde hic facere amet ea vero libero totam atque!Laudantium et quae aliquam similique animi explicabo quam recusandae assumenda, sed nostrum, officiis delectus, error itaque possimus. Beatae sequi ipsam quibusdam, quo aliquam dolorem illo sint suscipit, rem asperiores perspiciatis.Praesentium, ex eveniet nam quis obcaecati animi hic nobis repudiandae vero, mollitia id veritatis doloribus rem. Minima voluptatem illum reiciendis consequatur eligendi aliquam alias molestias voluptatibus, quod cumque officiis rerum!dolore recusandae at voluptatibus nihil nisi ullam dolorem esse! imilique animi explicabo quam recusandae assumenda, sed nostrum, officiis delecQui tempora quae optio dolorem animi eaque nostrum, modi commodi facere! Nemo, ipsam alias!Incidunt amet laudantium aperiam, provident maxime necessitatibus perferendis dicta neque asperiores cum sit fuga omnis eos architecto rem similique possimus qui? Quaerat commodi quae beatae sequi rem minus, recusandae maxime?Quia cum culpa rem doloremque sed officiis laborum omnis, sapiente ratione iste voluptatum laboriosam est, at dolor accusamus eaque corrupti ducimus! Unde hic facere amet ea vero libero totam atque!Laudantium et quae aliquam similique animi explicabo quam recusandae assumenda, sed nostrum, officiis delectus, error itaque possimus. Beatae sequi ipsam quibusdam, quo aliquam dolorem illo sint suscipit, rem asperiores perspiciatis.Praesentium, ex eveniet nam quis obcaecati animi hic nobis repudiandae vero, mollitia id veritatis doloribus rem. Minima voluptatem illum reiciendis consequatur eligendi aliquam alias molestias voluptatibus, quod cumque officiis rerum Impedit accusantium voluptates corporis itaque beatae, repellendus enim harum laboriosam excepturi quaerat non est! Voluptates, vero consequatur exercitationem tempora recusandae dolore sapiente dicta dignissimos alias corrupti placeat optio, quisquam pariatur!Nostrum labore molestiae laboriosam, tenetur, expedita culpa, Quia cum culpa rem doloremque sed officiis laborum omnis, sapiente ratione iste voluptatum laboriosam est, at dolor accusamus eaque corrupti ducimus! Unde hic facere amet ea vero libero totam atque!Laudantium et quae aliquam similique animi explicabo quam recusandae assumenda, sed nostrum, officiis delectus, error itaque possimus. Beatae sequi ipsam quibusdam, quo aliquam dolorem illo sint suscipit, rem asperiores perspiciatis.Praesentium, ex eveniet nam quis obcaecati animi hic nobis repudiandae vero, mollitia id veritatis doloribus rem. Minima voluptatem illum reiciendis consequatur eligendi aliquam alias molestias voluptatibus, quod cumque officiis rerum!dolore recusandae at voluptatibus nihil nisi ullam dolorem esse! Qui tempora quae optio dolorem animi eaque nostrum, modi commodi facere! Nemo, ipsam alias!Incidunt amet laudantium aperiam, provident maxime necessitatibus perferendis dicta neque asperiores cum sit fuga omnis eos architecto rem similique possimus qui? Quaerat commodi quae beatae sequi rem minus, recusandae maxime?Quia cum culpa rem doloremque sed officiis laborum omnis, sapiente ratione iste voluptatum laboriosam est, at dolor accusamus eaque corrupti ducimus! Unde hic facere amet ea vero libero totam atque!Laudantium et quae aliquam similique animi explicabo quam recusandae assumenda, sed nostrum, officiis delectus, error itaque possimus. Beatae sequi ipsam quibusdam, quo aliquam dolorem illo sint suscipit, rem asperiores perspiciatis.Praesentium, ex eveniet nam quis obcaecati animi hic nobis repudiandae vero, mollitia id veritatis doloribus rem. Minima voluptatem illum reiciendis consequatur eligendi aliquam alias molestias voluptatibus, quod cumque officiis rerum Impedit accusantium voluptates corporis itaque beatae, repellendus enim harum laboriosam excepturi quaerat non est! Voluptates, vero consequatur exercitationem tempora recusandae dolore sapiente dicta dignissimos alias corrupti placeat optio, quisquam pariatur!Nostrum labore molestiae laboriosam, tenetur, expedita culpa, Quia cum culpa rem doloremque sed officiis laborum omnis, sapiente ratione iste voluptatum laboriosam est, at dolor accusamus eaque corrupti ducimus! Unde hic facere amet ea vero libero totam atque!Laudantium et quae aliquam similique animi explicabo quam recusandae assumenda, sed nostrum, officiis delectus, error itaque possimus. Beatae sequi ipsam quibusdam, quo aliquam dolorem illo sint suscipit, rem asperiores perspiciatis.Praesentium, ex eveniet nam quis obcaecati animi hic nobis repudiandae vero, mollitia id veritatis doloribus rem. Minima voluptatem illum reiciendis consequatur eligendi aliquam alias molestias voluptatibus, quod cumque officiis rerum!dolore recusandae at voluptatibus nihil nisi ullam dolorem esse! Qui tempora quae optio dolorem animi eaque nostrum, modi commodi facere! Nemo, ipsam alias!Incidunt amet laudantium aperiam, provident maxime necessitatibus perferendis dicta neque asperiores cum sit fuga omnis eos architecto rem similique possimus qui? Quaerat commodi quae beatae sequi rem minus, recusandae maxime?Quia cum culpa rem doloremque sed officiis laborum omnis, sapiente ratione iste voluptatum laboriosam est, at dolor accusamus eaque corrupti ducimus! Unde hic facere amet ea vero libero totam atque!Laudantium et quae aliquam similique animi explicabo quam recusandae assumenda, sed nostrum, officiis delectus, error itaque possimus. Beatae sequi ipsam quibusdam, quo aliquam dolorem illo sint suscipit, rem asperiores perspiciatis.Praesentium, ex eveniet nam quis obcaecati animi hic nobis repudiandae vero, mollitia id veritatis doloribus rem. Minima voluptatem illum reiciendis consequatur eligendi aliquam alias molestias voluptatibus, quod cumque officiis rerum Impedit accusantium voluptates corporis itaque beatae, repellendus enim harum laboriosam excepturi quaerat non est! Voluptates, vero consequatur exercitationem tempora recusandae dolore sapiente dicta dignissimos alias corrupti placeat optio, quisquam pariatur!Nuam alias molestias voluptatibus, quod cumque officiis rerum ",
-  },
-];
 
 export const ReaderReview = [
   {
@@ -166,3 +159,81 @@ export const ReaderReview = [
       "Quia cum culpa rem doloremque sed officiis laborum omnis, sapiente ratione iste voluptatum laboriosam est, at dolor accusamus eaque corrupti ducimus!",
   },
 ];
+
+
+
+
+export const works = [
+  {
+    type: "Book",
+    cover: Bookcover,
+    title: "The greatest Indian stories ever told",
+    description: "The Greatest Indian Stories Ever Told is a selection of some of the finest literary short fiction written by Indian writers since the genre came into being in the country in the late nineteenth century. Including early masters of the form, contemporary stars, as well as . . .",
+    link: "/Book/The-greatest-Indian-stories-ever-told"
+  },
+
+  {
+    type: "Article",
+    cover: Articlehero,
+    title: "In Defense of moon lighting",
+    description: "If a Martian were to visit our planet and ask you to describe what is this 'job' thing you keep talking about, you would probably describe it as a setup in which you use your skills to do a specific task for someone and get paid for that. The definition is sound enough,. . .",
+    link: "/Article/In-Defense-of-moon-lighting"
+  },
+  {
+    type: "Article",
+    cover: Articlehero,
+
+    title: "The Peculiar Perils (and Excitements) of Living in One Language and Writing in Another",
+    description: "First things first: when I talk about the language in which we live, I mean to talk about the nebulous linguistic soup in our heads in which our thoughts are first formed and take definite shapes. This language, or a mixture of languages, is often our mother-tongue, the one in . . .",
+    link: "/Article/The-Peculiar-Perils-(and-Excitements)-of-Living-in-One-Language-and-Writing-in-Another"
+  },
+  {
+    type: "Article",
+    cover: Articlehero,
+    title: "Coward attacks literary giant, achieves nothing",
+    description: "tempora recusandae dolore sapiente dicta dignissimos alias corrupti placeat optio, quisquam pariatur!Nuam alias molestias voluptatibus, quod cumque officiis rerum animi explicabo quam recusandae assumenda, sed nostrum, officiis delectus, error itaque possimus. Beatae . . .",
+    link: "/Article/Coward-attacks-literary-giant,-achieves-nothing"
+  },
+  {
+    type: "Short Story",
+    cover: story1,
+
+    title: "Upside Down",
+    description: "The following account was stumbled upon by a hot-air balloonist near the recently created Haridwar Space Station in northern India. It sheds some light on the chain of events which led up to the replacement of an entire city by a patch of sky in the year 2020 . . .",
+    link: "Story/Upside-Down"
+  },
+  {
+    type: "Short Story",
+    cover: story2,
+
+    title: "The Alligator of Aligarh",
+    description: "Kalua listened to his belly groan with hunger.He mopped at the beads of sweat on his forehead with a gamcha1 and peeked over his wife&rsquo;s shoulder into a pot wherein she was cooking some nameless concoction.It was a homogeneous sludge, the color of mucus . . .",
+    link: "/Story/The-Alligator-of-Aligarh"
+  },
+  {
+    type: "Short Story",
+    cover: story6,
+
+    title: "The Shadow Teacher",
+    description: "The day had been strange, and now it was night.As she hurried on her way home, Simran passed beneath a streetlamp and could not repress a shudder at the sight of that Simran-shaped darkness which stretched from her feet to a few feet in front of her, that is to say . . .",
+    link: "Story/The-Shadow-Teacher"
+  },
+  {
+    type: "Short Story",
+    cover: story4,
+
+    title: "Fifty-Nine Times but One",
+    description: "Now were walking on this empty street and you tell me how we&rsquo;re very much the same, how much our thoughts and choices match.It has been just a month since I met you, you say, and already I feel like I&rsquo;ve known you for years.You said that on this same . . .",
+    link: "Story/Fifty-Nine-Times-but-One"
+  },
+  {
+    type: "Short Story",
+    cover: story5,
+
+    title: "Into the Night",
+    description: "It’s 2 a.m.Only drunkards, ghosts, and thieves stay up late in the night, Mother used to say while putting us to bed. Maybe parenthood had made her forget all about lovesick people, college students, and people with thoughts so heavy that sleep slips away the moment their . . .",
+    link: ""
+  },
+
+
+]

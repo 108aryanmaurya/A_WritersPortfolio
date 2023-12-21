@@ -30,11 +30,11 @@ const Article = () => {
               </span>{" "}
             </div>
             <div
-              className="max-md:leading-4 leading-5 w-[85%] max-md:truncate text-[22px] max-md:text-[18px] font-TimesNewRoman text-gray-600 "
+              className="max-md:leading-4 leading-5 w-[85%]  text-[22px] max-md:text-[21px] font-TimesNewRoman text-gray-600 "
               dangerouslySetInnerHTML={{
                 __html: DOMPurify.sanitize(
-                  art.description.length > 230
-                    ? art.description.substring(0, 230) + "   . . ."
+                  art.description.length > 100
+                    ? art.description.substring(0, 100) + "   . . ."
                     : art.description
                 ),
               }}

@@ -18,7 +18,7 @@ const App = () => {
     <Router>
       <ScrollProgress />
       <ScrollToTop />
-      <main className=" container select-none">
+      <main className=" container ">
         <Navbar></Navbar>
         <Routes>
           <Route path="/" element={<Home />} />
