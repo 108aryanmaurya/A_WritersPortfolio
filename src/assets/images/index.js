@@ -11,6 +11,7 @@ import cover3 from "./cover3.jpg";
 import cover4 from "./cover4.jpg";
 import cover5 from "./cover5.jpg";
 import book from "./book.png";
+
 import Synopsis from './Synopsis.jpg'
 import Articlehero from './Artilcehero.jpg'
 import article2 from './article2.jpg'
@@ -35,8 +36,8 @@ import TheGreatestIndianStoriesEverTold from './The-Greatest-Indian-Stories-Ever
 import heroBannerImage from "./heroBannerImage.png"
 
 export {
-  heroBannerImage,
   TheGreatestIndianStoriesEverTold,
+  heroBannerImage,
   Bookcover,
   reviewhero,
   Bookhero,
