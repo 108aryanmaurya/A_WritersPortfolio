@@ -14,8 +14,8 @@ export default function About() {
               />
             </div>
             <i className="fa fa-quote-right text-6xl max-sm:text-3xl my-5 text-gray-400  dark:text-darkTextPrimary "></i>
-            <p className="text-gray-600 font-montserrat dark:text-darkTextPrimary mb-3 max-lg:px-5 max-sm:px-4 text-xl 2xl:text-2xl text-center max-sm:text-justify max-md:text-lg max-sm:text-base">
-              <span className="text-[25px] max-sm:text-lg ml-28 font-[500]  ">
+            <p className="text-gray-600 font-montserrat dark:text-darkTextPrimary mb-3 max-lg:px-5 max-sm:px-4 text-xl 2xl:text-2xl text-center  max-md:text-lg max-sm:text-sm">
+              <span className="text-[25px] max-sm:text-base ml-28 max-sm:ml-0 font-[500]  ">
                 A.M. Gautam{" "}
               </span>
               is an Indian writer from Bangalore with interests in cultural

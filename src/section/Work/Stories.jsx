@@ -47,9 +47,9 @@ const Stories = () => {
           );
         })}
 
-        <div className="bg-slate-200 z-10 max-lg:hidden h-28  w-28 right-1 rounded-full  absolute  "></div>
-        <div className="bg-slate-200 z-10  h-72 top-96 w-72 max-lg:hidden  rounded-full  absolute  right-12 "></div>
-        <div className="bg-slate-200 z-10 h-48 top-[600px] w-48 max-lg:hidden  rounded-full  absolute  left-4 "></div>
+        <div className="bg-slate-200 -z-50 max-lg:hidden h-28  w-28 right-1 rounded-full  absolute  "></div>
+        <div className="bg-slate-200 -z-50  h-72 top-96 w-72 max-lg:hidden  rounded-full  absolute  right-12 "></div>
+        <div className="bg-slate-200 -z-50 h-48 top-[600px] w-48 max-lg:hidden  rounded-full  absolute  left-4 "></div>
       </div>
     </section>
   );
