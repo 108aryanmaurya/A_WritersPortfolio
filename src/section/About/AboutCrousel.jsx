@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { crausoel, works } from "../../components/constants";
 import { ArrowRight } from "../../assets/icons";
 import { useNavigate } from "react-router";
-import { Articlehero } from "../../assets/images";
+import { Articlehero, Bookcover } from "../../assets/images";
 
 const AboutCrousel = () => {
   const [reviews, setReviews] = useState(works);
@@ -36,9 +36,9 @@ const AboutCrousel = () => {
       </p>
 
       <div className="flex max-md:flex-col justify-center items-start  max-md:gap-0 max-md:my-3  my-8  gap-28">
-        <div className=" px-28 ">
+        <div className=" mx-auto ">
           {reviews[currentIndex].type == "Book" && (
-            <div className="h-[450px] relative  flex  justify-center items-center w-[300px] max-w-[500px]    max-md:h-[300px] max-md:max-w-full mx-auto text-center">
+            <div className="h-[450px] relative  flex  justify-center items-center w-[300px] max-w-[100px] max-md:w-[200px]     max-md:h-[300px] max-md:max-w-full mx-auto text-center">
               <img
                 // src={Articlehero}
                 src={reviews[currentIndex]?.cover}
@@ -49,7 +49,7 @@ const AboutCrousel = () => {
           )}
 
           {reviews[currentIndex].type == "Article" && (
-            <div className="h-[400px] relative  flex  justify-center items-center w-[400px] max-w-[600px]    max-md:h-[300px] max-md:max-w-full mx-auto text-center">
+            <div className="h-[400px] relative  flex  justify-center items-center w-[400px] max-w-[600px]     max-md:w-[300px]   max-md:h-[200px] max-md:max-w-full mx-auto text-center">
               <img
                 src={Articlehero}
                 // src={reviews[currentIndex]?.cover}
@@ -75,7 +75,7 @@ const AboutCrousel = () => {
                 />
               </div>
               <div className=" z-50 absolute max-md:left-3  w-[75%]  left-9 bottom-12 flex flex-col  max-md:bottom-7  gap-24  max-md:gap-20 max-md:w-[85%]">
-                <div className="tracking-widest  text-yellow-400 uppercase font-Gamiliademo max-md:text-[18px]  text-[28px] text-center ">
+                <div className="tracking-widest  text-yellow-400 uppercase font-Gamiliademo max-md:text-[18px]  text-[28px] text-center   ">
                   {reviews[currentIndex]?.title}
                 </div>
                 <div className="tracking-widest  text-yellow-500 uppercase font-Authorfont text-[20px]  font-light max-md:text-[14px] text-center ">
@@ -87,7 +87,7 @@ const AboutCrousel = () => {
         </div>
         <div className="mx-7 max-lg:mx-0 max-sm:p-2 text-center items-center justify-evenly  w-[50%] max-md:w-[100%] flex flex-col max-md:py-5 gap-9  max-md:gap-0 ">
           <div>
-            <p className="text-[30px] 2xl:text-[35px] max-sm:pl-2 text-white font-Gamiliademo w-full ">
+            <p className="text-[30px] 2xl:text-[35px] max-sm:pl-2 max-md:leading-7 max-md:my-3  text-white font-Gamiliademo w-full ">
               {reviews[currentIndex]?.title}
             </p>
             <span className="italic max-sm:pl-2 text-[18px] 2xl:text-[22px] font-[50] font-Oswald tracking-wider text-slate-300">
