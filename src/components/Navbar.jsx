@@ -105,7 +105,8 @@ const Navbar = () => {
                       className={`${
                         location.pathname.includes("/About") ||
                         location.pathname.includes("/Book") ||
-                        location.pathname.includes("/Article")
+                        location.pathname.includes("/Article") ||
+                        location.pathname.includes("/Story")
                           ? " bg-white "
                           : " bg-black "
                       } h-[2px] w-7 transform transition-all duration-300 origin-left ${
@@ -116,6 +117,7 @@ const Navbar = () => {
                       className={`${
                         location.pathname.includes("/About") ||
                         location.pathname.includes("/Book") ||
+                        location.pathname.includes("/Story") ||
                         location.pathname.includes("/Article")
                           ? " bg-white "
                           : " bg-black "
@@ -127,6 +129,7 @@ const Navbar = () => {
                       className={`${
                         location.pathname.includes("/About") ||
                         location.pathname.includes("/Book") ||
+                        location.pathname.includes("/Story") ||
                         location.pathname.includes("/Article")
                           ? " bg-white "
                           : " bg-black "

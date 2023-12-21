@@ -173,10 +173,10 @@ export const works = [
   {
     type: "Book",
     cover: Bookcover,
-    title: "The greatest Indian stories ever told",
-    description:
-      "The Greatest Indian Stories Ever Told is a selection of some of the finest literary short fiction written by Indian writers since the genre came into being in the country in the late nineteenth century. Including early masters of the form, contemporary stars, as well as . . .",
-    link: "/Book/The-greatest-Indian-stories-ever-told",
+
+    title: "The Greatest Indian Stories Ever Told",
+    description: "The Greatest Indian Stories Ever Told is a selection of some of the finest literary short fiction written by Indian writers since the genre came into being in the country in the late nineteenth century. Including early masters of the form, contemporary stars, as well as . . .",
+    link: "/Book/The-greatest-Indian-stories-ever-told"
   },
 
   {
