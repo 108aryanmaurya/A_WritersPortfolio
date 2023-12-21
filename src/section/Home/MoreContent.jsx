@@ -30,13 +30,13 @@ export default function MoreContent() {
                 className="h-64 w-64 max-md:w-50 max-md:h-50 max-sm:w-32 max-sm:h-32 object-cover"
               />
               <div className="w-full max-md:ml-4">
-                <h3 className="mt-4 max-md:mt-0 text-lg 2xl:text-2xl max-md:text-base max-sm:text-sm font-mediu text-white sm:text-xl font-TimesNewRoman tracking-wider cursor-pointer hover:underline underline-offset-4 ">
+                <h3 className="mt-4 max-md:mt-0 text-lg 2xl:text-2xl max-md:text-base max-sm:text-base text-white sm:text-xl font-TimesNewRoman tracking-wider cursor-pointer hover:underline underline-offset-4 ">
                   {art.title}
                 </h3>
                 <div className="flex gap-2 items-center mt-2 max-md:flex-col max-md:items-start">
                   <a href={art?.link} target="_blank" rel="noopener noreferrer">
                     <div className="flex">
-                      <span className="uppercase text-[13px] max-sm:text-[10px] 2xl:text-[18px] text-white max-md:text-[10px] hover:underline hover:text-blue-500 font-Oswald">
+                      <span className="uppercase text-[13px] max-sm:text-[10px] 2xl:text-[18px] text-white max-md:text-[12px] hover:underline hover:text-blue-500 font-Oswald">
                         {art?.publication}{" "}
                       </span>
                       <img
@@ -49,7 +49,7 @@ export default function MoreContent() {
                   <span className="text-white items-center max-md:hidden">
                     -
                   </span>
-                  <h3 className=" text-sm text-gray-400 2xl:text-lg max-sm:text-[10px] font-CooperHevitt tracking-wider">
+                  <h3 className=" text-sm text-gray-400 2xl:text-lg max-sm:text-[12px] font-CooperHevitt tracking-wider">
                     {art.Date}
                   </h3>
                 </div>
