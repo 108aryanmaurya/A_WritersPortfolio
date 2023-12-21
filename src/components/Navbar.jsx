@@ -48,7 +48,7 @@ const Navbar = () => {
           } top-0 flex  max-md:flex-row max-md:justify-between py-2 pb-6 max-md:py-2 items-center w-full`}
         >
           <div
-            className={`transition-all duration-300 items-center max-md:m-0 mt-0 max-md:ml-2a`}
+            className={`transition-all duration-300 items-center max-md:m-0 mt-0 max-md:ml-2`}
           >
             {location.pathname.includes("/About") ||
             location.pathname.includes("/Book") ||
@@ -56,7 +56,7 @@ const Navbar = () => {
             location.pathname.includes("/Article") ? (
               <img
                 src={showNav ? AMGautmaBlack : AMGautmaWhite}
-                className="h-16 2xl:h-20 max-md:h-14 max-sm:h-12 max-md:-translate-y-1"
+                className="h-16 2xl:h-20 max-md:h-14 max-sm:h-12 max-md:-translate-y-1 max-md:"
                 alt=""
               />
             ) : (
