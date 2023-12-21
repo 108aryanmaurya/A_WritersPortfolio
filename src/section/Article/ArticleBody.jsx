@@ -91,7 +91,7 @@ font-Gamiliademo  w-[90%] max-md:w-[90%] mx-auto  text-[45px] max-md:text-[24px]
         </div>
 
         <div
-          className="text-[18px] tracking-wide     text-justify max-lg:w-[100%] max-md:w-[100%]  max-md:leading-[17px] max-md:text-[14px]   font-TimesNewRoman        "
+          className="text-[19px] tracking-wide     text-justify max-lg:w-[100%] max-md:w-[100%]  max-md:leading-[17px] max-md:text-[15.6px]   font-TimesNewRoman        "
           dangerouslySetInnerHTML={{
             __html: DOMPurify.sanitize(articledata?.description),
           }}
