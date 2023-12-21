@@ -38,7 +38,14 @@ const AboutCrousel = () => {
       <div className="flex max-md:flex-col justify-center items-start  max-md:gap-0 max-md:my-3  my-8  gap-28">
         <div className=" mx-auto ">
           {reviews[currentIndex].type == "Book" && (
-            <div className="h-[450px] relative  flex  justify-center items-center w-[300px] max-w-[100px] max-md:w-[200px]     max-md:h-[300px] max-md:max-w-full mx-auto text-center">
+            <div
+              className="h-[450px] relative  flex  justify-center items-center w-[300px] max-w-[100px] max-md:w-[200px]     max-md:h-[300px] max-md:max-w-full mx-auto text-center"
+              onClick={() => {
+                navigate(
+                  `/Book/${reviews[currentIndex].title.replace(/\s+/g, "-")}`
+                );
+              }}
+            >
               <img
                 // src={Articlehero}
                 src={reviews[currentIndex]?.cover}
@@ -49,7 +56,14 @@ const AboutCrousel = () => {
           )}
 
           {reviews[currentIndex].type == "Article" && (
-            <div className="h-[400px] relative  flex  justify-center items-center w-[400px] max-w-[600px]     max-md:w-[300px]   max-md:h-[200px] max-md:max-w-full mx-auto text-center">
+            <div
+              className="h-[400px] relative  flex  justify-center items-center w-[400px] max-w-[600px]     max-md:w-[300px]   max-md:h-[300px] max-md:max-w-full mx-auto text-center"
+              onClick={() => {
+                navigate(
+                  `/Article/${reviews[currentIndex].title.replace(/\s+/g, "-")}`
+                );
+              }}
+            >
               <img
                 src={Articlehero}
                 // src={reviews[currentIndex]?.cover}
@@ -64,10 +78,22 @@ const AboutCrousel = () => {
               key={2}
               className="relative"
               onClick={() => {
-                navigate(reviews[currentIndex]?.link);
+                navigate(
+                  `/Story/${reviews[currentIndex].title.replace(/\s+/g, "-")}`
+                );
               }}
             >
-              <div className="z-50  shadow-black bg-black max-md:shadow-md  max-md:shadow-gray-600  shadow-md">
+              <div
+                className="z-50  shadow-black bg-black max-md:shadow-md  max-md:shadow-gray-600  shadow-md"
+                onClick={() => {
+                  navigate(
+                    `/Article/${reviews[currentIndex].title.replace(
+                      /\s+/g,
+                      "-"
+                    )}`
+                  );
+                }}
+              >
                 <img
                   src={reviews[currentIndex]?.cover}
                   alt=""
@@ -98,13 +124,27 @@ const AboutCrousel = () => {
             {reviews[currentIndex]?.description}
           </div>
           <div
-            className="max-sm:p-1 max-sm:px-4 px-5 max-md:mt-4 max-md:m-2 max-md:max-w-[150px]  w-auto max-w-[200px] flex justify-center items-center flex-row text-white  border-2 p-2   max-sm:text-[14px]   border-white"
+            className="max-sm:p-1 max-sm:px-4 px-5 max-md:mt-4 max-md:m-2 max-md:max-w-[150px]  w-auto max-w-[200px] flex justify-center items-center flex-row text-white  border-2 p-2  max-md:border-[1px]  max-sm:text-[14px]   border-white"
             onClick={() => {
-              navigate(reviews[currentIndex]?.link);
+              if (reviews[currentIndex].type === "Book") {
+                navigate(
+                  `/Book/${reviews[currentIndex].title.replace(/\s+/g, "-")}`
+                );
+              }
+              if (reviews[currentIndex].type === "Story") {
+                navigate(
+                  `/Story/${reviews[currentIndex].title.replace(/\s+/g, "-")}`
+                );
+              }
+              if (reviews[currentIndex].type === "Article") {
+                navigate(
+                  `/Article/${reviews[currentIndex].title.replace(/\s+/g, "-")}`
+                );
+              }
             }}
           >
             <span>READ MORE</span>
-            <img src={ArrowRight} className="pl-1" alt="" />
+            <img src={ArrowRight} className="pl-1 max-md:w-6 " alt="" />
           </div>
         </div>
       </div>
