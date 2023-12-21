@@ -59,18 +59,14 @@ font-Gamiliademo  w-[90%] max-md:w-[90%] mx-auto  text-[45px] max-md:text-[24px]
         {articledata?.title}
       </div>
       <div className="flex gap-12 my-2 max-md:flex-col max-md:gap-0 max-md:my-3 w-[90%] mx-auto  ">
-        <a
-          href="https://orcalit.com/the-peculiar-perils-and-excitements-of-living-in-one-language-and-writing-in-another/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href={articledata?.link} target="_blank" rel="noopener noreferrer">
           <div className="font-semibold flex">
             {" "}
             <span className="text-gray-600 mr-2 max-md:text-[12px]">
               Published in{" "}
             </span>{" "}
             <span className="uppercase text-[15px] max-md:text-[12px] hover:underline hover:text-blue-500 font-Oswald">
-              Orca{" "}
+              {articledata?.publication}{" "}
             </span>
             <img src={goto} className="w-4 mx-1 h-4" alt="" />
           </div>

@@ -13,7 +13,9 @@ export default function Footer() {
                 <h1 class="text-xl my-1 font-bold mb-3 text-center max-sm:mb-0 font-CooperHevitt 2xl:text-2xl">
                   Susbcribe to our Newsletter
                 </h1>
-                <NewsletterCard />
+                <div className="relative">
+                  <NewsletterCard />
+                </div>
               </div>
             </div>
 
