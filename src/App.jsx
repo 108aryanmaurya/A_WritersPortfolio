@@ -11,12 +11,14 @@ import SingleBookLayout from "./Layout/SingleBookLayout";
 import NewsEvents from "./pages/NewsEvents";
 import SingleArticleLayout from "./Layout/SingleArticleLayout";
 import ScrollToTop from "./components/ScrollToTop";
+import SingleStoryLayout from "./Layout/SingleStoryLayout";
+
 const App = () => {
   return (
     <Router>
       <ScrollProgress />
       <ScrollToTop />
-      <main className=" container select-none">
+      <main className=" container ">
         <Navbar></Navbar>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -25,6 +27,7 @@ const App = () => {
           <Route path="/News&Events" element={<NewsEvents />} />
           <Route path="/Book/:book" element={<SingleBookLayout />} />
           <Route path="/Article/:article" element={<SingleArticleLayout />} />
+          <Route path="/Story/:story" element={<SingleStoryLayout />} />
           <Route path="/About" element={<About></About>} />
           <Route path="/Contact" element={<Contact />} />
         </Routes>

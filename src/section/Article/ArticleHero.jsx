@@ -3,7 +3,7 @@ import { Articlehero, cover1 } from "../../assets/images";
 
 const ArticleHero = () => {
   return (
-    <div className="h-72  relative flex  bg-black justify-center max-sm:h-52 items-end ">
+    <div className="h-72  relative flex  bg-black justify-center max-sm:h-44 items-end ">
       <img
         src={Articlehero}
         alt="AboutTopImg"

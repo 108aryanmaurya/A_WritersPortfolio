@@ -1,4 +1,5 @@
 import React from "react";
+
 import {
   story1,
   story2,
@@ -8,8 +9,10 @@ import {
   story6,
 } from "../../assets/images";
 import { storyCover } from "../../components/constants";
+import { useNavigate } from "react-router";
 
 const Stories = () => {
+  const navigate = useNavigate();
   return (
     <section className="flex relative flex-col  items-center justify-center">
       <div className="text-center text-[29px] pt-4 max-md:text-[23px] max-md:pb-3 pb-7 font-[100] font-CooperHevitt   border-black">
@@ -18,8 +21,14 @@ const Stories = () => {
       <div className=" grid grid-cols-3 max-md:grid-cols-2  gap-x-24 max-md:w-[90%] max-md:gap-x-10 max-md:gap-y-16 gap-y-20 my-10 max-md:my-6 justify-center ">
         {storyCover.map((ind) => {
           return (
-            <section key={2} className="relative">
-              <div className="z-50  shadow-black bg-black max-md:shadow-xl max-md:shadow-gray-600  shadow-sm">
+            <section
+              key={2}
+              className="relative"
+              onClick={() => {
+                navigate(`/Story/${ind.title.replace(/\s+/g, "-")}`);
+              }}
+            >
+              <div className="z-50  shadow-black bg-black max-md:shadow-xl max-md:shadow-gray-600  shadow-md">
                 <img
                   src={ind.cover}
                   alt=""

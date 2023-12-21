@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Gupter&family=Oswald:wght@300&family=Tinos&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,6 +12,16 @@
   font-family: "Minerva-Modern-Regular";
   src: local("Minerva-Modern-Regular"),
     url(./fonts/Minerva-Modern-Regular.otf) format("opentype");
+}
+@font-face {
+  font-family: "Slabo27px-Regular";
+  src: local("Slabo27px-Regular"),
+    url(./fonts/Slabo27px-Regular.otf) format("opentype");
+}
+@font-face {
+  font-family: "Mont-ExtraLightDEMO";
+  src: local("Mont-ExtraLightDEMO"),
+    url(./fonts/Mont-ExtraLightDEMO.otf) format("opentype");
 }
 
 @font-face {
