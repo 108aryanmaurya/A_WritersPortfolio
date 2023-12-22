@@ -4,7 +4,7 @@ import { article2 } from "../../assets/images";
 import DOMPurify from "dompurify";
 
 const StoryBody = ({ storydata }) => {
-  console.log(storydata);
+  //   console.log(storydata);
   return (
     <div className="relative max-md:w-full w-[90%] mx-auto p-16 max-sm:p-0 max-md:mt-8   justify-center items-center">
       <div className="flex gap-28  my-6   justify-center  max-md:gap-5 max-md:my-3 w-[90%] mx-auto  ">
