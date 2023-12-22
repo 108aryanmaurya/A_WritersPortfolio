@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from "react";
 import { heroright, heroleft } from "../../assets/icons";
 import HomeHeroCards from "./HomeHeroCards";
 import Hero from "../NewsEvents/Hero";
-import { storyCover } from "../../components/constants";
+import { works } from "../../components/constants";
 
 export default function HomeHero() {
   const slidesContainerRef = useRef(null);
@@ -49,6 +49,7 @@ export default function HomeHero() {
 
     return () => clearInterval(autoSlideInterval);
   }, [slideWidth, direction]);
+  const shortStories = works.filter((work) => work.type === "Short Story");
 
   return (
     <>
@@ -61,9 +62,10 @@ export default function HomeHero() {
             ref={slidesContainerRef}
             className="slides-container z-[999] h-[350px] 2xl:h-[400px] max-sm:h-[300px] flex snap-x snap-mandatory overflow-hidden overflow-x-auto space-x-4 max-sm:space-x-0 rounded max-md:rounded-none scroll-smooth no-scrollbar"
           >
-            {storyCover.map((story, index) => (
+            {shortStories.map((story, index) => (
               <HomeHeroCards key={index} story={story} />
             ))}
+
             {/* <div className="relative w-[1000px] max-xl:w-[900px] max-lg:w-[700px] 2xl:w-[1200px] max-sm:w-full rounded max-md:rounded-none h-full flex-shrink-0 snap-center overflow-hidden">
               <Hero />
             </div> */}
