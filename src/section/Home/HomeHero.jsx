@@ -1,6 +1,8 @@
 import React, { useRef, useState, useEffect } from "react";
 import { heroright, heroleft } from "../../assets/icons";
 import HomeHeroCards from "./HomeHeroCards";
+import Hero from "../NewsEvents/Hero";
+import { works } from "../../components/constants";
 
 export default function HomeHero() {
   const slidesContainerRef = useRef(null);
@@ -43,30 +45,11 @@ export default function HomeHero() {
       }
     };
 
-    autoSlide();
-
     const autoSlideInterval = setInterval(autoSlide, 10000);
 
     return () => clearInterval(autoSlideInterval);
   }, [slideWidth, direction]);
-
-  const slideData = [
-    {
-      imageSrc:
-        "https://images.pexels.com/photos/6263568/pexels-photo-6263568.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      backgroundColor: "bg-red-100",
-    },
-    {
-      imageSrc:
-        "https://images.pexels.com/photos/3026364/pexels-photo-3026364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      backgroundColor: "bg-violet-100",
-    },
-    {
-      imageSrc:
-        "https://images.pexels.com/photos/3026364/pexels-photo-3026364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      backgroundColor: "bg-green-100",
-    },
-  ];
+  const shortStories = works.filter((work) => work.type === "Short Story");
 
   return (
     <>
@@ -77,11 +60,15 @@ export default function HomeHero() {
         <div className="relative">
           <div
             ref={slidesContainerRef}
-            className="slides-container z-[999] h-[350px] 2xl:h-[400px] max-sm:h-[300px] flex snap-x snap-mandatory overflow-hidden overflow-x-auto space-x-4 max-sm:space-x-0 rounded max-md:rounded-none scroll-smooth no-scrollbar "
+            className="slides-container z-[999] h-[350px] 2xl:h-[400px] max-sm:h-[300px] flex snap-x snap-mandatory overflow-hidden overflow-x-auto space-x-4 max-sm:space-x-0 rounded max-md:rounded-none scroll-smooth no-scrollbar"
           >
-            {slideData.map((slide, index) => (
-              <HomeHeroCards key={index} {...slide} />
+            {shortStories.map((story, index) => (
+              <HomeHeroCards key={index} story={story} />
             ))}
+
+            {/* <div className="relative w-[1000px] max-xl:w-[900px] max-lg:w-[700px] 2xl:w-[1200px] max-sm:w-full rounded max-md:rounded-none h-full flex-shrink-0 snap-center overflow-hidden">
+              <Hero />
+            </div> */}
           </div>
         </div>
       </div>

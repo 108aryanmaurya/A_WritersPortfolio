@@ -1,11 +1,11 @@
 import React from "react";
 import { ArrowRight } from "../../assets/icons";
-import { articles } from "../../components/constants";
 import { useNavigate } from "react-router";
-import { Articlehero } from "../../assets/images";
 import { goto } from "../../assets/icons";
+import { works } from "../../components/constants";
 export default function MoreContent() {
   const navigate = useNavigate();
+  const shortStories = works.filter((work) => work.type === "Article");
 
   return (
     <>
@@ -16,7 +16,7 @@ export default function MoreContent() {
           </h2>
         </div>
         <div className="flex justify-center 2xl:gap-10 max-md:gap-0   flex-wrap max-md:flex-col items-start w-full">
-          {articles.map((art) => (
+          {shortStories.map((art) => (
             <div
               key={art.id}
               className="flex flex-col m-10 max-sm:m-2 max-sm:justify-center max-sm:items-center max-md:flex-row max-sm:pb-5 max-w-[300px] max-md:max-w-full"
@@ -26,22 +26,26 @@ export default function MoreContent() {
             >
               <img
                 alt="Art"
-                src={Articlehero}
+                src={art?.cover}
                 className="h-64 w-64 max-md:w-50 max-md:h-50 max-sm:w-32 max-sm:h-32 object-cover"
               />
               <div className="w-full max-md:ml-4">
                 <h3 className="mt-4 max-md:mt-0 text-lg 2xl:text-2xl max-md:text-base max-sm:text-base text-white sm:text-xl font-TimesNewRoman tracking-wider cursor-pointer hover:underline underline-offset-4 ">
-                  {art.title}
+                  {art?.title}
                 </h3>
                 <div className="flex gap-2 items-center mt-2 max-md:flex-col max-md:items-start">
-                  <a href={art?.link} target="_blank" rel="noopener noreferrer">
+                  <a
+                    href={art?.publicationlink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <div className="flex">
-                      <span className="uppercase text-[13px] max-sm:text-[10px] 2xl:text-[18px] text-white max-md:text-[12px] hover:underline hover:text-blue-500 font-Oswald">
+                      <span className="text-[13px] max-sm:text-[10px] 2xl:text-[16px] text-white max-md:text-[12px] hover:underline hover:text-blue-500 font-Oswald">
                         {art?.publication}{" "}
                       </span>
                       <img
                         src={goto}
-                        className="w-3 2xl:w-5 mx-1 h-3 2xl:h-5 invert"
+                        className="w-3 2xl:w-4 mx-1 h-3 2xl:h-4 invert"
                         alt=""
                       />
                     </div>
