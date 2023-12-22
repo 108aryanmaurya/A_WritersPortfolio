@@ -1,9 +1,11 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { navLinks } from "./constants";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+
 export default function SideNav(props) {
   const { NavStatus } = props;
-
+  const [showoption, setshowoption] = useState(false);
+  const navigate = useNavigate();
   return (
     <>
       <div
@@ -16,19 +18,44 @@ export default function SideNav(props) {
               {navLinks.map((item) => (
                 <li
                   key={item.label}
-                  className={`px-2 ${
+                  className={`relative px-2 ${
                     (location.pathname === "/" && item.href === "/home") ||
                     location.pathname === item.href
                       ? "border-b-[1px] border-b-gray-600 "
                       : ""
                   }`}
+                  onMouseEnter={() => {
+                    if (item.label === "Work") {
+                      setshowoption(true);
+                    }
+                  }}
+                  onClick={() => {
+                    if (item.label === "Work") {
+                      setshowoption(true);
+                    }
+                    if (item.label !== "Work") {
+                      // setshowoption(true);
+                      navigate(item.href);
+                    }
+                  }}
                 >
-                  <Link
+                  {/* <Link
                     to={item.href}
-                    className={`font-CooperHevitt text-lg max-sm:text-xl text-slate-gray`}
-                  >
+                   
+                  > */}
+                  <div className="font-CooperHevitt text-lg max-sm:text-xl text-slate-gray">
                     {item.label}
-                  </Link>
+                    {showoption && item.label === "Work" && (
+                      <div
+                        className={` absolute   pl-2 ml-2 text-[18px] space-y-1 py-0 flex top-[0px] w-32  flex-col 
+                          left-16  border-2 bg-gray-200  `}
+                      >
+                        <div> Fiction</div>
+                        <div>Non-Fiction</div>
+                      </div>
+                    )}
+                    {/* </Link> */}
+                  </div>
                 </li>
               ))}
             </ul>

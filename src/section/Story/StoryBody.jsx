@@ -35,17 +35,17 @@ font-Gamiliademo  w-[90%] max-md:w-[90%] mx-auto text-center   text-[45px] max-m
         {storydata?.title}
       </div>
 
-      <div className="mt-10 max-md:mt-6 flex flex-col justify-center items-center   ">
+      <div className="mt-10 w-[70%] mx-auto  max-md:mt-6 flex flex-col justify-center items-center   ">
         <div className=" ">
           <img
             src={storydata?.cover2}
             alt="person"
-            className=" pb-1 pr-6  z-10 max-md:pr-2 max-md:pb-[1px]    max-md:w-[80%] w-[70%] mx-auto "
+            className=" pb-1 pr-6   w-full z-10 max-md:pr-2 max-md:pb-[1px]    max-md:w-[80%]  mx-auto "
           />
         </div>
 
         <div
-          className="text-[24px] tracking-wide w-[70%] mt-4 max-md:p-4  p-14   bg-white  text-justify max-lg:w-[100%] max-md:w-[100%]  max-md:leading-[17px] max-md:text-[15.6px]   font-TimesNewRoman        "
+          className="text-[24px] tracking-wide  mt-4 max-md:p-4  p-14   bg-white  text-justify max-lg:w-[100%] max-md:w-[100%]  max-md:leading-[17px] max-md:text-[15.6px]   font-TimesNewRoman        "
           dangerouslySetInnerHTML={{
             __html: DOMPurify.sanitize(storydata?.description),
           }}

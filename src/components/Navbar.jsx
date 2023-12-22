@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { navLinks } from "./constants";
 import SideNav from "./SideNav";
 import { AMGautmaBlack, AMGautmaWhite } from "../assets/icons";
@@ -8,7 +8,8 @@ import { AMG, AMGautam, AMGautam2, AMGautam3 } from "../assets/images";
 const Navbar = () => {
   const location = useLocation();
   const [showNav, setNav] = useState(false);
-
+  const [showoption, setshowoption] = useState(false);
+  const navigate = useNavigate();
   useEffect(() => {
     setNav(false);
   }, [location]);
@@ -72,7 +73,7 @@ const Navbar = () => {
               {navLinks.map((item) => (
                 <li
                   key={item.label}
-                  className={`px-2 ${
+                  className={`relative px-2 ${
                     (location.pathname === "/" && item.href === "/home") ||
                     location.pathname === item.href
                       ? "border-b-[1px] "
@@ -84,13 +85,45 @@ const Navbar = () => {
                       : "border-b-gray-600"
                   }
                   `}
+                  onMouseEnter={() => {
+                    if (item.label === "Work") {
+                      setshowoption(true);
+                    }
+                  }}
+                  onMouseLeave={() => {
+                    setshowoption(false);
+                  }}
+                  onClick={() => {
+                    if (item.label === "Work") {
+                      setshowoption(true);
+                    }
+                    if (item.label !== "Work") {
+                      // setshowoption(true);
+                      navigate(item.href);
+                    }
+                  }}
                 >
-                  <Link
-                    to={item.href}
+                  <div
+                    // to={item.href}
                     className={`font-CooperHevitt text-lg 2xl:text-2xl  text-slate-gray`}
                   >
                     {item.label}
-                  </Link>
+                    {showoption && item.label === "Work" && (
+                      <div
+                        className={`   p-2 text-[20px] space-y-2 py-4 flex top-[33px] w-32  flex-col left-0 bg-white border-gray-400 absolute`}
+                      >
+                        <div
+                          onClick={() => {
+                            navigate(item.href);
+                          }}
+                        >
+                          {" "}
+                          Fiction
+                        </div>
+                        <div>Non-Fiction</div>
+                      </div>
+                    )}
+                  </div>
                 </li>
               ))}
             </ul>
