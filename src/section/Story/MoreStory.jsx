@@ -8,7 +8,7 @@ const MoreStory = ({ story }) => {
   useEffect(() => {
     setmoreStory(
       storyCover.filter((str) => {
-        return story.title !== str.title;
+        return story?.title !== str?.title;
       })
     );
   }, [storyCover, story]);
