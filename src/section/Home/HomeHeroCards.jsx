@@ -26,7 +26,7 @@ const HomeHeroCards = ({ story }) => {
                   ? story?.description.substring(0, maxCharacters) + "..."
                   : story?.description}
               </p>
-              <div className="max-sm:p-1 my-4 max-md:mt-4max-md:max-w-[150px]  w-auto max-w-[200px] flex justify-center items-center flex-row text-white  text-sm 2xl:text-lg  border-[1px] p-2   max-sm:text-[14px]   border-white">
+              <div className="max-sm:p-1 my-4 max-md:mt-4 max-md:max-w-[150px]  w-auto max-w-[200px] flex justify-center items-center flex-row text-white  text-sm 2xl:text-lg  border-[1px] p-2   max-sm:text-[14px]   border-white">
                 READ STORY
                 <img src={ArrowRight} className="w-8 px-1 pl-2" alt="" />
               </div>
