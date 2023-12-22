@@ -4,6 +4,8 @@ import { ArrowRight } from "../../assets/icons";
 import DOMPurify from "dompurify";
 
 const HomeHeroCards = ({ story }) => {
+  const maxCharacters = window.innerWidth <= 600 ? 100 : 180;
+
   return (
     <div className="relative w-[1000px] max-xl:w-[900px] max-lg:w-[700px] 2xl:w-[1200px] max-sm:w-full rounded max-md:rounded-none h-full flex-shrink-0 snap-center scroll-smooth overflow-hidden">
       <div className="w-full bg-black h-full flex flex-row group text-center scroll-smooth relative  overflow-hidden">
@@ -20,11 +22,11 @@ const HomeHeroCards = ({ story }) => {
               </h3>
 
               <p class=" text-gray-50 text-base  max-sm:text-[10px] font-montserrat">
-                {story?.description.length > 180
-                  ? story?.description.substring(0, 180) + "   . . ."
+                {story?.description.length > maxCharacters
+                  ? story?.description.substring(0, maxCharacters) + "..."
                   : story?.description}
               </p>
-              <div className="max-sm:p-1 my-4 max-md:mt-4 max-md:m-2 max-md:max-w-[150px]  w-auto max-w-[200px] flex justify-center items-center flex-row text-white  text-sm 2xl:text-lg  border-[1px] p-2   max-sm:text-[14px]   border-white">
+              <div className="max-sm:p-1 my-4 max-md:mt-4max-md:max-w-[150px]  w-auto max-w-[200px] flex justify-center items-center flex-row text-white  text-sm 2xl:text-lg  border-[1px] p-2   max-sm:text-[14px]   border-white">
                 READ STORY
                 <img src={ArrowRight} className="w-8 px-1 pl-2" alt="" />
               </div>
@@ -33,7 +35,7 @@ const HomeHeroCards = ({ story }) => {
         </div>
         <div className="transition-all ease-in-out duration-200 absolute bg-gray-200 top-0 right-0 w-[55%] h-full">
           <div
-            className="w-full h-full flex justify-end items-center inside-shadow  bg-no-repeat bg object-center -z-50 bg-cover"
+            className="w-full h-full flex justify-end items-center inside-shadow bg-center bg-no-repeat bg object-center -z-50 bg-cover"
             style={{
               backgroundImage: `url(${story?.cover})`,
             }}
