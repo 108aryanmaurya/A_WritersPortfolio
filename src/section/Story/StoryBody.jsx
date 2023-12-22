@@ -38,7 +38,7 @@ font-Gamiliademo  w-[90%] max-md:w-[90%] mx-auto text-center   text-[45px] max-m
       <div className="mt-10 max-md:mt-6 flex flex-col justify-center items-center   ">
         <div className=" ">
           <img
-            src={article2}
+            src={storydata?.cover2}
             alt="person"
             className=" pb-1 pr-6  z-10 max-md:pr-2 max-md:pb-[1px]    max-md:w-[80%] w-[70%] mx-auto "
           />

@@ -80,7 +80,7 @@ font-Gamiliademo  w-[90%] max-md:w-[90%] mx-auto  text-[45px] max-md:text-[24px]
       <div className="mt-10 max-md:mt-6   max-md:p-4  p-10  bg-white ">
         <div className="float-left ">
           <img
-            src={article2}
+            src={articledata?.cover}
             alt="person"
             className=" pb-1 pr-6  z-10 max-md:pr-2 max-md:pb-[1px]    max-md:w-[200px] w-[600px]  "
           />

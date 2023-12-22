@@ -34,8 +34,24 @@ import reviewhero from './reviewhero.jpg'
 import Bookcover from './Bookcover.png'
 import TheGreatestIndianStoriesEverTold from './The-Greatest-Indian-Stories-Ever-Told.png'
 import heroBannerImage from "./heroBannerImage.png"
+import fiftyninetimesbutone from './fiftyninetimesbutone.jpg'
+import IntotheNight from './IntotheNight.jpg'
+import inDefenseOfMoonlight from './inDefenseOfMoonlight.jpg'
+import ManinaLittleTown from './ManinaLittleTown.jpg'
+import peril from './peril.jpg'
+import UpsideDown from './UpsideDown.jpg'
+import TheLibrary from './TheLibrary.jpg'
+import TheShadowTeacher from './TheShadowTeacher.jpeg'
 
 export {
+  UpsideDown,
+  TheShadowTeacher,
+  TheLibrary,
+  peril,
+  ManinaLittleTown,
+  inDefenseOfMoonlight,
+  IntotheNight,
+  fiftyninetimesbutone,
   TheGreatestIndianStoriesEverTold,
   heroBannerImage,
   Bookcover,

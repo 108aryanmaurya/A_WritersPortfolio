@@ -30,16 +30,16 @@ const AboutCrousel = () => {
   };
 
   return (
-    <section className="mx-auto flex px-24 max-lg:px-10 bg-gray-900 flex-col my-10 max-sm:mt-20 max-md:py-3  py-24 max-sm:px-0">
-      <p className="font-CooperHevitt   max-md:my-2 font-semibold tracking-[5px]  text-[40px] pl-8 max-md:pl-0 text-gray-200 max-md:text-center  max-sm:text-[22px] ">
+    <section className="mx-auto flex px-24 max-lg:px-10 bg-gray-800 justify-center items-center flex-col my-10 max-sm:mt-20 max-md:py-3  py-20 max-sm:px-0">
+      <p className="font-Oswald mb-6  max-md:mb-0  max-md:my-2 font- tracking-[5px]  text-[40px] max-md:pl-0 text-gray-200 max-md:text-center  max-sm:text-[22px] ">
         WORKS BY A.M. GAUTAM
       </p>
 
-      <div className="flex max-md:flex-col justify-center items-start  max-md:gap-0 max-md:my-3  my-8  gap-28">
-        <div className=" mx-auto ">
+      <div className="bg-gray-900 flex max-md:flex-col justify-center items-center max-md:gap-0 max-md:my-3  py-8  gap-28">
+        <div className=" mx-auto    ">
           {reviews[currentIndex].type == "Book" && (
             <div
-              className="h-[450px] relative  flex  justify-center items-center w-[300px] max-w-[100px] max-md:w-[200px]     max-md:h-[300px] max-md:max-w-full mx-auto text-center"
+              className="h-[400px] relative  flex  justify-center items-center w-[300px] max-w-[300px] max-md:w-[200px]     max-md:h-[300px] max-md:max-w-full mx-auto text-center"
               onClick={() => {
                 navigate(
                   `/Book/${reviews[currentIndex].title.replace(/\s+/g, "-")}`
@@ -65,7 +65,7 @@ const AboutCrousel = () => {
               }}
             >
               <img
-                src={Articlehero}
+                src={reviews[currentIndex].cover}
                 // src={reviews[currentIndex]?.cover}
                 alt=""
                 className=" transition ease-in-out group3 w-full h-full object-top     m-auto mb-1 "
@@ -116,9 +116,6 @@ const AboutCrousel = () => {
             <p className="text-[30px] 2xl:text-[35px] max-sm:pl-2 max-md:leading-7 max-md:my-3  text-white font-Gamiliademo w-full ">
               {reviews[currentIndex]?.title}
             </p>
-            <span className="italic max-sm:pl-2 text-[18px] 2xl:text-[22px] font-[50] font-Oswald tracking-wider text-slate-300">
-              -BY A.M. GAUTAM
-            </span>
           </div>
           <div className="font-montserrat max-md:mx-2 max-md:mt-3 h-auto 2xl:text-[18px] text-slate-400 text-justify max-md:text-center">
             {reviews[currentIndex]?.description}
