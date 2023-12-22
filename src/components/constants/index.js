@@ -199,7 +199,7 @@ export const works = [
   {
     type: "Article",
     cover: inDefenseOfMoonlight,
-    title: "In Defense of moon lighting",
+    title: "In Defense Of Moonlighting",
     publication: "Businessworld",
     Date: "March 2, 2023",
     publicationlink:

@@ -13,9 +13,12 @@ const HomeHeroCards = ({ story }) => {
         <div
           className={`bg-gray-800 transition-all ease-in-out duration-200 opacity-80 max-sm:opacity-70 z-[1] w-[80%] h-full  [clip-path:polygon(0%_0%,65%_0%,100%_100%,0%_100%)]`}
         >
-          <div class="w-[74%] h-full flex justify-center items-center flex-col text-left space-y-2 p-3">
+          <div class="w-[74%] max-sm:w[80%] h-full flex justify-center items-center flex-col text-left space-y-2 p-3">
             <div className="ml-10 max-sm:ml-0">
-              <h3 class="font-black font-Gamiliademo tracking-wider text-white 2xl:text-4xl text-4xl max-lg:text-3xl max-md:text-2xl mb-3 max-sm:mb-1">
+              <span className="bg-white px-2 py-1 uppercase font-CooperHevitt text-xs text-black font-bold my-2">
+                short stories
+              </span>
+              <h3 class="font-black font-Gamiliademo tracking-wider text-white 2xl:text-4xl text-4xl max-lg:text-3xl max-md:text-2xl my-3 max-sm:mb-1">
                 {story?.title}
               </h3>
               <h3 class="font-black font-Authorfont tracking-wider mb-2  text-gray-100  text-xl 2xl:text-2xl max-md:text-lg max-sm:text-base">
