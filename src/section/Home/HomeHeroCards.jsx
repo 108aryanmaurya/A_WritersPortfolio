@@ -1,10 +1,11 @@
 import React from "react";
 import "./HomeHeroCards.css";
 import { ArrowRight } from "../../assets/icons";
-import DOMPurify from "dompurify";
+import { useNavigate } from "react-router";
 
 const HomeHeroCards = ({ story }) => {
   const maxCharacters = window.innerWidth <= 600 ? 100 : 180;
+  const navigate = useNavigate();
 
   return (
     <div className="relative w-[1000px] max-xl:w-[900px] max-lg:w-[700px] 2xl:w-[1200px] max-sm:w-full rounded max-md:rounded-none h-full flex-shrink-0 snap-center scroll-smooth overflow-hidden">
@@ -14,19 +15,24 @@ const HomeHeroCards = ({ story }) => {
         >
           <div class="w-[74%] h-full flex justify-center items-center flex-col text-left space-y-2 p-3">
             <div className="ml-10 max-sm:ml-0">
-              <h3 class="font-black font-Gamiliademo tracking-wider text-white 2xl:text-3xl text-4xl max-lg:text-3xl max-md:text-2xl mb-3 max-sm:mb-1">
+              <h3 class="font-black font-Gamiliademo tracking-wider text-white 2xl:text-4xl text-4xl max-lg:text-3xl max-md:text-2xl mb-3 max-sm:mb-1">
                 {story?.title}
               </h3>
-              <h3 class="font-black font-Authorfont tracking-wider mb-2  text-gray-100  text-xl max-md:text-lg max-sm:text-base">
+              <h3 class="font-black font-Authorfont tracking-wider mb-2  text-gray-100  text-xl 2xl:text-2xl max-md:text-lg max-sm:text-base">
                 -By A.M. Gautam
               </h3>
 
-              <p class=" text-gray-50 text-base  max-sm:text-[12px] font-montserrat">
+              <p class=" text-gray-50 text-base 2xl:text-lg max-sm:text-[12px] font-montserrat">
                 {story?.description.length > maxCharacters
                   ? story?.description.substring(0, maxCharacters) + "..."
                   : story?.description}
               </p>
-              <div className="max-sm:p-1 my-4 max-md:mt-4 max-md:max-w-[150px]  w-auto max-w-[200px] flex justify-center items-center flex-row text-white  text-sm 2xl:text-lg  border-[1px] p-2   max-sm:text-[14px]   border-white">
+              <div
+                className="max-sm:p-1 my-4 max-md:mt-4 max-md:max-w-[150px]  w-auto max-w-[200px] flex justify-center items-center flex-row text-white  text-sm 2xl:text-lg  border-[1px] p-2   max-sm:text-[14px]   border-white"
+                onClick={() => {
+                  navigate(`/Story/${story?.title.replace(/\s+/g, "-")}`);
+                }}
+              >
                 READ STORY
                 <img src={ArrowRight} className="w-8 px-1 pl-2" alt="" />
               </div>

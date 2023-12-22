@@ -135,8 +135,8 @@ export const articles = [
   {
     title:
       "The Peculiar Perils (and Excitements) of Living in One Language and Writing in Another",
-    publication: "Orca",
     cover: peril,
+    publication: "Orca",
     Date: "April 1, 2022",
     link: "https://orcalit.com/the-peculiar-perils-and-excitements-of-living-in-one-language-and-writing-in-another/",
     description:
@@ -145,8 +145,8 @@ export const articles = [
 
   {
     title: "In Defense Of Moonlighting",
-    publication: "Businessworld",
     cover: inDefenseOfMoonlight,
+    publication: "Businessworld",
     Date: "March 2, 2023",
     link: "https://www.businessworld.in/article/In-Defense-Of-Moonlighting-/02-03-2023-467583/",
     description:
@@ -200,6 +200,10 @@ export const works = [
     type: "Article",
     cover: inDefenseOfMoonlight,
     title: "In Defense of moon lighting",
+    publication: "Businessworld",
+    Date: "March 2, 2023",
+    publicationlink:
+      "https://www.businessworld.in/article/In-Defense-Of-Moonlighting-/02-03-2023-467583/",
     description:
       "If a Martian were to visit our planet and ask you to describe what is this 'job' thing you keep talking about, you would probably describe it as a setup in which you use your skills to do a specific task for someone and get paid for that. The definition is sound enough,. . .",
     link: "/Article/In-Defense-of-moon-lighting",
@@ -207,9 +211,12 @@ export const works = [
   {
     type: "Article",
     cover: peril,
-
     title:
       "The Peculiar Perils (and Excitements) of Living in One Language and Writing in Another",
+    publication: "Orca",
+    Date: "April 1, 2022",
+    publicationlink:
+      "https://orcalit.com/the-peculiar-perils-and-excitements-of-living-in-one-language-and-writing-in-another/",
     description:
       "First things first: when I talk about the language in which we live, I mean to talk about the nebulous linguistic soup in our heads in which our thoughts are first formed and take definite shapes. This language, or a mixture of languages, is often our mother-tongue, the one in . . .",
     link: "/Article/The-Peculiar-Perils-(and-Excitements)-of-Living-in-One-Language-and-Writing-in-Another",
@@ -218,6 +225,10 @@ export const works = [
     type: "Article",
     cover: Articlehero,
     title: "Coward attacks literary giant, achieves nothing",
+    Date: "August 14, 2022",
+    publication: "Times of India",
+    publicationlink:
+      "https://timesofindia.indiatimes.com/life-style/books/features/coward-attacks-literary-giant-achieves-nothing/articleshow/93553331.cms#",
     description:
       "tempora recusandae dolore sapiente dicta dignissimos alias corrupti placeat optio, quisquam pariatur!Nuam alias molestias voluptatibus, quod cumque officiis rerum animi explicabo quam recusandae assumenda, sed nostrum, officiis delectus, error itaque possimus. Beatae . . .",
     link: "/Article/Coward-attacks-literary-giant,-achieves-nothing",
