@@ -9,9 +9,9 @@ export default function MoreContent() {
 
   return (
     <>
-      <div className="bg-gray-900 py-20 px-12 max-sm:py-10 max-sm:px-8">
+      <div className="bg-gray-900 py-20 px-12 max-sm:px-4 max-sm:py-10">
         <div className="flex flex-col text-center w-full mb-10">
-          <h2 className="max-sm:tracking-[6px] max-sm:text-[21px] tracking-[6px] font-semibold text-[40px] text-[#FAF8F0] font-Oswald textce uppercase">
+          <h2 className="max-sm:tracking-[6px] max-sm:text-[20px] tracking-[6px] font-semibold text-[40px] text-[#FAF8F0] font-Oswald textce uppercase">
             Articles By A.M. Gautam
           </h2>
         </div>
