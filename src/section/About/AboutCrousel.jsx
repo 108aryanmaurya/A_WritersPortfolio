@@ -35,7 +35,7 @@ const AboutCrousel = () => {
         WORKS BY A.M. GAUTAM
       </p>
 
-      <div className="bg-gray-900 flex max-md:flex-col justify-center items-center max-md:gap-0 max-md:my-3  py-8  gap-28">
+      <div className=" flex max-md:flex-col justify-center items-center max-md:gap-0 max-md:my-3  py-8  gap-28">
         <div className=" mx-auto    ">
           {reviews[currentIndex].type == "Book" && (
             <div
@@ -97,17 +97,17 @@ const AboutCrousel = () => {
                 <img
                   src={reviews[currentIndex]?.cover}
                   alt=""
-                  className=" w-[260px] max-md:h-[280px]  opacity-70 h-[400px]  max-md:w-full "
+                  className=" w-[500px]   max-md:w-full  opacity-70"
                 />
               </div>
-              <div className=" z-50 absolute max-md:left-3  w-[75%]  left-9 bottom-12 flex flex-col  max-md:bottom-7  gap-24  max-md:gap-20 max-md:w-[85%]">
+              {/* <div className=" z-50 absolute max-md:left-3  w-[75%]  left-9 bottom-12 flex flex-col  max-md:bottom-7  gap-24  max-md:gap-20 max-md:w-[85%]">
                 <div className="tracking-widest  text-yellow-400 uppercase font-Gamiliademo max-md:text-[18px]  text-[28px] text-center   ">
                   {reviews[currentIndex]?.title}
                 </div>
                 <div className="tracking-widest  text-yellow-500 uppercase font-Authorfont text-[20px]  font-light max-md:text-[14px] text-center ">
                   By A.M. Gautam
                 </div>
-              </div>
+              </div> */}
             </section>
           )}
         </div>

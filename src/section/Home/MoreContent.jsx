@@ -33,6 +33,7 @@ export default function MoreContent() {
                     navigate(`/Article/${art?.title.replace(/\s+/g, "-")}`);
                   }}
                 >
+
                   {art?.title}
                 </h3>
                 <div className="flex gap-2 items-center mt-2 max-md:flex-col max-md:items-start">
