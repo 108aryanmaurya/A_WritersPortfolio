@@ -25,7 +25,7 @@ export default function SideNav(props) {
                       : ""
                   }           
                              
-                          ${showoption && item.label == "Work" && "ml-[90px]"}
+                          ${showoption && item.label == "Work" && "ml-[84px]"}
                           `}
                   onClick={() => {
                     if (item.label === "Work") {
