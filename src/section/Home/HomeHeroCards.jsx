@@ -4,7 +4,7 @@ import { ArrowRight } from "../../assets/icons";
 import { useNavigate } from "react-router";
 
 const HomeHeroCards = ({ story }) => {
-  const maxCharacters = window.innerWidth <= 600 ? 100 : 180;
+  const maxCharacters = window.innerWidth <= 600 ? 80 : 180;
   const navigate = useNavigate();
 
   return (
@@ -15,8 +15,8 @@ const HomeHeroCards = ({ story }) => {
         >
           <div class="w-[74%] max-sm:w[80%] h-full flex justify-center items-center flex-col text-left space-y-2 p-3">
             <div className="ml-10 max-sm:ml-0">
-              <span className="bg-white px-2 py-1 uppercase font-CooperHevitt text-xs text-black font-bold my-2">
-                short stories
+              <span className="bg-white px-2 py-1 max-sm:pt-1 uppercase font-CooperHevitt text-xs text-black font-bold my-2">
+                short story
               </span>
               <h3 class="font-black font-Gamiliademo tracking-wider text-white 2xl:text-4xl text-4xl max-lg:text-3xl max-md:text-2xl my-3 max-sm:mb-1">
                 {story?.title}

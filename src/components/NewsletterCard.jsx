@@ -4,7 +4,7 @@ export default function NewsletterCard() {
   return (
     <>
       <iframe
-        src="https://ashwinmaurya.substack.com/embed"
+        src="https://adityagautam.substack.com/embed"
         width="100%"
         height="100%"
         style={{
