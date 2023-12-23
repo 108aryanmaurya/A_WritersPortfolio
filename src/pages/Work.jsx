@@ -141,7 +141,7 @@ export default function Work() {
             </div>
           )}
         </div>
-        <div className="text-center tracking-wider border- font-Gamiliademo  py-20  max-md:py-8 text-[55px] ">
+        <div className="text-center tracking-wider border- font-Gamiliademo  py-20  max-md:py-8 text-[55px] max-md:text-[40px] ">
           {type}
         </div>
         {BookData.length > 0 && (
