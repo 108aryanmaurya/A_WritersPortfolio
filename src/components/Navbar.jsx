@@ -49,7 +49,7 @@ const Navbar = () => {
           } top-0 flex  max-md:flex-row max-md:justify-between py-2 pb-6 max-md:py-2 items-center w-full`}
         >
           <div
-            className={`transition-all duration-300 items-center max-md:m-0 mt-0 max-md:ml-1`}
+            className={`transition-all duration-300 items-center max-md:m-0 mt-0 max-md:ml-1 mb-5 max-sm:mb-0`}
           >
             {location.pathname.includes("/About") ||
             location.pathname.includes("/Book") ||
@@ -75,7 +75,7 @@ const Navbar = () => {
                   key={item.label}
                   className={`relative px-2 ${
                     (location.pathname === "/" && item.href === "/home") ||
-                    location.pathname === item.href
+                    location.pathname.includes(item.href)
                       ? "border-b-[1px] "
                       : ""
                   }
