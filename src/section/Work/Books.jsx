@@ -12,11 +12,11 @@ const Books = ({ BookData }) => {
         BOOKS
       </div> */}
 
-      <div className=" flex flex-col mx-28 my-10 max-md:my-0 max-md:mx-0 justify-center  items-center max-md:mb-14 ">
+      <div className=" flex flex-col mx-28 my-10  max-md:mx-0 justify-center  items-center max-md:my-6  ">
         {BookData?.map((singleBook) => (
           <div
             key={2}
-            className=" max-md:flex-col   max-md:justify-center max-md:items-center   flex justify-center items-start  w-full   "
+            className=" max-md:flex-col   max-md:justify-center max-md:items-center   flex justify-center items-start  w-full     "
           >
             <div
               className="w-[60%] flex justify-center items-center max-md:flex max-md:flex-col max-md:justify-center  max-md:items-center max-md:w-full "
@@ -25,7 +25,7 @@ const Books = ({ BookData }) => {
               }}
             >
               <span
-                className="text-[30px]    max-md:block hidden  text-center   max-md:text-[22px]  uppercase  text-gray-800 font-Oswald  max-md:leading-7 max-md:mb-8 "
+                className="text-[30px]    max-md:block hidden  text-center   max-md:text-[22px]   uppercase  text-gray-800 font-Oswald  max-md:leading-7 max-md:mb-10 "
                 onClick={() => {
                   navigate(`/Story/${singleBook?.title.replace(/\s+/g, "-")}`);
                 }}
@@ -49,12 +49,12 @@ const Books = ({ BookData }) => {
               >
                 {singleBook?.title}
               </span>{" "}
-              <div className="text-justify max-md:text-[12px] font-TimesNewRoman  text-[23px] max-md:leading-none leading-7 text-gray-900 w-[90%] max-md:w-[85%] max-md:mt-6">
+              <div className="text-justify max-md:text-[18px] font-TimesNewRoman  text-[23px] max-md:leading-none leading-7 text-gray-900 w-[90%] max-md:w-[85%] max-md:mt-6">
                 {singleBook.description}
               </div>
               <div className="flex gap-7 mt-5 max-md:mt-2 max-md:gap-1">
                 <div
-                  className=" max-sm:p-1 max-md:mt-2  max-md:m-1   w-auto max-w-[200px] flex justify-center items-center flex-row text-black   border-2 p-2 gap-2 max-md:gap-1 max-sm:text-[14px]  max-md:border-[1px] border-black"
+                  className=" max-sm:p-1 max-md:mt-2  max-md:m-1   w-auto max-w-[200px] flex justify-center items-center flex-row text-black   border-2 p-2 gap-2 max-md:gap-1 max-sm:text-[14px]  max-md:border-[2px] border-black"
                   onClick={() => {
                     navigate(`/Book/${singleBook.title.replace(/\s+/g, "-")}`);
                   }}
@@ -66,7 +66,7 @@ const Books = ({ BookData }) => {
                     alt=""
                   />
                 </div>
-                <div className=" max-sm:p-1 max-md:mt-2  max-md:m-1   w-auto max-w-[200px] flex justify-center items-center flex-row text-black   border-2 p-2 gap-2 max-md:gap-2 max-sm:text-[14px] max-md:border-[1px]  border-black">
+                <div className=" max-sm:p-1 max-md:mt-2  max-md:m-1   w-auto max-w-[200px] flex justify-center items-center flex-row text-black   border-2 p-2 gap-2 max-md:gap-2 max-sm:text-[14px] max-md:border-[2px]  border-black">
                   <span>ORDER NOW</span>
                   <img
                     src={Cart}
