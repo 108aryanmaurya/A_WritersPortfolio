@@ -20,17 +20,20 @@ export default function MoreContent() {
             <div
               key={art.id}
               className="flex flex-col m-10 max-sm:m-2 max-sm:justify-center max-sm:items-center max-md:flex-row max-sm:pb-5 max-w-[300px] max-md:max-w-full"
-              onClick={() => {
-                navigate(`/Article/${art.title.replace(/\s+/g, "-")}`);
-              }}
             >
               <img
                 alt="Art"
                 src={art?.cover}
                 className="h-64 w-64 max-md:w-50 max-md:h-50 max-sm:w-32 max-sm:h-32 object-cover"
               />
-              <div className="w-full flex flex-col justify-between   max-md:ml-4">
-                <h3 className="mt-4 max-md:mt-0 text-lg 2xl:text-2xl max-md:text-base max-sm:text-base text-white sm:text-xl font-TimesNewRoman tracking-wider cursor-pointer hover:underline underline-offset-4 ">
+              <div className="w-full max-md:ml-4">
+                <h3
+                  className="mt-4 max-md:mt-0 text-lg 2xl:text-2xl max-md:text-base max-sm:text-base text-white sm:text-xl font-TimesNewRoman tracking-wider cursor-pointer hover:underline underline-offset-4 "
+                  onClick={() => {
+                    navigate(`/Article/${art?.title.replace(/\s+/g, "-")}`);
+                  }}
+                >
+
                   {art?.title}
                 </h3>
                 <div className="flex gap-2 items-center mt-2 max-md:flex-col max-md:items-start">
@@ -57,7 +60,12 @@ export default function MoreContent() {
                     {art.Date}
                   </h3>
                 </div>
-                <div className="max-md:hidden max-sm:p-1 my-4 max-md:mt-4 max-md:m-2 max-md:max-w-[150px]  w-auto max-w-[200px] flex justify-center items-center flex-row text-white  text-sm 2xl:text-lg  border-[1px] p-2   max-sm:text-[14px]   border-white">
+                <div
+                  className="max-md:hidden max-sm:p-1 my-4 max-md:mt-4 max-md:m-2 max-md:max-w-[150px]  w-auto max-w-[200px] flex justify-center items-center flex-row text-white  text-sm 2xl:text-lg  border-[1px] p-2   max-sm:text-[14px]   border-white"
+                  onClick={() => {
+                    navigate(`/Article/${art?.title.replace(/\s+/g, "-")}`);
+                  }}
+                >
                   READ NOW
                   <img src={ArrowRight} className="w-8 px-1 pl-2" alt="" />
                 </div>
