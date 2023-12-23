@@ -29,7 +29,7 @@ export default function MoreContent() {
                 src={art?.cover}
                 className="h-64 w-64 max-md:w-50 max-md:h-50 max-sm:w-32 max-sm:h-32 object-cover"
               />
-              <div className="w-full max-md:ml-4">
+              <div className="w-full flex flex-col justify-between   max-md:ml-4">
                 <h3 className="mt-4 max-md:mt-0 text-lg 2xl:text-2xl max-md:text-base max-sm:text-base text-white sm:text-xl font-TimesNewRoman tracking-wider cursor-pointer hover:underline underline-offset-4 ">
                   {art?.title}
                 </h3>

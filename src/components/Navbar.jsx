@@ -110,17 +110,32 @@ const Navbar = () => {
                     {item.label}
                     {showoption && item.label === "Work" && (
                       <div
-                        className={`   p-2 text-[20px] space-y-2 py-4 flex top-[33px] w-32  flex-col left-0 bg-white border-gray-400 absolute`}
+                        className={` ${
+                          location.pathname === "/About" ||
+                          location.pathname.includes("/Book") ||
+                          location.pathname.includes("/Story") ||
+                          location.pathname.includes("/Article")
+                            ? "text-black"
+                            : ""
+                        }  p-2 text-[20px] space-y-2 py-4 flex top-[32px] w-32  flex-col left-0 bg-white border-gray-400 absolute`}
                       >
                         <div
                           onClick={() => {
-                            navigate(item.href);
+                            navigate("/Work/Fiction");
+                            setshowoption(false);
                           }}
                         >
                           {" "}
                           Fiction
                         </div>
-                        <div>Non-Fiction</div>
+                        <div
+                          onClick={() => {
+                            navigate("/Work/Non-Fiction");
+                            setshowoption(false);
+                          }}
+                        >
+                          Non-Fiction
+                        </div>
                       </div>
                     )}
                   </div>

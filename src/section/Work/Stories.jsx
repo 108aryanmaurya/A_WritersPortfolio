@@ -1,14 +1,14 @@
 import { storyCover } from "../../components/constants";
 import StoryCard from "../../components/StoryCard";
 
-const Stories = () => {
+const Stories = ({ StoryData }) => {
   return (
-    <section className="flex relative flex-col  items-center justify-center">
+    <section className="flex relative flex-col my-44  items-center justify-center">
       <div className="text-center text-[29px] pt-4 max-md:text-[23px] max-md:pb-3 pb-7 font-[100] font-CooperHevitt   border-black">
         SHORT STORIES
       </div>
       <div className=" grid grid-cols-3 max-md:grid-cols-2  gap-x-24 max-md:w-[90%] max-md:gap-x-10 max-md:gap-y-16 gap-y-20 my-10 max-md:my-6 justify-center ">
-        {storyCover.map((ind) => {
+        {StoryData?.map((ind) => {
           return <StoryCard key={2} ind={ind}></StoryCard>;
         })}
 

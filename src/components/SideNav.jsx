@@ -12,7 +12,7 @@ export default function SideNav(props) {
         id="mySidenav"
         className="backdrop-blur-sm fixed select-none w-screen sidenav bg-Opacitywhite h-[100vh] overflow-hidden  z-[99] transition-all ease-in-out delay-75 duration-200"
       >
-        <div className="w-full flex justify-start  select-none h-full bg-white shadow-lg overflow-hidden dark:bg-darkBgMain flex-col">
+        <div className="w-full flex justify-start  items-center select-none h-full bg-white shadow-lg overflow-hidden dark:bg-darkBgMain flex-col">
           <div className="flex w-auto mt-24">
             <ul className="flex-1 flex flex-col items-center gap-8">
               {navLinks.map((item) => (
@@ -23,12 +23,10 @@ export default function SideNav(props) {
                     location.pathname === item.href
                       ? "border-b-[1px] border-b-gray-600 "
                       : ""
-                  }`}
-                  onMouseEnter={() => {
-                    if (item.label === "Work") {
-                      setshowoption(true);
-                    }
-                  }}
+                  }           
+                             
+                          ${showoption && item.label == "Work" && "ml-[90px]"}
+                          `}
                   onClick={() => {
                     if (item.label === "Work") {
                       setshowoption(true);
@@ -36,6 +34,7 @@ export default function SideNav(props) {
                     if (item.label !== "Work") {
                       // setshowoption(true);
                       navigate(item.href);
+                      setshowoption(false);
                     }
                   }}
                 >
@@ -43,15 +42,29 @@ export default function SideNav(props) {
                     to={item.href}
                    
                   > */}
-                  <div className="font-CooperHevitt text-lg max-sm:text-xl text-slate-gray">
+                  <div className="font-CooperHevitt  text-lg max-sm:text-xl text-slate-gray ">
                     {item.label}
                     {showoption && item.label === "Work" && (
                       <div
-                        className={` absolute   pl-2 ml-2 text-[18px] space-y-1 py-0 flex top-[0px] w-32  flex-col 
-                          left-16  border-2 bg-gray-200  `}
+                        className={` mt-4  text-[20px] space-y-1 py-0 flex top-[0px] w-32   flex-col   `}
                       >
-                        <div> Fiction</div>
-                        <div>Non-Fiction</div>
+                        <div
+                          onClick={() => {
+                            navigate("/Work/Fiction");
+                            setshowoption(false);
+                          }}
+                        >
+                          {" "}
+                          Fiction
+                        </div>
+                        <div
+                          onClick={() => {
+                            navigate("/Work/Non-Fiction");
+                            setshowoption(false);
+                          }}
+                        >
+                          Non-Fiction
+                        </div>
                       </div>
                     )}
                     {/* </Link> */}
