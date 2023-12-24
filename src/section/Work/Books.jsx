@@ -49,8 +49,7 @@ const Books = ({ BookData }) => {
               >
                 {singleBook?.title}
               </span>{" "}
-              <div className="text-justify max-md:text-[12px] font-TimesNewRoman  2xl:text-[23px] text-[16px] max-md:leading-none leading-7 text-gray-900 w-[90%] max-md:w-[85%] max-md:mt-6">
-
+              <div className="text-justify max-md:text-[16px] font-TimesNewRoman  2xl:text-[23px] text-[16px] max-md:leading-none leading-7 text-gray-900 w-[90%] max-md:w-[85%] max-md:mt-6">
                 {singleBook.description}
               </div>
               <div className="flex gap-7 2xl:mt-5 mt-0 max-md:mt-2 max-md:gap-1">
