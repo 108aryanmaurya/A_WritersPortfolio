@@ -5,7 +5,7 @@ const BookSynopsis = ({ bookdetails }) => {
   return (
     <section className="relative max-md:mt-14 flex mt-14">
       <div className="flex justify-between max-md:justify-center  max-md:flex-col  items-center">
-        <div className="w-[400px]   max-md:w-[100%]  max-md:py-0 py-20 max-md:h-[100%] max-md:bg-black    max-md:blur-[0px]   h-full ">
+        <div className="w-[400px]   max-md:w-[100%]  max-md:py-0 py-20 max-md:h-[100%]  max-md:bg-black    max-md:blur-[0px]   h-full ">
           <img
             src={Synopsis}
             className="w-full  max-md:opacity-[0.29]  h-full"
