@@ -9,11 +9,8 @@ export default function Home() {
     <>
       <HomeHero />
       <About />
-      <MoreContent />
       <Newsletter />
-      <div className="grid">
-        <Hero />
-      </div>
+      <MoreContent />
     </>
   );
 }

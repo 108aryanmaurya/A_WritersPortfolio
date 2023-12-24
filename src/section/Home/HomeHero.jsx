@@ -71,7 +71,7 @@ export default function HomeHero() {
                 <div className="w-full h-full flex justify-start items-center">
                   <img
                     src={TheGreatestIndianStoriesEverTold}
-                    className="h-[400px] ml-10 max-md:ml-5 max-sm:ml-0 2xl:h-[450px] max-xl:h-[380px] max-lg:h-[350px] max-md:h-[300px] max-sm:h-[250px] mr-10 max-md:mr-7 max-sm:mr-2"
+                    className="h-[400px] ml-10 max-md:ml-5 max-sm:ml-0 2xl:h-[450px] max-xl:h-[380px] max-lg:h-[350px] max-md:h-[300px] max-sm:h-[250px] mr-10 max-md:mr-7 max-sm:mr-2 max-sm:z-50"
                     alt=""
                   />
                 </div>
@@ -84,11 +84,11 @@ export default function HomeHero() {
                   }}
                 ></div>
 
-                <div class="w-[75%] max-sm:w-[80%] h-full flex justify-center items-center flex-col space-y-2 p-3">
-                  <h3 class="font-black text-center text-gray-800 text-5xl 2xl:text-6xl max-xl:text-4xl max-lg:text-2xl max-md:text-xl uppercase book-cover max-sm:font-extrabold mb-5 max-sm:mb-2 max-sm:text-[25px]">
+                <div class="w-[75%] max-sm:w-[90%] h-full flex justify-center items-center flex-col space-y-2 p-3 max-sm:p-0">
+                  <h3 class="font-black text-center text-gray-800 text-5xl 2xl:text-6xl max-xl:text-4xl max-lg:text-2xl max-md:text-xl uppercase book-cover max-sm:font-extrabold mb-5 max-sm:mb-2 max-sm:text-[30px] drop-shadow-[0_5px_5px_rgba(231, 0, 188, 0.5)]">
                     The Greatest Indian Stories Ever Told
                   </h3>
-                  <span class="md:text-lg inline text-center max-sm:text-center max-sm:leading-4 text-gray-800 text-base font-CooperHevitt max-sm:text-[10px] line-clamp-4 max-md:line-clamp-3 ">
+                  <span class="md:text-lg inline text-center max-sm:text-center max-sm:leading-4 text-gray-800 text-base font-CooperHevitt max-sm:text-[10px] line-clamp-4 max-md:line-clamp-3 max-sm:w-[75%] ">
                     The Greatest Indian Stories Ever Told is a selection of some
                     of the finest literary short fiction written by Indian
                     writers since the genre came into being in the country in

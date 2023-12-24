@@ -12,10 +12,11 @@ import NewsEvents from "./pages/NewsEvents";
 import SingleArticleLayout from "./Layout/SingleArticleLayout";
 import ScrollToTop from "./components/ScrollToTop";
 import SingleStoryLayout from "./Layout/SingleStoryLayout";
-
+import NewsletterFixed from "./components/NewsletterFixed";
 const App = () => {
   return (
     <Router>
+      <NewsletterFixed />
       <ScrollProgress />
       <ScrollToTop />
       <main className=" container select-none">
