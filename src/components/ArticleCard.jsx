@@ -14,7 +14,7 @@ const ArticleCard = ({ art }) => {
         }}
       >
         <span
-          className="text-[30px] max-md:block hidden max-md:text-[22px] uppercase text-gray-800 font-Oswald max-md:leading-7 max-md:mb-8 "
+          className="text-[30px] max-md:block hidden max-md:text-[22px] underline  uppercase text-gray-800 font-Oswald max-md:leading-7 max-md:mb-5 "
           onClick={() => {
             navigate(`/Article/${art?.title.replace(/\s+/g, "-")}`);
           }}
@@ -23,7 +23,7 @@ const ArticleCard = ({ art }) => {
         </span>{" "}
         <img src={art.cover} alt="" className="w-[650px]" />
       </div>
-      <div className="w-[60%] max-md:w-full flex max-md:gap-2  flex-col gap-4">
+      <div className="w-[60%] max-md:w-full flex max-md:gap-0  flex-col gap-4">
         <div className="max-md:mt-2">
           <span>Published in </span>
           <a href={art.link} target="_blank" rel="noopener noreferrer">
@@ -34,7 +34,7 @@ const ArticleCard = ({ art }) => {
           </a>
         </div>
         <span
-          className="text-[25px] 2xl:text-[30px] max-md:hidden   max-md:text-[20px]  uppercase text-gray-800 font-Oswald max-md:leading-7 max-md:mb-2"
+          className="text-[25px] 2xl:text-[30px] max-md:hidden   max-md:text-[20px]  uppercase text-gray-800 font-Oswald max-md:leading-7 underline max-md:mb-2"
           onClick={() => {
             navigate(`/Article/${art?.title.replace(/\s+/g, "-")}`);
           }}
@@ -47,7 +47,7 @@ const ArticleCard = ({ art }) => {
             navigate(`/Article/${art?.title.replace(/\s+/g, "-")}`);
           }}
         >
-          {art?.shortDescription}
+          "{art?.shortDescription}"
         </span>
       </div>
     </div>
