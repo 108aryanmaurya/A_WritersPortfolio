@@ -42,7 +42,7 @@ const ArticleCard = ({ art }) => {
           {art?.title}
         </span>{" "}
         <span
-          className="max-md:leading-6 leading-7 max-md:mt-3  text-[18px] 2xl:text-[22px] max-md:text-[21px] font-TimesNewRoman "
+          className="max-md:leading-6 leading-7 max-md:mt-3  text-[18px] 2xl:text-[22px] text-justify max-md:text-[21px] font-TimesNewRoman "
           onClick={() => {
             navigate(`/Article/${art?.title.replace(/\s+/g, "-")}`);
           }}
