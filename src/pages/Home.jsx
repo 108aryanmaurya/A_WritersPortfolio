@@ -7,8 +7,8 @@ import HomeHero from "../section/Home/HomeHero";
 export default function Home() {
   return (
     <>
-      <HomeHero />
       <About />
+      <HomeHero />
       <Newsletter />
       <MoreContent />
     </>

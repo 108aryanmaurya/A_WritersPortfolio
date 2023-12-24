@@ -64,14 +64,14 @@ export default function HomeHero() {
         <div className="relative">
           <div
             ref={slidesContainerRef}
-            className="slides-container z-[999] h-[350px] 2xl:h-[400px] max-sm:h-[300px] flex snap-x snap-mandatory overflow-hidden overflow-x-auto space-x-4 max-sm:space-x-0 rounded max-md:rounded-none scroll-smooth no-scrollbar"
+            className="slides-container z-[999] h-[450px] 2xl:h-[500px] max-sm:h-[400px] flex snap-x snap-mandatory overflow-hidden overflow-x-auto space-x-4 max-sm:space-x-0 rounded max-md:rounded-none scroll-smooth no-scrollbar"
           >
             <div className="relative w-[1000px] max-xl:w-[900px] max-lg:w-[700px] 2xl:w-[1200px] max-sm:w-full rounded max-md:rounded-none h-full flex-shrink-0 snap-center overflow-hidden">
               <div className="transition-all ease-in-out duration-200 absolute bg-pink-200 top-0  w-[50%] max-sm:w-[60%] h-full ">
                 <div className="w-full h-full flex justify-start items-center">
                   <img
                     src={TheGreatestIndianStoriesEverTold}
-                    className="h-[400px] ml-10 max-md:ml-5 max-sm:ml-0 2xl:h-[450px] max-xl:h-[380px] max-lg:h-[350px] max-md:h-[300px] max-sm:h-[250px] mr-10 max-md:mr-7 max-sm:mr-2 max-sm:z-50"
+                    className="h-[400px] ml-5 max-md:ml-5 max-sm:ml-0 2xl:h-[450px] max-xl:h-[380px] max-lg:h-[350px] max-md:h-[300px] max-sm:h-[250px] mr-10 max-md:mr-7 max-sm:mr-2 max-sm:z-50"
                     alt=""
                   />
                 </div>

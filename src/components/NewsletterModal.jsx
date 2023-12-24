@@ -35,7 +35,7 @@ export default function NewsletterModal(props) {
         onClick={handleOutsideClick}
       >
         <div className="w-auto max-lg:w-[90%] 2xl:scale-125 flex rounded-lg h-auto overflow-hidden bg-white shadow-xl">
-          <div className="flex items-center w-[45%] h-full  bg-[#c182f5] max-lg:hidden">
+          <div className="flex items-center w-[45%] h-full  bg-[#c182f5] max-md:hidden">
             <img
               src="https://images.unsplash.com/photo-1516410529446-2c777cb7366d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               className="max-h-[500px]"
@@ -43,7 +43,15 @@ export default function NewsletterModal(props) {
             />
           </div>
 
-          <div className="py-20 2xl: w-[55%] flex justify-center items-center">
+          <div className="py-20 max-lg:w-full w-[55%] flex justify-center flex-col items-center">
+            <div class=" max-sm:w-full mx-5 hidden max-md:block px-2">
+              <h1 class="text-center text-5xl 2xl:text-6xl font-bold font-CooperHevitt">
+                Newsletter
+              </h1>
+              <p class="text-center 2xl:text-xl mt-2  font-montserrat">
+                Stay up to date with Aditya's latest Reads and News
+              </p>
+            </div>
             <NewsletterCard />
           </div>
         </div>

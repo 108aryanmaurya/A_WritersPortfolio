@@ -34,6 +34,11 @@
   src: local("CooperHewitt-Light"),
     url(./fonts/CooperHewitt-Light.otf) format("opentype");
 }
+@font-face {
+  font-family: "AGaramondPro-Regular";
+  src: local("AGaramondPro-Regular"),
+    url(./fonts/AGaramondPro-Regular.otf) format("opentype");
+}
 
 * {
   margin: 0;
@@ -41,7 +46,6 @@
   box-sizing: border-box;
 }
 body {
-  background-color: rgb(244, 244, 244);
   overflow-x: hidden;
 }
 

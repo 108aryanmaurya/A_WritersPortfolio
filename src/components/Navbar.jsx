@@ -3,7 +3,6 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { navLinks } from "./constants";
 import SideNav from "./SideNav";
 import { AMGautmaBlack, AMGautmaWhite } from "../assets/icons";
-import { AMG, AMGautam, AMGautam2, AMGautam3 } from "../assets/images";
 
 const Navbar = () => {
   const location = useLocation();
@@ -49,24 +48,26 @@ const Navbar = () => {
           } top-0 flex  max-md:flex-row max-md:justify-between py-2 pb-6 max-md:py-2 items-center w-full`}
         >
           <div
-            className={`transition-all duration-300 items-center max-md:m-0 mt-0 max-md:ml-1 mb-2 max-sm:mb-0`}
+            className={`transition-all duration-300 items-center max-md:m-0 mt-0 max-md:ml-1 mb-4 max-sm:mb-0`}
           >
-            {location.pathname.includes("/About") ||
-            location.pathname.includes("/Book") ||
-            location.pathname.includes("/Story") ||
-            location.pathname.includes("/Article") ? (
-              <img
-                src={showNav ? AMGautmaBlack : AMGautmaWhite}
-                className="h-14 2xl:h-20 max-md:h-14 max-sm:h-12 max-md:-translate-y-[0.3rem]"
-                alt=""
-              />
-            ) : (
-              <img
-                src={AMGautmaBlack}
-                className="h-14 2xl:h-20 max-md:h-14 max-sm:h-12 max-md:-translate-y-[0.3rem]"
-                alt=""
-              />
-            )}
+            <Link to="/">
+              {location.pathname.includes("/About") ||
+              location.pathname.includes("/Book") ||
+              location.pathname.includes("/Story") ||
+              location.pathname.includes("/Article") ? (
+                <img
+                  src={showNav ? AMGautmaBlack : AMGautmaWhite}
+                  className="h-14 2xl:h-20 max-md:h-14 max-sm:h-12 max-md:-translate-y-[0.3rem]"
+                  alt=""
+                />
+              ) : (
+                <img
+                  src={AMGautmaBlack}
+                  className="h-14 2xl:h-20 max-md:h-14 max-sm:h-12 max-md:-translate-y-[0.3rem]"
+                  alt=""
+                />
+              )}
+            </Link>
           </div>
           <div className="flex items-center w-auto mt-2 max-sm:mt-0 2xl:mb-2">
             <ul className="flex-1 flex items-center gap-8 max-md:hidden">
@@ -84,7 +85,7 @@ const Navbar = () => {
                       ? "border-b-white"
                       : "border-b-gray-600"
                   }
-                  `}
+                   cursor-pointer`}
                   onMouseEnter={() => {
                     if (item.label === "Work") {
                       setshowoption(true);
@@ -117,8 +118,16 @@ const Navbar = () => {
                           location.pathname.includes("/Article")
                             ? "text-black"
                             : ""
-                        }  p-2 text-[18px] space-y-2 py-3 flex top-[20px] 2xl:top-[30px] w-32  flex-col left-[30%] bg-white border-gray-400 absolute`}
+                        }  p-2 text-[18px] 2xl:text-[22px] space-y-2 py-3 flex top-[30px] 2xl:top-[35px] w-32  flex-col left-[30%] bg-white border-gray-400 absolute`}
                       >
+                        <div
+                          onClick={() => {
+                            navigate("/Work/Non-Fiction");
+                            setshowoption(false);
+                          }}
+                        >
+                          Non-Fiction
+                        </div>
                         <div
                           onClick={() => {
                             navigate("/Work/Fiction");
@@ -127,14 +136,6 @@ const Navbar = () => {
                         >
                           {" "}
                           Fiction
-                        </div>
-                        <div
-                          onClick={() => {
-                            navigate("/Work/Non-Fiction");
-                            setshowoption(false);
-                          }}
-                        >
-                          Non-Fiction
                         </div>
                       </div>
                     )}
