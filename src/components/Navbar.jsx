@@ -49,7 +49,7 @@ const Navbar = () => {
           } top-0 flex  max-md:flex-row max-md:justify-between py-2 pb-6 max-md:py-2 items-center w-full`}
         >
           <div
-            className={`transition-all duration-300 items-center max-md:m-0 mt-0 max-md:ml-1 mb-5 max-sm:mb-0`}
+            className={`transition-all duration-300 items-center max-md:m-0 mt-0 max-md:ml-1 mb-2 max-sm:mb-0`}
           >
             {location.pathname.includes("/About") ||
             location.pathname.includes("/Book") ||
@@ -117,7 +117,7 @@ const Navbar = () => {
                           location.pathname.includes("/Article")
                             ? "text-black"
                             : ""
-                        }  p-2 text-[20px] space-y-2 py-4 flex top-[32px] w-32  flex-col left-0 bg-white border-gray-400 absolute`}
+                        }  p-2 text-[18px] space-y-2 py-3 flex top-[20px] 2xl:top-[30px] w-32  flex-col left-[30%] bg-white border-gray-400 absolute`}
                       >
                         <div
                           onClick={() => {
