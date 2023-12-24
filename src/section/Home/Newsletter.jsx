@@ -11,7 +11,7 @@ export default function Newsletter() {
           <p class="text-center 2xl:text-xl mt-2  font-montserrat">
             Stay up to date with Aditya's latest Reads and News
           </p>
-          <div className="mt-10 max-sm:mt-5 mb-5">
+          <div className="mt-10 max-sm:mt-5 mb-5 scale-150">
             <NewsletterCard />
           </div>
         </div>
