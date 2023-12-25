@@ -1,5 +1,4 @@
 import { useRef, useEffect } from "react";
-import { girlReading } from "../assets/images";
 import NewsletterCard from "./NewsletterCard";
 export default function NewsletterModal(props) {
   const { setShowNewsletterModal, showNewsletterModal } = props;

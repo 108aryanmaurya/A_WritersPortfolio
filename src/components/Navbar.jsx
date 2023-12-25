@@ -7,6 +7,7 @@ import { AMGautmaBlack, AMGautmaWhite } from "../assets/icons";
 const Navbar = () => {
   const location = useLocation();
   const [showNav, setNav] = useState(false);
+  const [currentLoc, setcurrentLoc] = useState("");
   const [showoption, setshowoption] = useState(false);
   const navigate = useNavigate();
   useEffect(() => {
@@ -118,26 +119,36 @@ const Navbar = () => {
                           location.pathname.includes("/Article")
                             ? "text-black"
                             : ""
-
-                        }  p-2 text-[22px] space-y-3 py-3 flex top-[20px] 2xl:top-[32.4px] w-32  flex-col left-0 bg-white border-gray-400 absolute`}
+                        }  p-2 text-[22px] max-lg:text-[18px] max-lg:top-[26px] space-y-3 py-3 flex top-[20px] 2xl:top-[32.4px] w-32 max-lg:py-2  max-lg:space-y-1 max-lg:w-28 flex-col left-0 bg-white border-gray-400 absolute`}
                       >
-                        <div
+                        <span
                           onClick={() => {
                             navigate("/Work/Non-Fiction");
+                            setcurrentLoc("Non-Fiction");
+
                             setshowoption(false);
                           }}
+                          className={` ${
+                            currentLoc === "Non-Fiction" &&
+                            "border-b-[1px]  border-black"
+                          } `}
                         >
                           Non-Fiction
-                        </div>
-                        <div
+                        </span>
+                        <span
                           onClick={() => {
                             navigate("/Work/Fiction");
+                            setcurrentLoc("Fiction");
                             setshowoption(false);
                           }}
+                          className={` ${
+                            currentLoc === "Fiction" &&
+                            "border-b-[1px] w-[60%] border-black"
+                          } `}
                         >
                           {" "}
                           Fiction
-                        </div>
+                        </span>
                       </div>
                     )}
                   </div>

@@ -54,7 +54,6 @@ export {
   UpsideDown,
   TheShadowTeacher,
   peril,
-  girlReading,
   ManinaLittleTown,
   inDefenseOfMoonlight,
   IntotheNight,

@@ -30,12 +30,18 @@ const AboutCrousel = () => {
   };
 
   return (
-    <section className="mx-auto flex px-24 max-lg:px-10 bg-white justify-center items-center flex-col my-10 max-sm:mt-20 max-md:py-3  py-20 max-sm:px-0">
-      <p className="font-Oswald mb-6  max-md:mb-0  max-md:my-2 font- tracking-[5px]  text-[40px] max-md:pl-0 text-gray-800 max-md:text-center  max-sm:text-[22px] ">
+    <section className="mx-auto flex px-24 max-lg:px-10 max-md:bg-slate-200 bg-white justify-center items-center flex-col my-10 max-sm:mt-20 max-md:py-6  py-20 max-sm:px-0">
+      <p className="font-Oswald mb-6  max-md:mb-6   font- tracking-[5px]  text-[40px] max-md:pl-0 text-gray-800 max-md:text-center  max-sm:text-[22px] ">
         WORKS BY A.M. GAUTAM
       </p>
 
-      <div className=" flex max-md:flex-col justify-center  max-md:gap-0 max-md:my-3  py-8  gap-28">
+      <p
+        className="text-[30px] max-md:block hidden 2xl:text-[35px] max-md:text-center 
+             max-md:leading-7 max-md:my-3  text-black font-Gamiliademo  "
+      >
+        {reviews[currentIndex]?.title}
+      </p>
+      <div className=" flex max-md:flex-col justify-center  max-md:gap-3 max-md:my-0  max-md:py-0 py-8  gap-28">
         <div className=" mx-auto    ">
           {reviews[currentIndex].type == "Book" && (
             <div
@@ -111,9 +117,12 @@ const AboutCrousel = () => {
             </section>
           )}
         </div>
-        <div className="mx-7 max-lg:mx-0 max-sm:p-2  items-start justify-evenly  w-[50%] max-md:w-[100%] flex flex-col max-md:py-5 gap-9  max-md:gap-0 ">
-          <div className="flex flex-col gap-5">
-            <p className="text-[30px] 2xl:text-[35px] max-sm:pl-2 max-md:leading-7 max-md:my-3  text-black font-Gamiliademo  ">
+        <div className="mx-7 max-lg:mx-0 max-sm:p-1  items-start justify-evenly  w-[50%] max-md:w-[100%] flex flex-col max-md:py-5 gap-9 max-  max-md:gap-0 ">
+          <div className="flex flex-col max-md:gap-0 gap-5">
+            <p
+              className="text-[30px] max-md:hidden 2xl:text-[35px] max-md:text-center 
+             max-md:leading-7 max-md:my-3  text-black font-Gamiliademo  "
+            >
               {reviews[currentIndex]?.title}
             </p>
             <div className="font-montserrat max-md:mx-2 max-md:mt-3 h-auto 2xl:text-[18px] text-slate-600 text-justify ">
@@ -121,7 +130,7 @@ const AboutCrousel = () => {
             </div>
           </div>
           <button
-            className=" gap-7 mt-0   bg-black max-md:p-[3px] p-[3px]  justify- items-center  max-w-[170px]  "
+            className=" gap-7 mt-0 max-md:hidden  bg-black max-md:p-[3px] p-[3px]  justify- items-center  max-w-[170px]  "
             onClick={() => {
               if (reviews[currentIndex].type === "Book") {
                 navigate(
@@ -140,7 +149,7 @@ const AboutCrousel = () => {
               }
             }}
           >
-            <span className=" max-md:p-2 border-[1px] border-white      flex justify-center items-center text-[20px] font-TimesNewRoman flex-row text-white bg-black  uppercase  p-1 gap-1 max-md:gap-1 max-sm:text-[14px]   max-md:border-[2px] ">
+            <span className="  max-md:p-2 border-[1px] border-white      flex justify-center items-center text-[20px] font-TimesNewRoman flex-row text-white bg-black  uppercase  p-1 gap-1 max-md:gap-1 max-sm:text-[14px]   max-md:border-[2px] ">
               <span>READ Here</span>
               <img
                 src={ArrowRight}
