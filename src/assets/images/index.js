@@ -42,11 +42,16 @@ import peril from './peril.jpg'
 import UpsideDown from './UpsideDown.jpg'
 import TheLibrary from './TheLibrary.jpg'
 import TheShadowTeacher from './TheShadowTeacher.jpeg'
-
+import caseIndia from './caseIndia.jpg'
+import salmanRushidie from './salmanRushidie.jpg'
+import SalmanRushdie from './SalmanRushdie.webp'
 export {
+  SalmanRushdie,
+  TheLibrary,
+  caseIndia,
+  salmanRushidie,
   UpsideDown,
   TheShadowTeacher,
-  TheLibrary,
   peril,
   ManinaLittleTown,
   inDefenseOfMoonlight,

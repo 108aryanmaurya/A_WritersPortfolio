@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { crausoel, works } from "../../components/constants";
+import { works } from "../../components/constants";
 import { ArrowRight } from "../../assets/icons";
 import { useNavigate } from "react-router";
 import { Articlehero, Bookcover } from "../../assets/images";
@@ -30,12 +30,12 @@ const AboutCrousel = () => {
   };
 
   return (
-    <section className="mx-auto flex px-24 max-lg:px-10 bg-gray-800 justify-center items-center flex-col my-10 max-sm:mt-20 max-md:py-3  py-20 max-sm:px-0">
-      <p className="font-Oswald mb-6  max-md:mb-0  max-md:my-2 font- tracking-[5px]  text-[40px] max-md:pl-0 text-gray-200 max-md:text-center  max-sm:text-[22px] ">
+    <section className="mx-auto flex px-24 max-lg:px-10 bg-white justify-center items-center flex-col my-10 max-sm:mt-20 max-md:py-3  py-20 max-sm:px-0">
+      <p className="font-Oswald mb-6  max-md:mb-0  max-md:my-2 font- tracking-[5px]  text-[40px] max-md:pl-0 text-gray-800 max-md:text-center  max-sm:text-[22px] ">
         WORKS BY A.M. GAUTAM
       </p>
 
-      <div className=" flex max-md:flex-col justify-center items-center max-md:gap-0 max-md:my-3  py-8  gap-28">
+      <div className=" flex max-md:flex-col justify-center  max-md:gap-0 max-md:my-3  py-8  gap-28">
         <div className=" mx-auto    ">
           {reviews[currentIndex].type == "Book" && (
             <div
@@ -111,17 +111,17 @@ const AboutCrousel = () => {
             </section>
           )}
         </div>
-        <div className="mx-7 max-lg:mx-0 max-sm:p-2 text-center items-center justify-evenly  w-[50%] max-md:w-[100%] flex flex-col max-md:py-5 gap-9  max-md:gap-0 ">
-          <div>
-            <p className="text-[30px] 2xl:text-[35px] max-sm:pl-2 max-md:leading-7 max-md:my-3  text-white font-Gamiliademo w-full ">
+        <div className="mx-7 max-lg:mx-0 max-sm:p-2  items-start justify-evenly  w-[50%] max-md:w-[100%] flex flex-col max-md:py-5 gap-9  max-md:gap-0 ">
+          <div className="flex flex-col gap-5">
+            <p className="text-[30px] 2xl:text-[35px] max-sm:pl-2 max-md:leading-7 max-md:my-3  text-black font-Gamiliademo  ">
               {reviews[currentIndex]?.title}
             </p>
+            <div className="font-montserrat max-md:mx-2 max-md:mt-3 h-auto 2xl:text-[18px] text-slate-600 text-justify ">
+              {reviews[currentIndex]?.description}
+            </div>
           </div>
-          <div className="font-montserrat max-md:mx-2 max-md:mt-3 h-auto 2xl:text-[18px] text-slate-400 text-justify max-md:text-center">
-            {reviews[currentIndex]?.description}
-          </div>
-          <div
-            className="max-sm:p-1 max-sm:px-4 px-5 max-md:mt-4 max-md:m-2 max-md:max-w-[150px]  w-auto max-w-[200px] flex justify-center items-center flex-row text-white  border-2 p-2  max-md:border-[1px]  max-sm:text-[14px]   border-white"
+          <button
+            className=" gap-7 mt-0   bg-black max-md:p-[3px] p-[3px]  justify- items-center  max-w-[170px]  "
             onClick={() => {
               if (reviews[currentIndex].type === "Book") {
                 navigate(
@@ -140,9 +140,15 @@ const AboutCrousel = () => {
               }
             }}
           >
-            <span>READ MORE</span>
-            <img src={ArrowRight} className="pl-1 max-md:w-6 " alt="" />
-          </div>
+            <span className=" max-md:p-2 border-[1px] border-white      flex justify-center items-center text-[20px] font-TimesNewRoman flex-row text-white bg-black  uppercase  p-1 gap-1 max-md:gap-1 max-sm:text-[14px]   max-md:border-[2px] ">
+              <span>READ Here</span>
+              <img
+                src={ArrowRight}
+                className="w-8 px-1  max-md:pl-0 max-md:w-4  max-md:px-0 pl-2"
+                alt=""
+              />
+            </span>
+          </button>
         </div>
       </div>
     </section>
