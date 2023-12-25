@@ -161,7 +161,7 @@ export default function Work() {
         )}
 
         <button
-          className="bg-black text-white max-md:p-2  p-4 text-[20px] flex justify-center items-center text-center font-serif"
+          className="bg-black text-white max-md:p-2  p-4 text-[20px] max-md:text-[16px]  flex justify-center items-center text-center font-serif"
           onClick={() => {
             // navigate(`{/${type === "Fiction" ? "Non-Fiction" : "Fiction"}}`);
 
