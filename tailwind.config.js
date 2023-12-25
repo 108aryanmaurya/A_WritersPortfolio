@@ -14,6 +14,7 @@ export default {
         VulturaRegular: ["Vultura-Regular", "sans-serif"],
         Mont: ["Mont-ExtraLightDEMO", "sans-serif"],
         Slabo: ["Slabo27px-Regular", "sans-serif"],
+        AGaramondProRegular: ["AGaramondPro-Regular", "sans-serif"],
       },
     },
   },

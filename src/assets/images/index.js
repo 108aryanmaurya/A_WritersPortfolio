@@ -12,6 +12,7 @@ import cover4 from "./cover4.jpg";
 import cover5 from "./cover5.jpg";
 import book from "./book.png";
 
+
 import Synopsis from './Synopsis.jpg'
 import Articlehero from './Artilcehero.jpg'
 import article2 from './article2.jpg'
@@ -53,6 +54,7 @@ export {
   UpsideDown,
   TheShadowTeacher,
   peril,
+  girlReading,
   ManinaLittleTown,
   inDefenseOfMoonlight,
   IntotheNight,

@@ -7,13 +7,10 @@ import HomeHero from "../section/Home/HomeHero";
 export default function Home() {
   return (
     <>
-      <HomeHero />
       <About />
-      <MoreContent />
       <Newsletter />
-      <div className="grid">
-        <Hero />
-      </div>
+      <HomeHero />
+      <MoreContent />
     </>
   );
 }
