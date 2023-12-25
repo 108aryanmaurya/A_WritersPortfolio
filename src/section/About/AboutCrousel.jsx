@@ -31,13 +31,13 @@ const AboutCrousel = () => {
 
   return (
     <section className="mx-auto flex px-24 max-lg:px-10 max-md:bg-slate-100 bg-white justify-center items-center flex-col my-10 max-sm:mt-20 max-md:py-6  py-20 max-sm:px-0">
-      <p className="font-Oswald mb-6  max-md:mb-6   font- tracking-[5px]  text-[40px] max-md:pl-0 text-gray-800 max-md:text-center  max-sm:text-[22px] ">
+      <p className="font-Oswald mb-6  max-md:mb-3   font- tracking-[5px]  text-[40px] max-md:pl-0 text-gray-800 max-md:text-center  max-sm:text-[22px] ">
         WORKS BY A.M. GAUTAM
       </p>
 
       <p
         className="text-[30px] max-md:block hidden 2xl:text-[35px] max-md:text-center 
-             max-md:leading-7 max-md:my-3  text-black font-Gamiliademo  "
+             max-md:leading-7 max-md:my-6  text-black font-Gamiliademo  "
       >
         {reviews[currentIndex]?.title}
       </p>
@@ -125,7 +125,7 @@ const AboutCrousel = () => {
             >
               {reviews[currentIndex]?.title}
             </p>
-            <div className="font-montserrat max-md:mx-2 max-md:mt-3 h-auto 2xl:text-[18px] text-slate-600 text-justify ">
+            <div className="font-montserrat max-md:mx-3 max-md:mt-3 h-auto 2xl:text-[18px] text-slate-600 text-justify ">
               {reviews[currentIndex]?.description}
             </div>
           </div>

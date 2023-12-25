@@ -46,7 +46,7 @@ export default function SideNav(props) {
                     {item.label}
                     {showoption && item.label === "Work" && (
                       <div
-                        className={` mt-4  text-[20px] space-y-1 py-0 flex top-[0px] w-32   flex-col   `}
+                        className={` mt-4  text-[21px] space-y-3 py-0 flex top-[0px] w-32   flex-col   `}
                       >
                         <div
                           onClick={() => {

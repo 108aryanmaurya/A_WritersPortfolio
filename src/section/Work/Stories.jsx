@@ -4,7 +4,7 @@ import StoryCardnew from "../../components/StoryCardnew";
 
 const Stories = ({ StoryData }) => {
   return (
-    <section className="flex relative flex-col my-44 max-md:my-28  items-center justify-center">
+    <section className="flex relative flex-col my-44 mb-20 max-md:mb-0 max-md:my-12  items-center justify-center">
       {/* <div className="text-center text-[29px] pt-4 max-md:text-[23px] max-md:pb-3 pb-7 font-[100] font-CooperHevitt   border-black">
         SHORT STORIES
       </div>

@@ -12,7 +12,7 @@ const Books = ({ BookData }) => {
         BOOKS
       </div> */}
 
-      <div className=" flex flex-col mx-28  gap-36  max-md:mx-0 justify-center  items-center max-md:my-6  ">
+      <div className=" flex flex-col mx-28 max-md:gap-24  gap-36  max-md:mx-0 justify-center  items-center max-md:my-6  ">
         {BookData?.map((singleBook, index) => (
           <div
             key={2}

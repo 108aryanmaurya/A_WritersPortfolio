@@ -27,7 +27,7 @@ const StoryCardnew = ({ ind }) => {
         >
           <img src={ind.cover2} alt="" className="w-[650px]" />
         </div>
-        <div className="w-[60%]  max-md:w-full flex max-md:gap-0  flex-col gap-10 ">
+        <div className="w-[60%]  max-md:w-full flex max-md:gap-4  flex-col gap-10 ">
           <div className="flex flex-col gap-3">
             <div className="max-md:mt-2">
               <span>Published in </span>
@@ -63,14 +63,14 @@ const StoryCardnew = ({ ind }) => {
               handbag on which his number was printed."
             </span>
           </div>
-          <button className=" gap-7 mt-0   bg-black max-md:p-[3px] p-[3px]  justify- items-center  max-w-[170px]  ">
+          <button className=" max-md:hidden gap-7 mt-0   bg-black max-md:p-[3px] p-[3px]  justify- items-center  max-w-[170px]  ">
             <span
-              className=" max-md:p-2 border-[1px] border-white      flex justify-center items-center text-[20px] font-TimesNewRoman flex-row text-white bg-black  uppercase  p-1 gap-1 max-md:gap-1 max-sm:text-[14px]   max-md:border-[2px] "
+              className="  border-[1px] border-white      flex justify-center items-center text-[20px] font-TimesNewRoman flex-row text-white bg-black  p-1 gap-1 max-md:gap-1 max-md:p-1  max-sm:text-[19px]   max-md:border-[2px] "
               onClick={() => {
                 navigate(`/Story/${ind.title.replace(/\s+/g, "-")}`);
               }}
             >
-              <span>READ Here</span>
+              <span>Read Here</span>
               <img
                 src={ArrowRight}
                 className="w-8 px-1  max-md:pl-0 max-md:w-4  max-md:px-0 pl-2"

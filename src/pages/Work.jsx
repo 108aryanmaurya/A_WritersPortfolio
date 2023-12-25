@@ -3,13 +3,13 @@ import Books from "../section/Work/Books";
 import Article from "../section/Work/Articles";
 import News from "../section/Work/Stories";
 import Stories from "../section/Work/Stories";
-import { useParams } from "react-router";
+import { useNavigate, useParams } from "react-router";
 import { articles, covers, storyCover } from "../components/constants";
 
 export default function Work() {
   const { type } = useParams();
   console.log(type);
-
+  const navigate = useNavigate();
   const [currentSec, setcurrentSec] = useState("book");
   const Bookref = useRef(null);
   const Articleref = useRef(null);
@@ -89,7 +89,7 @@ export default function Work() {
 
   return (
     <>
-      <section className=" relative max-md:pt-0  bg-white py-2">
+      <section className=" flex justify-center flex-col items-center relative max-md:py-0  bg-white py-2">
         {/* <div className="md:top-1  max-md:justify-evenly w-full  pr-2   max-md:bottom-0  max-md:border-t-[1px] sticky max-md:border-gray-300  max-md:fixed max-md:flex  max  max-md:pr-1 gap-1 items-center max-md:text-[16px]  justify-end flex max-md:items-center    max-md:py-[3px] max-md:bg-black z-[60] ">
           {BookData.length > 0 && (
             <div
@@ -159,6 +159,21 @@ export default function Work() {
             <Article ArticleData={ArticleData}></Article>
           </div>
         )}
+
+        <button
+          className="bg-black text-white max-md:p-2  p-4 text-[20px] flex justify-center items-center text-center font-serif"
+          onClick={() => {
+            // navigate(`{/${type === "Fiction" ? "Non-Fiction" : "Fiction"}}`);
+
+            if (type === "Fiction") {
+              navigate("/Work/Non-Fiction");
+            } else {
+              navigate("/Work/Fiction");
+            }
+          }}
+        >
+          Read {type === "Fiction" ? "Non-Fiction" : "Fiction"} ⟶
+        </button>
       </section>
     </>
   );

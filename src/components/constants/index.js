@@ -260,7 +260,7 @@ export const works = [
     type: "Article",
     genre: "Non-Fiction",
 
-    cover: Articlehero,
+    cover: SalmanRushdie,
     title: "Coward attacks literary giant, achieves nothing",
     Date: "August 14, 2022",
     publication: "Times of India",
