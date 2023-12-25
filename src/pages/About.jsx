@@ -8,8 +8,8 @@ const About = () => {
     <>
       <AboutHero></AboutHero>
       <AboutAuthor></AboutAuthor>
-      <WritingJourney></WritingJourney>
       <AboutCrousel></AboutCrousel>
+      <WritingJourney></WritingJourney>
     </>
   );
 };

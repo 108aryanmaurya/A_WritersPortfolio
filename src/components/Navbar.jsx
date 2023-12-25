@@ -118,7 +118,8 @@ const Navbar = () => {
                           location.pathname.includes("/Article")
                             ? "text-black"
                             : ""
-                        }  p-2 text-[18px] 2xl:text-[22px] space-y-2 py-3 flex top-[30px] 2xl:top-[35px] w-32  flex-col left-[30%] bg-white border-gray-400 absolute`}
+
+                        }  p-2 text-[22px] space-y-3 py-3 flex top-[20px] 2xl:top-[32.4px] w-32  flex-col left-0 bg-white border-gray-400 absolute`}
                       >
                         <div
                           onClick={() => {

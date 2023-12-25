@@ -12,11 +12,13 @@ const Books = ({ BookData }) => {
         BOOKS
       </div> */}
 
-      <div className=" flex flex-col mx-28 my-10  max-md:mx-0 justify-center  items-center max-md:my-6  ">
-        {BookData?.map((singleBook) => (
+      <div className=" flex flex-col mx-28  gap-36  max-md:mx-0 justify-center  items-center max-md:my-6  ">
+        {BookData?.map((singleBook, index) => (
           <div
             key={2}
-            className=" max-md:flex-col   max-md:justify-center max-md:items-center   flex justify-center items-start  w-full     "
+            className={`max-md:flex-col    max-md:justify-center max-md:items-center   flex justify-center items-start ${
+              index % 2 == 1 && "flex-row-reverse"
+            }    w-full     `}
           >
             <div
               className="w-[60%] flex justify-center items-center max-md:flex max-md:flex-col max-md:justify-center  max-md:items-center max-md:w-full "
