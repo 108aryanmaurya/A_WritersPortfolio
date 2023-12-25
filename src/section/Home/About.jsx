@@ -2,20 +2,22 @@ import React from "react";
 export default function About() {
   return (
     <>
-      <div className="my-12 mb-60 max-sm:mt-12 max-sm:my-24 mx-auto">
+      <div className="py-12  max-sm:mt-4 max-md:px-8 mx-auto">
         <div className="relative ">
-          <i className="fa fa-quote-right text-5xl 2xl:text-6xl max-sm:text-3xl mb-16 text-gray-400  dark:text-darkTextPrimary text-center w-full"></i>
-          <div className="xl:w-[100%] lg:w-3/4 w-full mx-auto text-center flex flex-row max-md:flex-col justify-evenly items-center">
-            <div className="w-auto flex flex-col justify-center items-center">
+          <div className="xl:w-[100%]  w-full mx-auto text-center flex flex-row max-md:flex-col justify-evenly items-center">
+            <div className="w-auto flex flex-col  relative">
+              <div className=" w-[350px] h-[350px] max-sm:absolute max-sm:bottom-6 max-sm:right-5 2xl:w-[400px] 2xl:h-[400px] max-xl:w-[300px]   max-xl:h-[300px] z-0 bg-gray-900 ">
+                {" "}
+              </div>
               <img
                 src="https://lh3.googleusercontent.com/pw/ABLVV85D7meutv_6vpScXzib2drsyc0b5iuJzE7qAPhOkZLgAH_9xRt34reh_z5wwCDgQodWfKcO1VDgbqdHywHvr37guFsOMEz_BT5nfv-PK8WK4fN6BsAW_XX3_FVCptCPQdyxtzR3fBtVYPvSAUQnkRAEYw=w685-h913-s-no-gm?authuser=0"
                 alt=""
-                className="2xl:w-[480px] 2xl:h-[480px]  object-cover object-center w-[400px] h-[400px]"
+                className="2xl:w-[400px] absolute max-sm:relative max-sm:bottom-0 max-sm:right-0 bottom-12 right-10 2xl:h-[400px]  z-40 object-cover object-center w-[350px] h-[350px]  max-xl:w-[300px]   max-xl:h-[300px]"
               />
             </div>
             <div className="w-[50%] max-md:w-full">
-              <p className="text-gray-600 font-AGaramondProRegular mb-3 max-lg:px-5 max-sm:px-4 text-2xl 2xl:text-3xl text-center  max-md:text-lg max-sm:text-lg leading-9 2xl:leading-[2.8rem] max-sm:text-justify">
-                <span className="text-[34px] max-sm:text-base ml-28 max-sm:ml-0 font-semibold  mr-2 max-sm:mr-1">
+              <p className="text-gray-900 font-AGaramondProRegular mb-3 max-lg:px-5 max-sm:px-0 text-xl 2xl:text-2xl max-xl:text-xl text-center  max-md:text-lg max-sm:text-lg tracking-wide leading-9 2xl:leading-[3rem] max-sm:text-justify max-md:mt-10">
+                <span className="text-[22px] 2xl:text-[25px] text-black max-sm:text-xl ml-28 max-sm:ml-0 font-semibold  mr-2 max-sm:mr-2">
                   A.M. Gautam
                 </span>
                 is an Indian writer from Bangalore with interests in cultural
