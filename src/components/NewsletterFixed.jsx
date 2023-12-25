@@ -32,7 +32,7 @@ export default function NewsletterFixed() {
       />
 
       <div
-        className="max-md:hidden bg-[#B564F7] fixed bottom-0 right-2 mb-2 rounded-sm font-TimesNewRoman text-[25px] 2xl:text-[30px] max-lg:text-[20px] p-1 px-5 z-[99999999] text-white cursor-pointer flex"
+        className="max-md:hidden bg-[#B564F7] hover:bg-[#c27cfc] fixed bottom-0 right-2 mb-2 rounded-sm font-TimesNewRoman text-[25px] 2xl:text-[30px] max-lg:text-[20px] p-1 px-5 z-[99999999] text-white cursor-pointer flex select-none"
         onClick={openModal}
       >
         Subscribe

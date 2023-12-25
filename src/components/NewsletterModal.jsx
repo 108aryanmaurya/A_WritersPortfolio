@@ -30,7 +30,7 @@ export default function NewsletterModal(props) {
           showNewsletterModal
             ? " opacity-100 translate-y-0 "
             : " opacity-0 -translate-y-full"
-        } fixed inset-0 flex items-center transition-all  z-[99999999999] ease-in-out duration-300 justify-center backdrop-blur-sm bg-Opacityblack  `}
+        } fixed inset-0 flex items-center transition-all  z-[99999999999] ease-in-out duration-300 justify-center backdrop-blur-sm bg-Opacityblack select-none `}
         ref={modalRef}
         onClick={handleOutsideClick}
       >
