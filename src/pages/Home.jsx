@@ -12,9 +12,9 @@ export default function Home() {
     <>
       {/* <Aboutnew></Aboutnew> */}
       <About />
+      <Newsletter />
       <HomeHero />
       <ShowOption></ShowOption>
-      <Newsletter />
       <MoreContent />
     </>
   );
