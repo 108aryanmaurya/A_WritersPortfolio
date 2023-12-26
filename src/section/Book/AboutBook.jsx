@@ -11,7 +11,7 @@ const AboutBook = ({ bookdetails }) => {
       <div className="relative  max-lg:hidden  p-16 max-sm:p-0 max-md:mt-8  max-sm:ml-4  justify-center items-center">
         <div className=" bg-slate-200  md:pl-10  lg:pl-16 lg:ml-14 p-6 pl-36 xl:ml-36    w-[50%]   ">
           <img
-            src={Bookcover}
+            src={bookdetails?.cover}
             alt="person"
             className="  max-sm:pr-2  max-sm:pb-1 2xl:h-[450px] h-[400px]   "
           />

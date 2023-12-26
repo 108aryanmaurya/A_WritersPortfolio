@@ -4,7 +4,7 @@ import "./newAbout.css";
 const Aboutnew = () => {
   return (
     <div className="pl-20 bg-slate-100 pr-48 ">
-      <div className=" imgWrap w-[650px] z-30  float-left  ">
+      <div className=" imgWrap w-[650px] z-30  ">
         <img src={newAMGautam} alt="" className="z-50" />
       </div>
       <div className=" text-justify font-TimesNewRoman ml-72 py-16 text-[22px]">
@@ -25,9 +25,9 @@ const Aboutnew = () => {
         collection is forthcoming from The Aleph Book Company.
       </div>
 
-      <div className="bg-slate-200   max-lg:hidden h-28  w-28 right-10 rounded-full  absolute  "></div>
+      {/* <div className="bg-slate-200   max-lg:hidden h-28  w-28 right-10 rounded-full  absolute  "></div>
       <div className="bg-slate-200 h-72 top-36 w-72 max-lg:hidden  rounded-full  absolute  left-72 "></div>
-      <div className="bg-slate-200 h-48 top-[400px] w-48 max-lg:hidden  rounded-full  absolute  right-20 "></div>
+      <div className="bg-slate-200 h-48 top-[400px] w-48 max-lg:hidden  rounded-full  absolute  right-20 "></div> */}
     </div>
   );
 };

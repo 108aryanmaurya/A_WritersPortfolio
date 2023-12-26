@@ -12,7 +12,7 @@ import Synopsis from "../section/Book/Synopsis1";
 const SingleBookPage = ({ bookdetails }) => {
   console.log(bookdetails);
   return (
-    <section className="">
+    <section className="bg-slate-50">
       <BookHero></BookHero>
       <AboutBook bookdetails={bookdetails}></AboutBook>
       {/* <BookSynopsis bookdetails={bookdetails}></BookSynopsis> */}

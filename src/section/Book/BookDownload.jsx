@@ -13,9 +13,10 @@ const BookDownload = () => {
         <div className="font-Oswald max-md:text-[20px]  text-[28px]">
           Get a sample of book
         </div>
-        <div className="z-10  max-sm:p-1 max-md:mt-2  text-[20px] font-[400]  max-md:left-2  max-md:m-0     max-md:w-auto max-md:h-auto   flex justify-center  items-center  max-md:font-[300]    text-blackborder-2  p-2 gap-2 uppercase max-md:gap-1 max-sm:text-[14px] border-2  max-md:border-[1px]  border-black">
+
+        <span className="  border-[1px] border-white      flex justify-center items-center text-[20px] font-TimesNewRoman flex-row cursor-pointer text-white bg-black  p-3 gap-1 max-md:gap-1 max-md:p-1  max-sm:text-[19px] uppercase  max-md:border-[2px] ">
           <span>Download</span>
-        </div>
+        </span>
       </div>
     </section>
   );
