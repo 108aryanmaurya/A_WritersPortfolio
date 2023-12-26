@@ -116,12 +116,14 @@ export const covers = [
     cover: Bookcover,
     title: "The Greatest Indian Stories Ever Told",
     genre: "Fiction",
+    orderLink: "https://www.amazon.in/Greatest-Indian-Stories-Ever-Told/dp/9393852871",
 
     description:
       "The Greatest Indian Stories Ever Told is a selection of some of the finest literary short fiction written by Indian writers since the genre came into being in the country in the late nineteenth century. Including early masters of the form, contemporary stars, as well as brilliant writers who came of age in the twenty-first century, this anthology takes in its sweep stories from the various regions, languages, and literatures of India. These authors are some of the most feted in the annals of Indian literature and have, between them, won virtually every major literary prize on offer—including the Nobel Prize for Literature, the Jnanpith Award, the Sahitya Akademi Award, and numerous state, national, and international honours.",
   },
   {
     cover: caseIndia,
+    orderLink: "https://www.amazon.in/Case-Indian-Marvels-Dazzling-Countrys/dp/9391047645",
     title: "A Case of Indian Marvels: Dazzling Stories from the Country’s Finest New Writers",
     genre: "Fiction",
 

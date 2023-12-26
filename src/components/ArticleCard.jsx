@@ -21,7 +21,7 @@ const ArticleCard = ({ art }) => {
         >
           {art?.title}
         </span>{" "}
-        <img src={art.cover} alt="" className="w-[650px]" />
+        <img src={art.cover} alt="" className="cursor-pointer w-[650px]" />
       </div>
       <div className="w-[60%] max-md:w-full flex max-md:gap-0  flex-col gap-4">
         <div className="max-md:mt-2">
@@ -34,7 +34,7 @@ const ArticleCard = ({ art }) => {
           </a>
         </div>
         <span
-          className="text-[25px] 2xl:text-[30px] max-md:hidden   max-md:text-[20px]  uppercase text-gray-800 font-Oswald max-md:leading-7 underline max-md:mb-2"
+          className="text-[25px] 2xl:text-[30px] max-md:hidden   max-md:text-[20px]  uppercase text-gray-800 font-Oswald max-md:leading-7 underline decoration-1 underline-offset-4 cursor-pointer max-md:mb-2"
           onClick={() => {
             navigate(`/Article/${art?.title.replace(/\s+/g, "-")}`);
           }}

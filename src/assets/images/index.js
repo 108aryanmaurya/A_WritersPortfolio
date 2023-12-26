@@ -11,7 +11,7 @@ import cover3 from "./cover3.jpg";
 import cover4 from "./cover4.jpg";
 import cover5 from "./cover5.jpg";
 import book from "./book.png";
-
+import newAMGautam from './newAMGautam.png'
 
 import Synopsis from './Synopsis.jpg'
 import Articlehero from './Artilcehero.jpg'
@@ -46,7 +46,14 @@ import TheShadowTeacher from './TheShadowTeacher.jpeg'
 import caseIndia from './caseIndia.jpg'
 import salmanRushidie from './salmanRushidie.jpg'
 import SalmanRushdie from './SalmanRushdie.webp'
+import Fictionimg from './Fictionimg.jpeg'
+import nonFiction from './nonFiction.jpeg'
+import nonFictionimg from './nonFictionimg.jpeg'
 export {
+  nonFictionimg,
+  nonFiction,
+  Fictionimg,
+  newAMGautam,
   SalmanRushdie,
   TheLibrary,
   caseIndia,

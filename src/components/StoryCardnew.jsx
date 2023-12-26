@@ -8,7 +8,7 @@ const StoryCardnew = ({ ind }) => {
   return (
     <section className="w-[80%] max-md:w-[95%] max-md:gap-8 my-16 flex items-center flex-col gap-12 ">
       <span
-        className="text-[30px]     max-md:text-[22px]   uppercase text-gray-800 font-Oswald max-md:leading-7    "
+        className="text-[30px]     max-md:text-[22px]   uppercase text-gray-800 cursor-pointer font-Oswald max-md:leading-7    "
         onClick={() => {
           navigate(`/Story/${ind?.title.replace(/\s+/g, "-")}`);
         }}
@@ -20,9 +20,9 @@ const StoryCardnew = ({ ind }) => {
         className="max-md:flex-col   justify-between items-start   max-md:gap-3  gap-10  flex   "
       >
         <div
-          className="max-md:w-full mr-10"
+          className="max-md:w-full mr-10 cursor-pointer"
           onClick={() => {
-            navigate(`/indicle/${ind?.title.replace(/\s+/g, "-")}`);
+            navigate(`/Story/${ind?.title.replace(/\s+/g, "-")}`);
           }}
         >
           <img src={ind.cover2} alt="" className="w-[650px]" />
@@ -46,12 +46,7 @@ const StoryCardnew = ({ ind }) => {
         >
           {ind?.title}
         </span>{" "} */}
-            <span
-              className="max-md:leading-6 leading-7    text-[18px] 2xl:text-[22px]  text-justify max-md:text-[21px] font-TimesNewRoman "
-              onClick={() => {
-                navigate(`/indicle/${ind?.title.replace(/\s+/g, "-")}`);
-              }}
-            >
+            <span className="max-md:leading-6 leading-7    text-[18px] 2xl:text-[22px]   text-justify max-md:text-[21px] font-TimesNewRoman ">
               {/* "{ind?.shortDescription}" */}
               "At 9 in the morning, she had been standing on the balcony of a
               large apartment in South Delhi and the thought of landing her
@@ -65,7 +60,7 @@ const StoryCardnew = ({ ind }) => {
           </div>
           <button className=" max-md:hidden gap-7 mt-0   bg-black max-md:p-[3px] p-[3px]  justify- items-center  max-w-[170px]  ">
             <span
-              className="  border-[1px] border-white      flex justify-center items-center text-[20px] font-TimesNewRoman flex-row text-white bg-black  p-1 gap-1 max-md:gap-1 max-md:p-1  max-sm:text-[19px]   max-md:border-[2px] "
+              className="  border-[1px] border-white      flex justify-center items-center text-[20px] font-TimesNewRoman flex-row cursor-pointer text-white bg-black  p-1 gap-1 max-md:gap-1 max-md:p-1  max-sm:text-[19px]   max-md:border-[2px] "
               onClick={() => {
                 navigate(`/Story/${ind.title.replace(/\s+/g, "-")}`);
               }}

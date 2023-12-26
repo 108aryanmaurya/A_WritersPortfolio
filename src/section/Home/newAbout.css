@@ -1,0 +1,5 @@
+.imgWrap {
+  float: right;
+  shape-margin: 25px;
+  shape-outside: url("../../assets/images/newAMGautam.png");
+}

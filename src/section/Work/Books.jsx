@@ -27,9 +27,9 @@ const Books = ({ BookData }) => {
               }}
             >
               <span
-                className="text-[30px]    max-md:block hidden  text-center   max-md:text-[22px]   uppercase  text-gray-800 font-Oswald  max-md:leading-7 max-md:mb-10 "
+                className="text-[30px]    max-md:block hidden  text-center   max-md:text-[22px]   uppercase  text-gray-800 font-Oswald cursor-pointer  max-md:leading-7 max-md:mb-10 "
                 onClick={() => {
-                  navigate(`/Story/${singleBook?.title.replace(/\s+/g, "-")}`);
+                  navigate(`/Book/${singleBook?.title.replace(/\s+/g, "-")}`);
                 }}
               >
                 {singleBook?.title}
@@ -37,7 +37,7 @@ const Books = ({ BookData }) => {
               <img
                 src={singleBook.cover}
                 alt=""
-                className="2xl:w-[400px] w-[350px] max-md:w-[250px]"
+                className="2xl:w-[400px] cursor-pointer w-[350px] max-md:w-[250px]"
               />
             </div>
             <div className="w-[70%] mt-7 max-md:mt-0  max-md:flex max-md:justify-center max-md:items-center  max-md:w-full flex max-md:gap-2  flex-col gap-4">
@@ -56,7 +56,7 @@ const Books = ({ BookData }) => {
               </div>
               <div className="flex gap-7 2xl:mt-5 mt-0 max-md:mt-2 max-md:gap-1">
                 <div
-                  className=" max-sm:p-1 max-md:mt-2  max-md:m-1   w-auto max-w-[200px] flex justify-center items-center flex-row text-black   border-2 p-2 gap-2 max-md:gap-1 max-sm:text-[14px]  max-md:border-[2px] border-black"
+                  className=" max-sm:p-1 max-md:mt-2  max-md:m-1   w-auto max-w-[200px] flex justify-center items-center flex-row text-black   border-2 p-2 gap-2 max-md:gap-1 max-sm:text-[14px] cursor-pointer  max-md:border-[2px] border-black"
                   onClick={() => {
                     navigate(`/Book/${singleBook.title.replace(/\s+/g, "-")}`);
                   }}
@@ -68,8 +68,13 @@ const Books = ({ BookData }) => {
                     alt=""
                   />
                 </div>
-                <div className=" max-sm:p-1 max-md:mt-2  max-md:m-1   w-auto max-w-[200px] flex justify-center items-center flex-row text-black   border-2 p-2 gap-2 max-md:gap-2 max-sm:text-[14px] max-md:border-[2px]  border-black">
-                  <span>ORDER NOW</span>
+                <div
+                  className=" max-sm:p-1 max-md:mt-2  max-md:m-1   w-auto max-w-[200px] flex justify-center items-center flex-row text-black   border-2 p-2 gap-2 max-md:gap-2 max-sm:text-[14px] max-md:border-[2px]  border-black"
+                  onClick={() => {
+                    navigate(`{${singleBook.orderLink}}`);
+                  }}
+                >
+                  <span>GET A COPY HERE</span>
                   <img
                     src={Cart}
                     className=" w-7 max-md:pl-0 max-md:w-4 max-md:px-0  px-1 pl-2"

@@ -6,7 +6,7 @@ import DOMPurify from "dompurify";
 const StoryBody = ({ storydata }) => {
   //   console.log(storydata);
   return (
-    <div className="relative max-md:w-full w-[90%] mx-auto p-16 max-sm:p-0 max-md:mt-8   justify-center items-center">
+    <div className="relative  max-md:w-full w-[90%] mx-auto p-16 max-sm:p-0 max-md:mt-8   justify-center items-center">
       <div className="flex gap-28  my-6   justify-center  max-md:gap-5 max-md:my-3 w-[90%] mx-auto  ">
         <a href={storydata?.link} target="_blank" rel="noopener noreferrer">
           <div className="font-semibold flex justify-center items-center ">
@@ -45,7 +45,7 @@ font-Gamiliademo  w-[90%] max-md:w-[90%] mx-auto text-center   text-[45px] max-m
         </div>
 
         <div
-          className="text-[24px] tracking-wide  mt-4 max-md:p-4  p-14   bg-white  text-justify max-lg:w-[100%] max-md:w-[100%]  max-md:leading-[17px] max-md:text-[15.6px]   font-TimesNewRoman        "
+          className="text-[24px]  tracking-wide  mt-4 max-md:p-4  p-14   bg-white  text-justify max-lg:w-[100%] max-md:w-[100%]  max-md:leading-[17px] max-md:text-[15.6px]   font-TimesNewRoman        "
           dangerouslySetInnerHTML={{
             __html: DOMPurify.sanitize(storydata?.description),
           }}

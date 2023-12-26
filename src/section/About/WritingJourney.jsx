@@ -3,7 +3,7 @@ import React from "react";
 export default function WritingJourney() {
   return (
     <>
-      <div className=" text-black bg-white py-8 max-md:mt-24">
+      <div className=" text-black bg-slate-50 py-8 max-md:mt-24">
         <div className="container mx-auto flex flex-col items-start md:flex-row mb-12 md:mb-24">
           <div className="flex flex-col w-full sticky md:top-44 lg:w-1/3 mt-2 md:mt-12 px-8 max-sm:items-center justify-center">
             <p className="text-3xl md:text-4xl leading-normal md:leading-relaxed  font-CooperHevitt max-sm:font-semibold">

@@ -4,7 +4,7 @@ import { RandomPerson } from "../../assets/images";
 export default function AboutAuthor() {
   return (
     <>
-      <div className="relative  p-16 max-sm:p-0 max-md:mt-8  max-sm:ml-4  justify-center items-center">
+      <div className="relative bg-slate-100  p-16 max-sm:p-0 max-md:mt-8  max-sm:ml-4  justify-center items-center">
         <div className="float-left ">
           <img
             src="https://lh3.googleusercontent.com/pw/ABLVV85D7meutv_6vpScXzib2drsyc0b5iuJzE7qAPhOkZLgAH_9xRt34reh_z5wwCDgQodWfKcO1VDgbqdHywHvr37guFsOMEz_BT5nfv-PK8WK4fN6BsAW_XX3_FVCptCPQdyxtzR3fBtVYPvSAUQnkRAEYw=w685-h913-s-no-gm?authuser=0"
@@ -15,9 +15,9 @@ export default function AboutAuthor() {
         </div>
         <div className="text-black flex font-Authorfont transform translate-y-10  my-3 max-md:m-0 mt-0 max-md:ml-2  "></div>
 
-        <div className="bg-slate-200 -z-50 max-lg:hidden h-28  w-28 right-1 rounded-full  absolute  "></div>
-        <div className="bg-slate-200 -z-50  h-72 top-72 w-72 max-lg:hidden  rounded-full  absolute  right-32 "></div>
-        <div className="bg-slate-200 -z-50 h-48 top-[600px] w-48 max-lg:hidden  rounded-full  absolute  right-4 "></div>
+        <div className="bg-slate-200 z-50 max-lg:hidden h-28  w-28 right-1 rounded-full  absolute  "></div>
+        <div className="bg-slate-200 z-50  h-72 top-72 w-72 max-lg:hidden  rounded-full  absolute  right-32 "></div>
+        <div className="bg-slate-200 z-50 h-48 top-[600px] w-48 max-lg:hidden  rounded-full  absolute  right-4 "></div>
         <div className="text-[18px]  text-justify bg-white w-[60%] max-lg:w-[80%] max-md:w-[90%] max-md:p-3 max-sm:leading-[19px] max-md:text-[16px] max-sm:text-[15px] font-montserrat   max-sm:ml-4 max-sm:mt-14  ml-24 mt-24  p-14  max-sm:pt-5   ">
           <span className="text-[20px]  font-[500]  ">A.M. Gautam </span>
           is an Indian writer from Bangalore with interests in cultural
