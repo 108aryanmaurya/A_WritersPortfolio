@@ -47,7 +47,7 @@ export default function MoreContent() {
                       </span>
                       <img
                         src={goto}
-                        className="w-3 2xl:w-4 mx-1 h-3 2xl:h-4 invert"
+                        className="w-3 2xl:w-4 mx-1 h-3 2xl:h-4 "
                         alt=""
                       />
                     </div>
