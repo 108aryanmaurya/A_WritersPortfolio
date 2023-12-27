@@ -6,7 +6,7 @@ import MoreArticle from "../section/Article/MoreArticle";
 const SingleArticlePage = ({ articledata }) => {
   console.log(articledata);
   return (
-    <section>
+    <section className="bg-slate-300/10">
       <ArticleHero></ArticleHero>
       <ArticleBody articledata={articledata}></ArticleBody>
       <MoreArticle article={articledata}></MoreArticle>

@@ -30,7 +30,7 @@ const AboutCrousel = () => {
   };
 
   return (
-    <section className="mx-auto flex px-24 max-lg:px-10 max-md:bg-slate-100 bg-white justify-center items-center flex-col my-10 max-sm:mt-20 max-md:py-6  py-20 max-sm:px-0">
+    <section className="mx-auto flex px-24 max-lg:px-10 max-md:bg-slate-100 bg-white justify-center items-center flex-col my-0 max-sm:mt-20 max-md:py-6  py-16 max-sm:px-0">
       <p className="font-Oswald mb-6  max-md:mb-3   font- tracking-[5px]  text-[40px] max-md:pl-0 text-gray-800 max-md:text-center  max-sm:text-[22px] ">
         WORKS BY A.M. GAUTAM
       </p>
