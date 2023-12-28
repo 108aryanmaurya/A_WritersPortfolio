@@ -59,7 +59,7 @@ export default function HomeHero() {
     <>
       <div
         id="app"
-        className="mx-auto mt-5 max-md:mt-0 px-8 max-md:px-0 transition-all duration-500 ease-linear"
+        className="mx-auto mt-16 max-md:mt-0 px-8 max-md:px-0 transition-all duration-500 ease-linear"
       >
         <div className="relative">
           <div
