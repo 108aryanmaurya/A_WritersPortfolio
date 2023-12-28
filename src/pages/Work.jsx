@@ -89,7 +89,7 @@ export default function Work() {
 
   return (
     <>
-      <section className=" flex justify-center flex-col items-center relative max-md:py-0  bg-white py-2">
+      <section className=" flex justify-center flex-col items-center relative max-md:py-0 max-md:mb-10  mb-28  bg-white py-2">
         {/* <div className="md:top-1  max-md:justify-evenly w-full  pr-2   max-md:bottom-0  max-md:border-t-[1px] sticky max-md:border-gray-300  max-md:fixed max-md:flex  max  max-md:pr-1 gap-1 items-center max-md:text-[16px]  justify-end flex max-md:items-center    max-md:py-[3px] max-md:bg-black z-[60] ">
           {BookData.length > 0 && (
             <div
