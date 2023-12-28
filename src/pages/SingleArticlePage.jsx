@@ -9,7 +9,7 @@ const SingleArticlePage = ({ articledata }) => {
     <section className="bg-slate-300/10">
       <ArticleHero></ArticleHero>
       <ArticleBody articledata={articledata}></ArticleBody>
-      <MoreArticle article={articledata}></MoreArticle>
+      {/* <MoreArticle article={articledata}></MoreArticle> */}
     </section>
   );
 };

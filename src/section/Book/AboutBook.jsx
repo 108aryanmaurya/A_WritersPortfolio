@@ -31,11 +31,11 @@ const AboutBook = ({ bookdetails }) => {
         </div>
       </div>
       <div className="relative lg:hidden  z-50 p-16 max-sm:p-0 max-md:mt-0  max-sm:ml-4  justify-center items-center">
-        <div className="float-left bottom-0   max-md:h-[220px]">
+        <div className="float-left bottom-0  mr-3  max-md:h-[220px]">
           <img
-            src={Bookcover}
+            src={bookdetails?.cover}
             alt="person"
-            className=" pb-4 pr-6 z-10 max-md:pr-0 max-md:pb-8  max-xl:h-[550px] max-lg:h-[500px]    max-sm:h-[260px] h-[600px]  "
+            className=" pb-4  z-10 max-md:pr-0 max-md:pb-8  max-xl:h-[550px] max-lg:h-[500px]    max-sm:h-[260px] h-[600px]  "
           />
         </div>
         <div className="text-black flex font-Authorfont transform translate-y-10 -translate-x-40 max-xl:-translate-x-30 max-lg:-translate-x-20  max-md:-translate-x-10 max-sm:-translate-x-0 text-center justify-center text-6xl max-xl:text-5xl max-lg:text-4xl max-md:text-3xl max-sm:text-2xl tracking-wide my-6 max-md:m-0 mt-0 max-md:ml-5  "></div>
