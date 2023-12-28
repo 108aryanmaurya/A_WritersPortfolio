@@ -14,7 +14,7 @@ const BookDownload = () => {
           Get a sample of book
         </div>
 
-        <span className="  border-[1px] border-white      flex justify-center items-center text-[20px] font-TimesNewRoman flex-row cursor-pointer text-white bg-black  p-3 gap-1 max-md:gap-1 max-md:p-1  max-sm:text-[19px] uppercase  max-md:border-[2px] ">
+        <span className="  border-[1px] border-white      flex justify-center items-center  text-[20px] font-TimesNewRoman flex-row cursor-pointer text-white bg-black  p-3 gap-1 max-md:gap-1 max-md:p-1  max-md:text-[15px] max-md:px-2 uppercase  max-md:border-[2px] ">
           <span>Download</span>
         </span>
       </div>
