@@ -47,15 +47,7 @@ const StoryCardnew = ({ ind }) => {
           {ind?.title}
         </span>{" "} */}
             <span className="max-md:leading-6 leading-7    text-[18px] 2xl:text-[22px]   text-justify max-md:text-[21px] font-TimesNewRoman ">
-              {/* "{ind?.shortDescription}" */}
-              "At 9 in the morning, she had been standing on the balcony of a
-              large apartment in South Delhi and the thought of landing her
-              first job had filled her guts with excitement. Some of that
-              excitement, admittedly, had started churning into nervousness when
-              she rang the doorbell twice, and yet no one answered the
-              door.Maybe Im at the wrong address, she had thought, and to
-              confirm it with Pandey-Ji she had taken out the pamphlet from her
-              handbag on which his number was printed."
+              "{ind?.shortDescription}"
             </span>
           </div>
           <button className=" max-md:hidden gap-7 mt-0   bg-black max-md:p-[3px] p-[3px]  justify- items-center  max-w-[170px]  ">
