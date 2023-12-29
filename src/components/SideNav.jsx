@@ -50,20 +50,20 @@ export default function SideNav(props) {
                       >
                         <div
                           onClick={() => {
+                            navigate("/Work/Non-Fiction");
+                            setshowoption(false);
+                          }}
+                        >
+                          Non-Fiction
+                        </div>
+                        <div
+                          onClick={() => {
                             navigate("/Work/Fiction");
                             setshowoption(false);
                           }}
                         >
                           {" "}
                           Fiction
-                        </div>
-                        <div
-                          onClick={() => {
-                            navigate("/Work/Non-Fiction");
-                            setshowoption(false);
-                          }}
-                        >
-                          Non-Fiction
                         </div>
                       </div>
                     )}
