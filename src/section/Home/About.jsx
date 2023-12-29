@@ -2,7 +2,7 @@ import React from "react";
 export default function About() {
   return (
     <>
-      <div className="py-12 pt-16 max-sm:pt-6 max-sm:mt-4 max-md:px-8 mx-auto">
+      <div className="py-12 pt-16 max-sm:pt-6 max-sm:mt-10 max-md:px-8 mx-auto">
         <div className="relative ">
           <div className="xl:w-[100%]  w-full mx-auto text-center flex flex-row max-md:flex-col justify-evenly items-center">
             <div className="w-auto flex flex-col  relative">
