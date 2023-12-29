@@ -45,7 +45,7 @@ font-Gamiliademo  w-[90%] max-md:w-[90%] mx-auto text-center   text-[45px] max-m
         </div>
 
         <div
-          className="text-[24px]  tracking-wide  mt-4 max-md:p-4  p-14   bg-white  text-justify max-lg:w-[100%] max-md:w-[100%]  max-md:leading-[17px] max-md:text-[15.6px]   font-TimesNewRoman        "
+          className="text-[24px]  tracking-wide  mt-4 max-md:p-4  p-14   bg-white  text-justify max-lg:w-[100%] max-md:w-[100%]  max-md:leading-[17px] max-md:text-[15.6px]  select-text  font-TimesNewRoman        "
           dangerouslySetInnerHTML={{
             __html: DOMPurify.sanitize(storydata?.description),
           }}

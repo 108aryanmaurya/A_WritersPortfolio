@@ -9,7 +9,7 @@ const ShowOption = () => {
       <div className="text-center max-md:text-[29px] max-md:mx-10  text-[43px] font-Gamiliademo py-10 max-md:py-6 max-md:leading-9">
         What Would You Like To Read ?
       </div>
-      <div className="flex gap-14 max-md:gap-4 max-md:mx-3 justify-center items-center ">
+      <div className="flex gap-14 max-md:gap-4 max-md:mx-3 justify-center   items-center ">
         <div
           className="relative flex justify-center items-center bg-black "
           onClick={() => {

@@ -5,7 +5,7 @@ import MoreStory from "../section/Story/MoreStory";
 
 const SingleStoryPage = ({ storydata }) => {
   return (
-    <div className="bg-slate-300/10">
+    <div className="bg-slate-300/10 max-md:pb-10 pb-20">
       <StoryHero></StoryHero>
       <StoryBody storydata={storydata}></StoryBody>
       <MoreStory story={storydata}></MoreStory>
